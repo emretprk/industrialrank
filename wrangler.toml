@@ -5,4 +5,3 @@ main = "./worker.js"
 [assets]
 directory = "."
 not_found_handling = "single-page-application"
-exclude = ["node_modules", ".wrangler", ".github", "*.toml", "*.log", "worker.js"]
