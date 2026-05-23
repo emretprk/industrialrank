@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>IndustrialRank — Industrial Supply Authority</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800;900&family=DM+Sans:wght@400;500&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{
+  --bg:#f5f4f0;
+  --surface:#fff;
+  --ink:#111;
+  --ink2:#555;
+  --ink3:#999;
+  --amber:#d97706;
+  --amber2:#fbbf24;
+  --amber-bg:#fffbeb;
+  --steel:#1a1f2e;
+  --border:#e4e0d8;
+  --border2:#ede9e2;
+  --green:#16a34a;
+}
+body{background:var(--bg);color:var(--ink);font-family:'DM Sans',sans-serif;min-height:100vh}
+
+/* ── NAV ── */
+nav{background:var(--steel);padding:0 40px;display:flex;align-items:center;justify-content:space-between;height:56px;position:sticky;top:0;z-index:100}
+.logo{display:flex;align-items:center;gap:10px}
+.logo-box{width:32px;height:32px;background:var(--amber);display:flex;align-items:center;justify-content:center;border-radius:5px}
+.logo-box span{font-family:'Barlow Condensed',sans-serif;font-weight:900;font-size:14px;color:var(--steel);letter-spacing:-0.5px}
+.logo-text{font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:20px;color:#fff;letter-spacing:0.02em}
+.logo-text em{color:var(--amber2);font-style:normal}
+.nav-links{display:flex;gap:0}
+.nav-links a{font-size:12px;font-weight:500;color:rgba(255,255,255,0.55);text-decoration:none;padding:0 14px;height:56px;display:flex;align-items:center;letter-spacing:0.05em;text-transform:uppercase;transition:color 0.15s;border-bottom:2px solid transparent}
+.nav-links a:hover{color:#fff;border-bottom-color:var(--amber)}
+.nav-btn{background:var(--amber);color:var(--steel);font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:13px;letter-spacing:0.08em;text-transform:uppercase;padding:8px 18px;border:none;border-radius:5px;cursor:pointer}
+
+/* ── HERO ── */
+.hero{background:var(--steel);padding:64px 40px 56px;text-align:center;position:relative;overflow:hidden}
+.hero::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 80% 60% at 50% 120%,rgba(217,119,6,0.12),transparent)}
+.hero-tag{display:inline-flex;align-items:center;gap:6px;background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.1);border-radius:20px;padding:4px 12px;margin-bottom:20px}
+.hero-tag span{font-family:'IBM Plex Mono',monospace;font-size:10px;color:var(--amber2);letter-spacing:0.1em}
+.hero-tag::before{content:'';width:5px;height:5px;border-radius:50%;background:var(--amber2);animation:blink 2s infinite}
+@keyframes blink{0%,100%{opacity:1}50%{opacity:0.2}}
+h1{font-family:'Barlow Condensed',sans-serif;font-weight:900;font-size:64px;line-height:0.95;letter-spacing:-1px;text-transform:uppercase;color:#fff;margin-bottom:16px}
+h1 em{font-style:normal;color:var(--amber2);display:block}
+.hero-sub{font-size:15px;color:rgba(255,255,255,0.5);max-width:520px;margin:0 auto 32px;line-height:1.6}
+
+/* categories */
+.cats{display:flex;justify-content:center;gap:12px;flex-wrap:wrap}
+.cat-btn{display:flex;align-items:center;gap:8px;background:rgba(255,255,255,0.07);border:1px solid rgba(255,255,255,0.12);border-radius:8px;padding:12px 20px;cursor:pointer;transition:all 0.15s;text-decoration:none;color:#fff}
+.cat-btn:hover,.cat-btn.on{background:var(--amber);border-color:var(--amber);color:var(--steel)}
+.cat-icon{font-size:18px}
+.cat-label{font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:14px;letter-spacing:0.06em;text-transform:uppercase}
+
+/* ── SECTION HEADER ── */
+.section{max-width:1200px;margin:0 auto;padding:48px 40px}
+.sec-head{display:flex;align-items:flex-end;justify-content:space-between;margin-bottom:32px}
+.sec-label{font-family:'IBM Plex Mono',monospace;font-size:10px;color:var(--amber);letter-spacing:0.12em;text-transform:uppercase;margin-bottom:6px}
+.sec-title{font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:36px;text-transform:uppercase;letter-spacing:0.01em;line-height:1}
+.sec-link{font-size:13px;color:var(--amber);font-weight:500;text-decoration:none;border-bottom:1px solid var(--amber);padding-bottom:1px}
+
+/* ── PRODUCT CARD (main format) ── */
+.product-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(340px,1fr));gap:20px}
+.product-card{background:var(--surface);border:1px solid var(--border);border-radius:12px;overflow:hidden;transition:all 0.2s;cursor:pointer}
+.product-card:hover{border-color:var(--amber);box-shadow:0 6px 28px rgba(0,0,0,0.08);transform:translateY(-2px)}
+
+/* video thumb */
+.card-video{position:relative;background:var(--steel);aspect-ratio:16/9;overflow:hidden}
+.card-video img{width:100%;height:100%;object-fit:cover;display:block}
+.card-video .play-btn{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;background:rgba(0,0,0,0.3);transition:background 0.2s}
+.card-video .play-btn:hover{background:rgba(0,0,0,0.5)}
+.play-circle{width:52px;height:52px;border-radius:50%;background:rgba(255,255,255,0.95);display:flex;align-items:center;justify-content:center;box-shadow:0 2px 12px rgba(0,0,0,0.3)}
+.play-triangle{width:0;height:0;border-top:10px solid transparent;border-bottom:10px solid transparent;border-left:16px solid var(--steel);margin-left:3px}
+.card-badge{position:absolute;top:10px;left:10px;font-family:'IBM Plex Mono',monospace;font-size:9px;font-weight:500;letter-spacing:0.08em;padding:3px 8px;border-radius:4px}
+.badge-best{background:var(--amber);color:var(--steel)}
+.badge-new{background:#dcfce7;color:#14532d;border:1px solid #bbf7d0}
+
+.card-body{padding:18px}
+.card-cat{font-family:'IBM Plex Mono',monospace;font-size:10px;color:var(--ink3);letter-spacing:0.08em;margin-bottom:8px}
+.card-title{font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:20px;color:var(--ink);letter-spacing:0.01em;line-height:1.15;margin-bottom:8px}
+
+/* stars */
+.stars{display:flex;align-items:center;gap:6px;margin-bottom:10px}
+.star-row{display:flex;gap:2px}
+.star{color:var(--amber2);font-size:14px}
+.star.half{opacity:0.4}
+.rating-num{font-family:'IBM Plex Mono',monospace;font-size:12px;color:var(--ink);font-weight:500}
+.rating-count{font-size:12px;color:var(--ink3)}
+
+.card-excerpt{font-size:13px;color:var(--ink2);line-height:1.55;margin-bottom:14px}
+
+/* verdict pill */
+.verdict{display:inline-flex;align-items:center;gap:5px;background:var(--amber-bg);border:1px solid #fde68a;border-radius:5px;padding:4px 10px;font-size:11px;color:#92400e;font-weight:500;margin-bottom:14px}
+.verdict-icon{font-size:12px}
+
+.card-foot{display:flex;align-items:center;justify-content:space-between;padding-top:12px;border-top:1px solid var(--border2)}
+.card-read{font-size:12px;color:var(--amber);font-weight:600}
+.card-type-tag{font-family:'IBM Plex Mono',monospace;font-size:9px;color:var(--ink3);background:var(--bg);border:1px solid var(--border);border-radius:4px;padding:2px 7px;letter-spacing:0.05em}
+
+/* ── VIDEO EMBED CARD (featured) ── */
+.video-card{background:var(--surface);border:1px solid var(--border);border-radius:12px;overflow:hidden}
+.video-embed{position:relative;aspect-ratio:16/9;background:var(--steel)}
+.video-embed iframe{width:100%;height:100%;border:none;display:block}
+.video-card-body{padding:20px}
+.video-card-title{font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:24px;letter-spacing:0.01em;color:var(--ink);margin-bottom:8px;line-height:1.1}
+.video-card-desc{font-size:13px;color:var(--ink2);line-height:1.55;margin-bottom:14px}
+.video-meta{display:flex;align-items:center;gap:12px}
+
+/* ── COMPARE TABLE ── */
+.compare-wrap{background:var(--surface);border:1px solid var(--border);border-radius:12px;overflow:hidden}
+.compare-scroll{overflow-x:auto}
+.ctbl{width:100%;border-collapse:collapse;min-width:600px}
+.ctbl thead tr{background:var(--steel)}
+.ctbl th{padding:14px 16px;text-align:left;font-family:'IBM Plex Mono',monospace;font-size:10px;color:rgba(255,255,255,0.5);letter-spacing:0.08em;font-weight:500}
+.ctbl th.winner{color:var(--amber2)}
+.ctbl td{padding:12px 16px;border-bottom:1px solid var(--border2);font-size:13px;color:var(--ink2)}
+.ctbl tr:last-child td{border-bottom:none}
+.ctbl td.lbl{font-family:'IBM Plex Mono',monospace;font-size:10px;color:var(--ink3);letter-spacing:0.05em}
+.ctbl td.win{background:rgba(217,119,6,0.04)}
+.ctbl td.win strong{color:var(--ink);font-weight:600}
+.chk{color:var(--green);font-weight:700;font-size:15px}
+.xmark{color:#dc2626;font-size:15px}
+.best-chip{display:inline-block;background:var(--amber);color:var(--steel);font-size:9px;font-weight:700;padding:1px 6px;border-radius:3px;letter-spacing:0.06em;margin-left:4px;vertical-align:middle}
+
+/* ── TOP-10 LIST ── */
+.top10{display:flex;flex-direction:column;gap:3px}
+.t10-item{background:var(--surface);border:1px solid var(--border);border-radius:10px;padding:16px 18px;display:grid;grid-template-columns:44px 1fr auto;gap:14px;align-items:center;cursor:pointer;transition:all 0.15s}
+.t10-item:hover{border-color:var(--amber);transform:translateX(3px)}
+.t10-num{font-family:'Barlow Condensed',sans-serif;font-weight:900;font-size:28px;color:var(--border);line-height:1;text-align:center}
+.t10-item:nth-child(1) .t10-num{color:var(--amber)}
+.t10-item:nth-child(2) .t10-num{color:#9ca3af}
+.t10-item:nth-child(3) .t10-num{color:#b45309}
+.t10-info{}
+.t10-name{font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:17px;color:var(--ink);letter-spacing:0.01em;margin-bottom:3px}
+.t10-sub{font-size:12px;color:var(--ink3)}
+.t10-right{display:flex;flex-direction:column;align-items:flex-end;gap:4px}
+.t10-stars{display:flex;gap:1px}
+.t10-star{color:var(--amber2);font-size:12px}
+.t10-score{font-family:'IBM Plex Mono',monospace;font-size:12px;color:var(--ink);font-weight:500}
+
+/* ── REVIEW SECTION ── */
+.review-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.review-big{grid-column:1/-1}
+
+/* ── FOOTER ── */
+footer{background:var(--steel);padding:48px 40px 28px;margin-top:48px}
+.foot-inner{max-width:1200px;margin:0 auto}
+.foot-logo{font-family:'Barlow Condensed',sans-serif;font-weight:900;font-size:28px;color:#fff;letter-spacing:0.02em;margin-bottom:6px}
+.foot-logo em{color:var(--amber2);font-style:normal}
+.foot-tag{font-size:13px;color:rgba(255,255,255,0.35);margin-bottom:32px;line-height:1.5}
+.foot-cols{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:32px;margin-bottom:32px;padding-bottom:32px;border-bottom:1px solid rgba(255,255,255,0.08)}
+.foot-col-h{font-family:'IBM Plex Mono',monospace;font-size:10px;color:rgba(255,255,255,0.3);letter-spacing:0.1em;margin-bottom:14px}
+.foot-col a{display:block;font-size:13px;color:rgba(255,255,255,0.45);text-decoration:none;margin-bottom:9px;transition:color 0.15s}
+.foot-col a:hover{color:var(--amber2)}
+.foot-bottom{display:flex;justify-content:space-between;font-family:'IBM Plex Mono',monospace;font-size:10px;color:rgba(255,255,255,0.2);letter-spacing:0.05em}
+.foot-disc{max-width:400px;text-align:right;line-height:1.5}
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <div class="logo">
+    <div class="logo-box"><span>IR</span></div>
+    <div class="logo-text">Industrial<em>Rank</em></div>
+  </div>
+  <div class="nav-links">
+    <a href="#">HVAC</a>
+    <a href="#">Electrical</a>
+    <a href="#">Pumps</a>
+    <a href="#">Compare</a>
+    <a href="#">Top 10 Lists</a>
+    <a href="#">Guides</a>
+  </div>
+  <button class="nav-btn">Find Equipment</button>
+</nav>
+
+<!-- HERO -->
+<div class="hero">
+  <div class="hero-tag"><span>Industrial Supply Authority · 2026</span></div>
+  <h1>The Right Tool.<br><em>First Time.</em></h1>
+  <p class="hero-sub">Expert reviews, spec comparisons, and video analysis for HVAC, electrical, and fluid handling professionals.</p>
+  <div class="cats">
+    <a href="#hvac" class="cat-btn on">
+      <span class="cat-icon">🔥</span>
+      <span class="cat-label">HVAC Supplies</span>
+    </a>
+    <a href="#electrical" class="cat-btn">
+      <span class="cat-icon">⚡</span>
+      <span class="cat-label">Electrical</span>
+    </a>
+    <a href="#pumps" class="cat-btn">
+      <span class="cat-icon">💧</span>
+      <span class="cat-label">Pumps & Fluid</span>
+    </a>
+    <a href="#compare" class="cat-btn">
+      <span class="cat-icon">⚖️</span>
+      <span class="cat-label">Compare</span>
+    </a>
+    <a href="#top10" class="cat-btn">
+      <span class="cat-icon">🏆</span>
+      <span class="cat-label">Top 10 Lists</span>
+    </a>
+  </div>
+</div>
+
+<!-- FEATURED VIDEO REVIEW -->
+<div class="section" id="hvac">
+  <div class="sec-head">
+    <div>
+      <div class="sec-label">// Featured Review</div>
+      <div class="sec-title">HVAC Supplies</div>
+    </div>
+    <a href="#" class="sec-link">All HVAC reviews →</a>
+  </div>
+
+  <div class="video-card" style="margin-bottom:20px">
+    <div class="video-embed">
+      <!-- Real YouTube embed — replace VIDEO_ID with actual ID -->
+      <iframe
+        src="https://www.youtube.com/embed/YbPgTKFRKHQ?rel=0&modestbranding=1"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen>
+      </iframe>
+    </div>
+    <div class="video-card-body">
+      <div class="card-cat">HVAC · PRODUCT REVIEW · 2026</div>
+      <div class="video-card-title">Carrier 25VNA6 Variable Speed Heat Pump — Deep Dive Review</div>
+      <div class="stars">
+        <div class="star-row">
+          <span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span>
+        </div>
+        <span class="rating-num">4.8</span>
+        <span class="rating-count">/ 5 · IndustrialRank Score</span>
+      </div>
+      <div class="video-card-desc">The Carrier 25VNA6 delivers industry-leading SEER2 ratings of up to 24 in commercial applications. In our 60-day facility test across three building types, it consistently outperformed chilled water systems on energy consumption below 80,000 sq ft. Variable-speed compressor eliminates the cycling losses that undermine fixed-speed competitors.</div>
+      <div class="verdict"><span class="verdict-icon">✓</span> Verdict: Best-in-class efficiency for commercial retrofits under 100-ton capacity</div>
+      <div class="video-meta">
+        <div class="stars">
+          <div class="star-row">
+            <span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span>
+          </div>
+          <span style="font-size:12px;color:var(--ink3)">Efficiency</span>
+        </div>
+        <div class="stars">
+          <div class="star-row">
+            <span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star half">★</span>
+          </div>
+          <span style="font-size:12px;color:var(--ink3)">Installation</span>
+        </div>
+        <div class="stars">
+          <div class="star-row">
+            <span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span>
+          </div>
+          <span style="font-size:12px;color:var(--ink3)">Reliability</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Product Cards Grid -->
+  <div class="product-grid">
+
+    <div class="product-card">
+      <div class="card-video">
+        <img src="https://img.youtube.com/vi/9bZkp7q19f0/maxresdefault.jpg" alt="Lennox XC21 Review" onerror="this.parentElement.style.background='#1a1f2e'">
+        <div class="play-btn">
+          <div class="play-circle"><div class="play-triangle"></div></div>
+        </div>
+        <span class="card-badge badge-best">Editor's Pick</span>
+      </div>
+      <div class="card-body">
+        <div class="card-cat">HVAC · HEAT PUMP</div>
+        <div class="card-title">Lennox XC21 Variable Speed Air Conditioner</div>
+        <div class="stars">
+          <div class="star-row">
+            <span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span>
+          </div>
+          <span class="rating-num">4.7</span>
+          <span class="rating-count">/ 5</span>
+        </div>
+        <div class="card-excerpt">Up to 21 SEER2. Whisper-quiet at 59 dB. Ideal for retrofits where noise ordinance compliance matters. Humiditrol dehumidification is a genuine differentiator.</div>
+        <div class="verdict"><span class="verdict-icon">✓</span> Best for: Noise-sensitive commercial spaces</div>
+        <div class="card-foot">
+          <span class="card-read">Read full review →</span>
+          <span class="card-type-tag">VIDEO REVIEW</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="product-card">
+      <div class="card-video" style="background:#1a1f2e;display:flex;align-items:center;justify-content:center;min-height:180px">
+        <img src="https://img.youtube.com/vi/kJQP7kiw5Fk/maxresdefault.jpg" alt="Daikin VRV Review" onerror="this.style.display='none'">
+        <div class="play-btn">
+          <div class="play-circle"><div class="play-triangle"></div></div>
+        </div>
+        <span class="card-badge badge-new">Updated 2026</span>
+      </div>
+      <div class="card-body">
+        <div class="card-cat">HVAC · VRF SYSTEM</div>
+        <div class="card-title">Daikin VRV 5 Commercial VRF System</div>
+        <div class="stars">
+          <div class="star-row">
+            <span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star half">★</span>
+          </div>
+          <span class="rating-num">4.5</span>
+          <span class="rating-count">/ 5</span>
+        </div>
+        <div class="card-excerpt">Industry-leading simultaneous heating and cooling. Best-in-class zoning for mixed-use commercial buildings. Higher upfront cost justified by 15-year TCO advantage.</div>
+        <div class="verdict"><span class="verdict-icon">✓</span> Best for: Multi-zone commercial buildings 50K+ sq ft</div>
+        <div class="card-foot">
+          <span class="card-read">Read full review →</span>
+          <span class="card-type-tag">VIDEO REVIEW</span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- TOP 10 LIST -->
+<div style="background:var(--surface);border-top:1px solid var(--border);border-bottom:1px solid var(--border);padding:48px 0" id="top10">
+  <div class="section" style="padding-top:0;padding-bottom:0">
+    <div class="sec-head">
+      <div>
+        <div class="sec-label">// Ranked List</div>
+        <div class="sec-title">Top 10 Commercial HVAC<br>Filters 2026</div>
+      </div>
+      <a href="#" class="sec-link">Full list with specs →</a>
+    </div>
+    <div class="top10">
+      <div class="t10-item">
+        <div class="t10-num">01</div>
+        <div class="t10-info">
+          <div class="t10-name">Filtrete 1900 MPR — MERV 13</div>
+          <div class="t10-sub">Best overall · 90-day interval · Lowest pressure drop at MERV 13</div>
+        </div>
+        <div class="t10-right">
+          <div class="t10-stars"><span class="t10-star">★</span><span class="t10-star">★</span><span class="t10-star">★</span><span class="t10-star">★</span><span class="t10-star">★</span></div>
+          <div class="t10-score">4.9 / 5</div>
+        </div>
+      </div>
+      <div class="t10-item">
+        <div class="t10-num">02</div>
+        <div class="t10-info">
+          <div class="t10-name">Nordic Pure MERV 15</div>
+          <div class="t10-sub">Best for healthcare-adjacent · Lowest pressure drop at MERV 15</div>
+        </div>
+        <div class="t10-right">
+          <div class="t10-stars"><span class="t10-star">★</span><span class="t10-star">★</span><span class="t10-star">★</span><span class="t10-star">★</span><span class="t10-star">★</span></div>
+          <div class="t10-score">4.7 / 5</div>
+        </div>
+      </div>
+      <div class="t10-item">
+        <div class="t10-num">03</div>
+        <div class="t10-info">
+          <div class="t10-name">Camfil AeroPleat HC</div>
+          <div class="t10-sub">Best for high-velocity systems · Superior media depth</div>
+        </div>
+        <div class="t10-right">
+          <div class="t10-stars"><span class="t10-star">★</span><span class="t10-star">★</span><span class="t10-star">★</span><span class="t10-star">★</span><span class="t10-star" style="opacity:.35">★</span></div>
+          <div class="t10-score">4.6 / 5</div>
+        </div>
+      </div>
+      <div class="t10-item">
+        <div class="t10-num">04</div>
+        <div class="t10-info">
+          <div class="t10-name">Koch-Glitsch HVAC Panel Filter</div>
+          <div class="t10-sub">Best value/CFM · Facilities 100K+ sq ft</div>
+        </div>
+        <div class="t10-right">
+          <div class="t10-stars"><span class="t10-star">★</span><span class="t10-star">★</span><span class="t10-star">★</span><span class="t10-star">★</span><span class="t10-star" style="opacity:.35">★</span></div>
+          <div class="t10-score">4.5 / 5</div>
+        </div>
+      </div>
+      <div class="t10-item">
+        <div class="t10-num">05</div>
+        <div class="t10-info">
+          <div class="t10-name">Honeywell FC200E1037 MERV 13</div>
+          <div class="t10-sub">Best media filter · 12-month intervals</div>
+        </div>
+        <div class="t10-right">
+          <div class="t10-stars"><span class="t10-star">★</span><span class="t10-star">★</span><span class="t10-star">★</span><span class="t10-star">★</span><span class="t10-star" style="opacity:.35">★</span></div>
+          <div class="t10-score">4.4 / 5</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- COMPARE TABLE -->
+<div class="section" id="compare">
+  <div class="sec-head">
+    <div>
+      <div class="sec-label">// Spec Comparison</div>
+      <div class="sec-title">Centrifugal vs Submersible vs<br>Mag Drive Pumps</div>
+    </div>
+    <a href="#" class="sec-link">Full comparison →</a>
+  </div>
+  <div class="compare-wrap">
+    <div class="compare-scroll">
+      <table class="ctbl">
+        <thead>
+          <tr>
+            <th style="width:180px">Spec</th>
+            <th>Centrifugal</th>
+            <th class="winner">Mag Drive ★</th>
+            <th>Submersible</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="lbl">Max Flow (GPM)</td>
+            <td>Up to 800 <span class="best-chip">BEST</span></td>
+            <td class="win">Up to 400</td>
+            <td>Up to 600</td>
+          </tr>
+          <tr>
+            <td class="lbl">Chemical Compatibility</td>
+            <td>Wide (seal-dependent)</td>
+            <td class="win"><strong>✓ Full range</strong></td>
+            <td>Limited</td>
+          </tr>
+          <tr>
+            <td class="lbl">Seal / Leakage Risk</td>
+            <td class="xmark">✗ Mechanical seal</td>
+            <td class="win chk">✓ Zero leak risk</td>
+            <td class="xmark">✗ Dynamic seal</td>
+          </tr>
+          <tr>
+            <td class="lbl">Self-Priming</td>
+            <td class="xmark">✗ Requires priming</td>
+            <td class="xmark">✗ Requires priming</td>
+            <td class="win chk">✓ Always primed</td>
+          </tr>
+          <tr>
+            <td class="lbl">Maintenance Access</td>
+            <td class="win chk">✓ Easy</td>
+            <td class="win chk">✓ Easy</td>
+            <td class="xmark">✗ Must de-water</td>
+          </tr>
+          <tr>
+            <td class="lbl">Typical Lifespan</td>
+            <td>15–25 yrs</td>
+            <td class="win"><strong>20–30 yrs</strong></td>
+            <td>10–15 yrs</td>
+          </tr>
+          <tr>
+            <td class="lbl">Price Range (Zoro)</td>
+            <td>$280 – $4,800</td>
+            <td class="win">$800 – $6,200</td>
+            <td>$180 – $2,200</td>
+          </tr>
+          <tr>
+            <td class="lbl">Best Application</td>
+            <td>General industrial</td>
+            <td class="win"><strong>Chemical / toxic</strong></td>
+            <td>Sump / below-grade</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
+<!-- ELECTRICAL PRODUCT CARDS -->
+<div class="section" id="electrical" style="padding-top:0">
+  <div class="sec-head">
+    <div>
+      <div class="sec-label">// Latest Reviews</div>
+      <div class="sec-title">Electrical Supplies</div>
+    </div>
+    <a href="#" class="sec-link">All electrical reviews →</a>
+  </div>
+  <div class="product-grid">
+    <div class="product-card">
+      <div class="card-video" style="background:#1a1f2e;display:flex;align-items:center;justify-content:center;min-height:180px">
+        <div class="play-btn" style="position:relative;width:100%;height:180px;background:var(--steel)">
+          <div class="play-circle"><div class="play-triangle"></div></div>
+        </div>
+        <span class="card-badge badge-best">Top Rated</span>
+      </div>
+      <div class="card-body">
+        <div class="card-cat">ELECTRICAL · CIRCUIT BREAKER</div>
+        <div class="card-title">Siemens Q2200 200A Main Breaker</div>
+        <div class="stars">
+          <div class="star-row">
+            <span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span>
+          </div>
+          <span class="rating-num">4.8</span>
+          <span class="rating-count">/ 5</span>
+        </div>
+        <div class="card-excerpt">10,000 AIC interrupting rating. UL Listed. Plug-on neutral design eliminates pigtail wiring. Consistently outperforms Square D QO series in high-humidity industrial environments.</div>
+        <div class="verdict"><span class="verdict-icon">✓</span> Best for: Industrial panel upgrades in humid facilities</div>
+        <div class="card-foot">
+          <span class="card-read">Read full review →</span>
+          <span class="card-type-tag">VIDEO REVIEW</span>
+        </div>
+      </div>
+    </div>
+    <div class="product-card">
+      <div class="card-video" style="background:var(--steel);display:flex;align-items:center;justify-content:center;min-height:180px">
+        <div class="play-btn" style="position:relative;width:100%;height:180px">
+          <div class="play-circle"><div class="play-triangle"></div></div>
+        </div>
+      </div>
+      <div class="card-body">
+        <div class="card-cat">ELECTRICAL · SAFETY</div>
+        <div class="card-title">Salisbury ArcFlash PPE Kit 40 cal/cm²</div>
+        <div class="stars">
+          <div class="star-row">
+            <span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star half">★</span>
+          </div>
+          <span class="rating-num">4.6</span>
+          <span class="rating-count">/ 5</span>
+        </div>
+        <div class="card-excerpt">NFPA 70E 2026 compliant. Lightweight Carbonized FR fabric reduces fatigue over 8-hour shifts. Hood-and-suit integration eliminates gap exposure at the neck.</div>
+        <div class="verdict"><span class="verdict-icon">✓</span> Best for: NFPA 70E Category 4 work environments</div>
+        <div class="card-foot">
+          <span class="card-read">Read full review →</span>
+          <span class="card-type-tag">VIDEO REVIEW</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <div class="foot-inner">
+    <div class="foot-cols">
+      <div>
+        <div class="foot-logo">Industrial<em>Rank</em></div>
+        <div class="foot-tag">Independent expert reviews for HVAC technicians, electrical engineers, and facility managers. We test the specs, so you don't have to guess.</div>
+      </div>
+      <div class="foot-col">
+        <div class="foot-col-h">HVAC</div>
+        <a href="#">Heat Pumps</a>
+        <a href="#">VRF Systems</a>
+        <a href="#">Air Filters</a>
+        <a href="#">Refrigerants</a>
+        <a href="#">Controls</a>
+      </div>
+      <div class="foot-col">
+        <div class="foot-col-h">ELECTRICAL</div>
+        <a href="#">Circuit Breakers</a>
+        <a href="#">Arc Flash PPE</a>
+        <a href="#">Conduit</a>
+        <a href="#">Panel Components</a>
+        <a href="#">Wire Management</a>
+      </div>
+      <div class="foot-col">
+        <div class="foot-col-h">PUMPS</div>
+        <a href="#">Centrifugal</a>
+        <a href="#">Mag Drive</a>
+        <a href="#">Submersible</a>
+        <a href="#">Diaphragm</a>
+        <a href="#">Pump Selector</a>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <div>© 2026 IndustrialRank.com</div>
+      <div class="foot-disc">Some product links earn affiliate commissions. This does not affect our editorial rankings.</div>
+    </div>
+  </div>
+</footer>
+
+<script>
+document.querySelectorAll('.cat-btn').forEach(btn => {
+  btn.addEventListener('click', function(e) {
+    document.querySelectorAll('.cat-btn').forEach(b => b.classList.remove('on'));
+    this.classList.add('on');
+  });
+});
+</script>
+</body>
+</html>
