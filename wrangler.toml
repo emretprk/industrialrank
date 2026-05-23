@@ -1,0 +1,5 @@
+name = "purple-rain-9bea"
+compatibility_date = "2026-05-23"
+
+[assets]
+directory = "."
