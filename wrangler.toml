@@ -1,5 +1,7 @@
 name = "purple-rain-9bea"
 compatibility_date = "2026-05-23"
+main = "./worker.js"
 
 [assets]
 directory = "."
+not_found_handling = "single-page-application"
