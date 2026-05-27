@@ -2,11 +2,6 @@ name = "purple-rain-9bea"
 compatibility_date = "2026-05-23"
 main = "./worker.js"
 
-routes = [
-  { pattern = "industrialrank.com/*", zone_name = "industrialrank.com" },
-  { pattern = "www.industrialrank.com/*", zone_name = "industrialrank.com" }
-]
-
 [assets]
 directory = "./public"
 not_found_handling = "single-page-application"
