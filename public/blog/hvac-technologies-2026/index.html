@@ -82,8 +82,55 @@ tr:nth-child(even) td { background: #f9f9f9; }
 .cta h3 { font-size: 22px; color: #fff; margin-top: 0; }
 .cta a { display: inline-block; background: #e85d04; color: #fff; padding: 12px 28px; border-radius: 4px; text-decoration: none; font-weight: 700; font-size: 15px; margin-top: 12px; }
 </style>
+<link rel="icon" type="image/x-icon" href="/favicon.ico">
+<link rel="apple-touch-icon" href="/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800;900&family=DM+Sans:wght@400;500&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+nav{background:#1a1f2e;padding:0 24px;display:flex;align-items:center;justify-content:space-between;height:56px;position:sticky;top:0;z-index:100}
+.logo{display:flex;align-items:center;gap:10px;text-decoration:none}
+.nav-links{display:flex;gap:0}
+.nav-links a{font-size:12px;font-weight:500;color:rgba(255,255,255,0.55);text-decoration:none;padding:0 14px;height:56px;display:flex;align-items:center;letter-spacing:0.05em;text-transform:uppercase;border-bottom:2px solid transparent}
+.nav-links a:hover{color:#fff;border-bottom-color:#d97706}
+.nav-btn{background:#d97706;color:#1a1f2e;font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:13px;letter-spacing:0.08em;text-transform:uppercase;padding:8px 18px;border:none;border-radius:5px;cursor:pointer;text-decoration:none}
+.hamburger{display:none;flex-direction:column;gap:5px;cursor:pointer;padding:8px;background:none;border:none}
+.hamburger span{display:block;width:22px;height:2px;background:#fff;border-radius:2px}
+.mobile-menu{display:none;position:fixed;top:56px;left:0;right:0;background:#1a1f2e;padding:16px 24px;z-index:99;flex-direction:column}
+.mobile-menu a{color:rgba(255,255,255,0.7);text-decoration:none;font-size:14px;font-weight:600;text-transform:uppercase;padding:14px 0;border-bottom:1px solid rgba(255,255,255,0.06);display:block}
+.mobile-menu.open{display:flex}
+@media(max-width:768px){.hamburger{display:flex}.nav-links{display:none}.nav-btn{display:none}}
+footer{background:#1a1f2e;padding:48px 24px 28px;margin-top:48px}
+.foot-inner{max-width:1100px;margin:0 auto}
+.foot-cols{display:grid;grid-template-columns:2fr 1fr 1fr 1fr 1fr;gap:24px;margin-bottom:32px;padding-bottom:32px;border-bottom:1px solid rgba(255,255,255,0.08)}
+.foot-logo{font-family:'Barlow Condensed',sans-serif;font-weight:900;font-size:28px;color:#fff;margin-bottom:12px}
+.foot-logo em{color:#fbbf24;font-style:normal}
+.foot-tag{font-size:13px;color:rgba(255,255,255,0.35);line-height:1.6;max-width:260px}
+.foot-col{display:flex;flex-direction:column;gap:10px}
+.foot-col-h{font-family:'IBM Plex Mono',monospace;font-size:10px;color:rgba(255,255,255,0.3);letter-spacing:0.1em;text-transform:uppercase;margin-bottom:4px}
+.foot-col a{font-size:13px;color:rgba(255,255,255,0.45);text-decoration:none}
+.foot-col a:hover{color:#fbbf24}
+.foot-bottom{display:flex;justify-content:space-between;font-family:'IBM Plex Mono',monospace;font-size:10px;color:rgba(255,255,255,0.2);flex-wrap:wrap;gap:8px}
+@media(max-width:768px){.foot-cols{grid-template-columns:1fr 1fr}}
+</style>
 </head>
 <body>
+<nav>
+  <a href="/" class="logo"><img src="/logo.png" alt="IndustrialRank" style="height:32px;width:auto;display:block;"></a>
+  <div class="nav-links">
+    <a href="/#hvac">HVAC</a><a href="/#electrical">Electrical</a><a href="/#pumps">Pumps</a>
+    <a href="/#compare">Compare</a><a href="/#top10">Top 10 Lists</a><a href="/#guides">Guides</a>
+  </div>
+  <a href="/#find" class="nav-btn">Find Equipment</a>
+  <button class="hamburger" onclick="toggleMenu(this)" aria-label="Menu"><span></span><span></span><span></span></button>
+</nav>
+<div class="mobile-menu" id="mobileMenu">
+  <a href="/#hvac" onclick="closeMenu()">🔥 HVAC</a>
+  <a href="/#electrical" onclick="closeMenu()">⚡ Electrical</a>
+  <a href="/#pumps" onclick="closeMenu()">💧 Pumps</a>
+  <a href="/#compare" onclick="closeMenu()">⚖️ Compare</a>
+  <a href="/#top10" onclick="closeMenu()">🏆 Top 10</a>
+  <a href="/#guides" onclick="closeMenu()">📖 Guides</a>
+</div>
 <div class="wrap">
 
 <div class="breadcrumb"><a href="/">IndustrialRank</a> &rsaquo; <a href="/blog">Blog</a> &rsaquo; HVAC Technologies 2026</div>
