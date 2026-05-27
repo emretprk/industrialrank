@@ -16,7 +16,6 @@ export default {
   async fetch(request, env) {
     const url = new URL(request.url);
 
-    // Serve sitemap with correct content-type
     if (url.pathname === '/sitemap.xml') {
       return new Response(SITEMAP, {
         headers: {
@@ -26,18 +25,6 @@ export default {
       });
     }
 
-    // Try static asset first
-    const assetResp = await env.ASSETS.fetch(request);
-    if (assetResp.status !== 404) return assetResp;
-
-    // Fallback: try adding /index.html for clean URLs
-    const indexUrl = new URL(request.url);
-    if (!indexUrl.pathname.endsWith('/')) indexUrl.pathname += '/';
-    indexUrl.pathname += 'index.html';
-    const indexResp = await env.ASSETS.fetch(indexUrl.toString());
-    if (indexResp.status !== 404) return indexResp;
-
-    // Final fallback: homepage
-    return env.ASSETS.fetch(new URL('/', request.url).toString());
+    return env.ASSETS.fetch(request);
   }
 };
