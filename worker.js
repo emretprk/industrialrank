@@ -3,7 +3,6 @@ const SITEMAP = `<?xml version="1.0" encoding="UTF-8"?>
   <url><loc>https://industrialrank.com/</loc><lastmod>2026-05-27</lastmod><changefreq>weekly</changefreq><priority>1.0</priority></url>
   <url><loc>https://industrialrank.com/hvac/carrier-infinity-20-heat-pump-review</loc><lastmod>2026-05-27</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
   <url><loc>https://industrialrank.com/hvac/lennox-xc21-review</loc><lastmod>2026-05-27</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
-  <url><loc>https://industrialrank.com/hvac/daikin-vrv5-review</loc><lastmod>2026-05-27</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
   <url><loc>https://industrialrank.com/electrical/siemens-q2200-review</loc><lastmod>2026-05-27</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
   <url><loc>https://industrialrank.com/pumps/grundfos-cm5-5-review</loc><lastmod>2026-05-27</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
   <url><loc>https://industrialrank.com/blog/hvac-technologies-2026</loc><lastmod>2026-05-27</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
@@ -16,7 +15,8 @@ const SITEMAP = `<?xml version="1.0" encoding="UTF-8"?>
 export default {
   async fetch(request, env) {
     const url = new URL(request.url);
-    
+
+    // Serve sitemap with correct content-type
     if (url.pathname === '/sitemap.xml') {
       return new Response(SITEMAP, {
         headers: {
@@ -25,7 +25,19 @@ export default {
         }
       });
     }
-    
-    return env.ASSETS.fetch(request);
+
+    // Try static asset first
+    const assetResp = await env.ASSETS.fetch(request);
+    if (assetResp.status !== 404) return assetResp;
+
+    // Fallback: try adding /index.html for clean URLs
+    const indexUrl = new URL(request.url);
+    if (!indexUrl.pathname.endsWith('/')) indexUrl.pathname += '/';
+    indexUrl.pathname += 'index.html';
+    const indexResp = await env.ASSETS.fetch(indexUrl.toString());
+    if (indexResp.status !== 404) return indexResp;
+
+    // Final fallback: homepage
+    return env.ASSETS.fetch(new URL('/', request.url).toString());
   }
 };
