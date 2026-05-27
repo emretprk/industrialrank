@@ -3,8 +3,6 @@
 <head>
 <meta charset="UTF-8">
 <link rel="icon" type="image/x-icon" href="/favicon.ico">
-<link rel="apple-touch-icon" href="/favicon.png">
-<link rel="icon" type="image/x-icon" href="/favicon.ico">
 <link rel="icon" type="image/png" href="/favicon.png">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -123,31 +121,12 @@ footer{background:var(--steel);padding:28px 40px;margin-top:48px}
 <body>
 
 <nav>
-  <div class="logo">
-    <img src="/logo.png" alt="IndustrialRank" style="height:32px;width:auto;display:block;">
-  </div>
+  <a href="/" class="logo"><img src="/logo.png" alt="IndustrialRank"></a>
   <div class="nav-links">
-    <a href="#">HVAC</a>
-    <a href="#">Electrical</a>
-    <a href="#">Pumps</a>
-    <a href="#">Compare</a>
-    <a href="#">Top 10 Lists</a>
-    <a href="#">Guides</a>
+    <a href="/#hvac">HVAC</a><a href="/#electrical">Electrical</a><a href="/#pumps">Pumps</a><a href="/#compare">Compare</a>
   </div>
-  <button class="nav-btn">Find Equipment</button>
-  <button class="hamburger" onclick="toggleMenu(this)" aria-label="Menu">
-    <span></span><span></span><span></span>
-  </button>
+  <a href="/#find" class="nav-btn">Find Equipment</a>
 </nav>
-<div class="mobile-menu" id="mobileMenu">
-  <a href="#" onclick="closeMenu()">🔥 HVAC</a>
-  <a href="#" onclick="closeMenu()">⚡ Electrical</a>
-  <a href="#" onclick="closeMenu()">💧 Pumps</a>
-  <a href="#" onclick="closeMenu()">⚖️ Compare</a>
-  <a href="#" onclick="closeMenu()">🏆 Top 10 Lists</a>
-  <a href="#" onclick="closeMenu()">📖 Guides</a>
-  <a href="#" onclick="closeMenu()" style="color:var(--amber);margin-top:8px">Find Equipment →</a>
-</div>
 
 <div class="breadcrumb">
   <a href="/">IndustrialRank</a> → <a href="/#electrical">Electrical</a> → Siemens Q2200 Review
@@ -403,40 +382,8 @@ footer{background:var(--steel);padding:28px 40px;margin-top:48px}
 
 <footer>
   <div class="foot-inner">
-    <div class="foot-cols">
-      <div>
-        <div class="foot-logo">Industrial<em>Rank</em></div>
-        <div class="foot-tag">Independent expert reviews for HVAC technicians, electrical engineers, and facility managers. We test the specs, so you don't have to guess.</div>
-      </div>
-      <div class="foot-col">
-        <div class="foot-col-h">HVAC</div>
-        <a href="#">Heat Pumps</a>
-        <a href="#">VRF Systems</a>
-        <a href="#">Air Filters</a>
-        <a href="#">Refrigerants</a>
-        <a href="#">Controls</a>
-      </div>
-      <div class="foot-col">
-        <div class="foot-col-h">ELECTRICAL</div>
-        <a href="#">Circuit Breakers</a>
-        <a href="#">Arc Flash PPE</a>
-        <a href="#">Conduit</a>
-        <a href="#">Panel Components</a>
-        <a href="#">Wire Management</a>
-      </div>
-      <div class="foot-col">
-        <div class="foot-col-h">PUMPS</div>
-        <a href="#">Centrifugal</a>
-        <a href="#">Mag Drive</a>
-        <a href="#">Submersible</a>
-        <a href="#">Diaphragm</a>
-        <a href="#">Pump Selector</a>
-      </div>
-    </div>
-    <div class="foot-bottom">
-      <div>© 2026 IndustrialRank.com</div>
-      <div class="foot-disc">Some product links earn affiliate commissions. This does not affect our editorial rankings.</div>
-    </div>
+    <div class="foot-logo">Industrial<em>Rank</em></div>
+    <div class="foot-disc">Some product links earn affiliate commissions. This does not affect our editorial rankings.</div>
   </div>
 </footer>
 
