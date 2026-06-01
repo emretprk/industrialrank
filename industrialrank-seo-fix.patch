@@ -1,0 +1,982 @@
+diff --git a/public/404.html b/public/404.html
+new file mode 100644
+index 0000000..413750d
+--- /dev/null
++++ b/public/404.html
+@@ -0,0 +1,24 @@
++<!DOCTYPE html>
++<html lang="en">
++<head>
++<meta charset="utf-8">
++<meta name="viewport" content="width=device-width, initial-scale=1">
++<meta name="robots" content="noindex">
++<title>Page Not Found | IndustrialRank</title>
++<link rel="canonical" href="https://industrialrank.com/404/">
++<style>
++  body{margin:0;background:#0d0f14;color:#e7e9ee;font-family:system-ui,-apple-system,Segoe UI,Roboto,sans-serif;display:flex;min-height:100vh;align-items:center;justify-content:center;text-align:center}
++  .box{padding:40px}
++  h1{font-size:64px;margin:0;color:#f5b301}
++  p{color:#9aa1ad;margin:12px 0 24px}
++  a{color:#f5b301;text-decoration:none;font-weight:600}
++</style>
++</head>
++<body>
++  <div class="box">
++    <h1>404</h1>
++    <p>That page does not exist or has moved.</p>
++    <a href="/">Return to IndustrialRank home</a>
++  </div>
++</body>
++</html>
+diff --git a/public/about/index.html b/public/about/index.html
+index 47675c7..a1da159 100644
+--- a/public/about/index.html
++++ b/public/about/index.html
+@@ -7,7 +7,7 @@
+ <meta name="description" content="IndustrialRank is an independent industrial equipment review platform. Learn about our editorial process, data sources, and the team behind our HVAC, electrical, and pump reviews.">
+ <link rel="alternate" hreflang="en-us" href="https://industrialrank.com">
+ <link rel="alternate" hreflang="x-default" href="https://industrialrank.com">
+-<link rel="canonical" href="https://industrialrank.com/about">
++<link rel="canonical" href="https://industrialrank.com/about/">
+ <link rel="icon" type="image/x-icon" href="/favicon.ico">
+ <link rel="apple-touch-icon" href="/favicon.png">
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+diff --git a/public/blog/compressed-air-systems-2026/index.html b/public/blog/compressed-air-systems-2026/index.html
+index 2db98de..d7fcee3 100644
+--- a/public/blog/compressed-air-systems-2026/index.html
++++ b/public/blog/compressed-air-systems-2026/index.html
+@@ -8,7 +8,7 @@
+ <meta name="robots" content="index, follow">
+ <link rel="alternate" hreflang="en-us" href="https://industrialrank.com">
+ <link rel="alternate" hreflang="x-default" href="https://industrialrank.com">
+-<link rel="canonical" href="https://industrialrank.com/blog/compressed-air-systems-2026">
++<link rel="canonical" href="https://industrialrank.com/blog/compressed-air-systems-2026/">
+ <script type="application/ld+json">
+ {
+   "@context": "https://schema.org",
+diff --git a/public/blog/hvac-technologies-2026/index.html b/public/blog/hvac-technologies-2026/index.html
+index 51566b1..c91b121 100644
+--- a/public/blog/hvac-technologies-2026/index.html
++++ b/public/blog/hvac-technologies-2026/index.html
+@@ -8,7 +8,7 @@
+ <meta name="robots" content="index, follow">
+ <link rel="alternate" hreflang="en-us" href="https://industrialrank.com">
+ <link rel="alternate" hreflang="x-default" href="https://industrialrank.com">
+-<link rel="canonical" href="https://industrialrank.com/blog/hvac-technologies-2026">
++<link rel="canonical" href="https://industrialrank.com/blog/hvac-technologies-2026/">
+ <script type="application/ld+json">
+ {
+   "@context": "https://schema.org",
+diff --git a/public/blog/index.html b/public/blog/index.html
+index 378e061..29812d5 100644
+--- a/public/blog/index.html
++++ b/public/blog/index.html
+@@ -165,7 +165,7 @@ ul li{font-size:15px;color:var(--ink2);margin-bottom:8px;line-height:1.6}
+ <div class="wrap">
+   <h2>Latest Guides</h2>
+   <div class="card-grid">
+-    <a href="/blog/hvac-technologies-2026" class="card">
++    <a href="/blog/hvac-technologies-2026/" class="card">
+       <img class="card-img" src="https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=600&q=80" alt="HVAC technology 2026">
+       <div class="card-body">
+         <div class="card-tag">HVAC · MAY 2026</div>
+@@ -173,7 +173,7 @@ ul li{font-size:15px;color:var(--ink2);margin-bottom:8px;line-height:1.6}
+         <div class="card-desc">Variable refrigerant flow advances, AI-driven building automation, heat pump performance thresholds, and what the 2026 IRA credit changes mean for commercial buyers.</div>
+       </div>
+     </a>
+-    <a href="/blog/industrial-electrical-trends-2026" class="card">
++    <a href="/blog/industrial-electrical-trends-2026/" class="card">
+       <img class="card-img" src="https://images.unsplash.com/photo-1558618047-3c8c4a553a33?w=600&q=80" alt="Electrical trends 2026">
+       <div class="card-body">
+         <div class="card-tag">ELECTRICAL · MAY 2026</div>
+@@ -181,7 +181,7 @@ ul li{font-size:15px;color:var(--ink2);margin-bottom:8px;line-height:1.6}
+         <div class="card-desc">NEC 2023 adoption status across all 50 states, arc flash mitigation advances, smart breaker technology, and EV charging infrastructure requirements for commercial facilities.</div>
+       </div>
+     </a>
+-    <a href="/blog/industrial-pump-technology-2026" class="card">
++    <a href="/blog/industrial-pump-technology-2026/" class="card">
+       <img class="card-img" src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=600&q=80" alt="Pump technology 2026">
+       <div class="card-body">
+         <div class="card-tag">PUMPS · MAY 2026</div>
+@@ -189,7 +189,7 @@ ul li{font-size:15px;color:var(--ink2);margin-bottom:8px;line-height:1.6}
+         <div class="card-desc">IE5 motor efficiency standards, smart pump diagnostics, mag drive adoption in chemical processing, and the Hydraulic Institute's 2026 efficiency rating updates.</div>
+       </div>
+     </a>
+-    <a href="/blog/industrial-automation-trends-2026" class="card">
++    <a href="/blog/industrial-automation-trends-2026/" class="card">
+       <img class="card-img" src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=80" alt="Industrial automation 2026">
+       <div class="card-body">
+         <div class="card-tag">AUTOMATION · MAY 2026</div>
+@@ -197,7 +197,7 @@ ul li{font-size:15px;color:var(--ink2);margin-bottom:8px;line-height:1.6}
+         <div class="card-desc">Collaborative robots in manufacturing, OPC UA communication standards, AI-driven predictive maintenance, and how facilities are reducing energy costs through automation.</div>
+       </div>
+     </a>
+-    <a href="/blog/compressed-air-systems-2026" class="card">
++    <a href="/blog/compressed-air-systems-2026/" class="card">
+       <img class="card-img" src="https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=600&q=80" alt="Compressed air systems 2026">
+       <div class="card-body">
+         <div class="card-tag">UTILITIES · MAY 2026</div>
+@@ -216,22 +216,22 @@ ul li{font-size:15px;color:var(--ink2);margin-bottom:8px;line-height:1.6}
+       </div>
+       <div class="foot-col">
+         <div class="foot-col-h">HVAC</div>
+-        <a href="/hvac/carrier-infinity-20-heat-pump-review">Carrier Infinity 20</a>
++        <a href="/hvac/carrier-infinity-20-heat-pump-review/">Carrier Infinity 20</a>
+         <a href="/hvac/lennox-xc21-review">Lennox XC21</a>
+-        <a href="/hvac/daikin-vrv5-review">Daikin VRV 5</a>
++        <a href="/hvac/daikin-vrv5-review/">Daikin VRV 5</a>
+         <a href="/hvac/">All HVAC Reviews</a>
+       </div>
+       <div class="foot-col">
+         <div class="foot-col-h">Electrical</div>
+-        <a href="/electrical/siemens-q2200-review">Siemens Q2200</a>
+-        <a href="/electrical/eaton-br2020-review">Eaton BR2020</a>
+-        <a href="/electrical/fluke-117-review">Fluke 117</a>
++        <a href="/electrical/siemens-q2200-review/">Siemens Q2200</a>
++        <a href="/electrical/eaton-br2020-review/">Eaton BR2020</a>
++        <a href="/electrical/fluke-117-review/">Fluke 117</a>
+         <a href="/electrical/">All Electrical Reviews</a>
+       </div>
+       <div class="foot-col">
+         <div class="foot-col-h">Pumps</div>
+-        <a href="/pumps/grundfos-cm5-5-review">Grundfos CM5</a>
+-        <a href="/pumps/xylem-goulds-3196-review">Xylem Goulds 3196</a>
++        <a href="/pumps/grundfos-cm5-5-review/">Grundfos CM5</a>
++        <a href="/pumps/xylem-goulds-3196-review/">Xylem Goulds 3196</a>
+         <a href="/pumps/">All Pump Reviews</a>
+       </div>
+       <div class="foot-col">
+diff --git a/public/blog/industrial-automation-trends-2026/index.html b/public/blog/industrial-automation-trends-2026/index.html
+index b6bcf79..fae8752 100644
+--- a/public/blog/industrial-automation-trends-2026/index.html
++++ b/public/blog/industrial-automation-trends-2026/index.html
+@@ -8,7 +8,7 @@
+ <meta name="robots" content="index, follow">
+ <link rel="alternate" hreflang="en-us" href="https://industrialrank.com">
+ <link rel="alternate" hreflang="x-default" href="https://industrialrank.com">
+-<link rel="canonical" href="https://industrialrank.com/blog/industrial-automation-trends-2026">
++<link rel="canonical" href="https://industrialrank.com/blog/industrial-automation-trends-2026/">
+ <script type="application/ld+json">
+ {
+   "@context": "https://schema.org",
+diff --git a/public/blog/industrial-electrical-trends-2026/index.html b/public/blog/industrial-electrical-trends-2026/index.html
+index d1f4914..d0882ab 100644
+--- a/public/blog/industrial-electrical-trends-2026/index.html
++++ b/public/blog/industrial-electrical-trends-2026/index.html
+@@ -8,7 +8,7 @@
+ <meta name="robots" content="index, follow">
+ <link rel="alternate" hreflang="en-us" href="https://industrialrank.com">
+ <link rel="alternate" hreflang="x-default" href="https://industrialrank.com">
+-<link rel="canonical" href="https://industrialrank.com/blog/industrial-electrical-trends-2026">
++<link rel="canonical" href="https://industrialrank.com/blog/industrial-electrical-trends-2026/">
+ <script type="application/ld+json">
+ {
+   "@context": "https://schema.org",
+diff --git a/public/blog/industrial-pump-technology-2026/index.html b/public/blog/industrial-pump-technology-2026/index.html
+index b6073e6..936672e 100644
+--- a/public/blog/industrial-pump-technology-2026/index.html
++++ b/public/blog/industrial-pump-technology-2026/index.html
+@@ -8,7 +8,7 @@
+ <meta name="robots" content="index, follow">
+ <link rel="alternate" hreflang="en-us" href="https://industrialrank.com">
+ <link rel="alternate" hreflang="x-default" href="https://industrialrank.com">
+-<link rel="canonical" href="https://industrialrank.com/blog/industrial-pump-technology-2026">
++<link rel="canonical" href="https://industrialrank.com/blog/industrial-pump-technology-2026/">
+ <script type="application/ld+json">
+ {
+   "@context": "https://schema.org",
+diff --git a/public/compare/index.html b/public/compare/index.html
+index 052ebe9..2604617 100644
+--- a/public/compare/index.html
++++ b/public/compare/index.html
+@@ -165,7 +165,7 @@ ul li{font-size:15px;color:var(--ink2);margin-bottom:8px;line-height:1.6}
+ <div class="wrap">
+   <h2>HVAC Comparisons</h2>
+   <div class="card-grid">
+-    <a href="/hvac/carrier-infinity-20-heat-pump-review" class="card">
++    <a href="/hvac/carrier-infinity-20-heat-pump-review/" class="card">
+       <div class="card-body">
+         <div class="card-tag">HEAT PUMP</div>
+         <div class="card-title">Carrier Infinity 20 vs Lennox XC21</div>
+@@ -173,7 +173,7 @@ ul li{font-size:15px;color:var(--ink2);margin-bottom:8px;line-height:1.6}
+         <div class="card-score" style="margin-top:12px">Read Carrier Review →</div>
+       </div>
+     </a>
+-    <a href="/hvac/daikin-vrv5-review" class="card">
++    <a href="/hvac/daikin-vrv5-review/" class="card">
+       <div class="card-body">
+         <div class="card-tag">VRF SYSTEMS</div>
+         <div class="card-title">Daikin VRV 5 vs Mitsubishi City Multi</div>
+@@ -184,7 +184,7 @@ ul li{font-size:15px;color:var(--ink2);margin-bottom:8px;line-height:1.6}
+   </div>
+   <h2>Electrical Comparisons</h2>
+   <div class="card-grid">
+-    <a href="/electrical/eaton-br2020-review" class="card">
++    <a href="/electrical/eaton-br2020-review/" class="card">
+       <div class="card-body">
+         <div class="card-tag">LOAD CENTERS</div>
+         <div class="card-title">Eaton BR2020 vs Siemens Q2200</div>
+@@ -192,7 +192,7 @@ ul li{font-size:15px;color:var(--ink2);margin-bottom:8px;line-height:1.6}
+         <div class="card-score" style="margin-top:12px">Read Eaton Review →</div>
+       </div>
+     </a>
+-    <a href="/electrical/fluke-117-review" class="card">
++    <a href="/electrical/fluke-117-review/" class="card">
+       <div class="card-body">
+         <div class="card-tag">MULTIMETERS</div>
+         <div class="card-title">Fluke 117 vs Klein MM700</div>
+@@ -203,7 +203,7 @@ ul li{font-size:15px;color:var(--ink2);margin-bottom:8px;line-height:1.6}
+   </div>
+   <h2>Pump Comparisons</h2>
+   <div class="card-grid">
+-    <a href="/pumps/xylem-goulds-3196-review" class="card">
++    <a href="/pumps/xylem-goulds-3196-review/" class="card">
+       <div class="card-body">
+         <div class="card-tag">PROCESS PUMPS</div>
+         <div class="card-title">Goulds 3196 vs Grundfos NBE</div>
+@@ -222,22 +222,22 @@ ul li{font-size:15px;color:var(--ink2);margin-bottom:8px;line-height:1.6}
+       </div>
+       <div class="foot-col">
+         <div class="foot-col-h">HVAC</div>
+-        <a href="/hvac/carrier-infinity-20-heat-pump-review">Carrier Infinity 20</a>
++        <a href="/hvac/carrier-infinity-20-heat-pump-review/">Carrier Infinity 20</a>
+         <a href="/hvac/lennox-xc21-review">Lennox XC21</a>
+-        <a href="/hvac/daikin-vrv5-review">Daikin VRV 5</a>
++        <a href="/hvac/daikin-vrv5-review/">Daikin VRV 5</a>
+         <a href="/hvac/">All HVAC Reviews</a>
+       </div>
+       <div class="foot-col">
+         <div class="foot-col-h">Electrical</div>
+-        <a href="/electrical/siemens-q2200-review">Siemens Q2200</a>
+-        <a href="/electrical/eaton-br2020-review">Eaton BR2020</a>
+-        <a href="/electrical/fluke-117-review">Fluke 117</a>
++        <a href="/electrical/siemens-q2200-review/">Siemens Q2200</a>
++        <a href="/electrical/eaton-br2020-review/">Eaton BR2020</a>
++        <a href="/electrical/fluke-117-review/">Fluke 117</a>
+         <a href="/electrical/">All Electrical Reviews</a>
+       </div>
+       <div class="foot-col">
+         <div class="foot-col-h">Pumps</div>
+-        <a href="/pumps/grundfos-cm5-5-review">Grundfos CM5</a>
+-        <a href="/pumps/xylem-goulds-3196-review">Xylem Goulds 3196</a>
++        <a href="/pumps/grundfos-cm5-5-review/">Grundfos CM5</a>
++        <a href="/pumps/xylem-goulds-3196-review/">Xylem Goulds 3196</a>
+         <a href="/pumps/">All Pump Reviews</a>
+       </div>
+       <div class="foot-col">
+diff --git a/public/contact/index.html b/public/contact/index.html
+index 2ef1ec0..172671d 100644
+--- a/public/contact/index.html
++++ b/public/contact/index.html
+@@ -7,7 +7,7 @@
+ <meta name="description" content="Contact IndustrialRank for editorial inquiries, product submissions, partnership questions, or reader feedback.">
+ <link rel="alternate" hreflang="en-us" href="https://industrialrank.com">
+ <link rel="alternate" hreflang="x-default" href="https://industrialrank.com">
+-<link rel="canonical" href="https://industrialrank.com/contact">
++<link rel="canonical" href="https://industrialrank.com/contact/">
+ <link rel="icon" type="image/x-icon" href="/favicon.ico">
+ <link rel="apple-touch-icon" href="/favicon.png">
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+diff --git a/public/electrical/eaton-br2020-review/index.html b/public/electrical/eaton-br2020-review/index.html
+index 6c652ae..156147d 100644
+--- a/public/electrical/eaton-br2020-review/index.html
++++ b/public/electrical/eaton-br2020-review/index.html
+@@ -9,7 +9,7 @@
+ <meta name="description" content="Eaton BR2020 review: 200A, 20-space load center. NEC 2023 compliant, AFCI/GFCI ready, Type BR breaker compatibility. Installed cost and comparison with Siemens Q2200.">
+ <link rel="alternate" hreflang="en-us" href="https://industrialrank.com">
+ <link rel="alternate" hreflang="x-default" href="https://industrialrank.com">
+-<link rel="canonical" href="https://industrialrank.com/electrical/eaton-br2020-review">
++<link rel="canonical" href="https://industrialrank.com/electrical/eaton-br2020-review/">
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+ <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800;900&family=DM+Sans:wght@400;500&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+ <script type="application/ld+json">{"@context":"https://schema.org","@type":"Review","name":"Eaton BR2020 Load Center Review 2026","reviewRating":{"@type":"Rating","ratingValue":"4.4","bestRating":"5"},"author":{"@type":"Organization","name":"IndustrialRank"},"itemReviewed":{"@type":"Product","name":"Eaton BR2020 200A Load Center","brand":{"@type":"Brand","name":"Eaton"},"offers":{"@type":"AggregateOffer","lowPrice":"120","highPrice":"180","priceCurrency":"USD"}},"datePublished":"2026-05-27"}</script>
+@@ -292,7 +292,7 @@ ul li{font-size:15px;color:var(--ink2);margin-bottom:8px;line-height:1.6}
+   </div>
+   <div style="background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:20px">
+     <div style="font-family:'IBM Plex Mono',monospace;font-size:10px;color:var(--ink3);letter-spacing:0.08em;margin-bottom:14px">// COMPARE WITH</div>
+-    <a href="/electrical/siemens-q2200-review" style="display:flex;justify-content:space-between;align-items:center;padding:10px 0;border-bottom:1px solid var(--border2);text-decoration:none"><span style="font-size:13px;color:var(--ink2)">Siemens Q2200</span><span style="font-size:12px;color:var(--amber)">Compare →</span></a><a href="/electrical/fluke-117-review" style="display:flex;justify-content:space-between;align-items:center;padding:10px 0;text-decoration:none"><span style="font-size:13px;color:var(--ink2)">Fluke 117 Multimeter</span><span style="font-size:12px;color:var(--amber)">Compare →</span></a>
++    <a href="/electrical/siemens-q2200-review/" style="display:flex;justify-content:space-between;align-items:center;padding:10px 0;border-bottom:1px solid var(--border2);text-decoration:none"><span style="font-size:13px;color:var(--ink2)">Siemens Q2200</span><span style="font-size:12px;color:var(--amber)">Compare →</span></a><a href="/electrical/fluke-117-review/" style="display:flex;justify-content:space-between;align-items:center;padding:10px 0;text-decoration:none"><span style="font-size:13px;color:var(--ink2)">Fluke 117 Multimeter</span><span style="font-size:12px;color:var(--amber)">Compare →</span></a>
+   </div>
+ </div></div><footer>
+   <div class="foot-inner">
+@@ -303,22 +303,22 @@ ul li{font-size:15px;color:var(--ink2);margin-bottom:8px;line-height:1.6}
+       </div>
+       <div class="foot-col">
+         <div class="foot-col-h">HVAC</div>
+-        <a href="/hvac/carrier-infinity-20-heat-pump-review">Carrier Infinity 20</a>
++        <a href="/hvac/carrier-infinity-20-heat-pump-review/">Carrier Infinity 20</a>
+         <a href="/hvac/lennox-xc21-review">Lennox XC21</a>
+-        <a href="/hvac/daikin-vrv5-review">Daikin VRV 5</a>
++        <a href="/hvac/daikin-vrv5-review/">Daikin VRV 5</a>
+         <a href="/hvac/">All HVAC Reviews</a>
+       </div>
+       <div class="foot-col">
+         <div class="foot-col-h">Electrical</div>
+-        <a href="/electrical/siemens-q2200-review">Siemens Q2200</a>
+-        <a href="/electrical/eaton-br2020-review">Eaton BR2020</a>
+-        <a href="/electrical/fluke-117-review">Fluke 117</a>
++        <a href="/electrical/siemens-q2200-review/">Siemens Q2200</a>
++        <a href="/electrical/eaton-br2020-review/">Eaton BR2020</a>
++        <a href="/electrical/fluke-117-review/">Fluke 117</a>
+         <a href="/electrical/">All Electrical Reviews</a>
+       </div>
+       <div class="foot-col">
+         <div class="foot-col-h">Pumps</div>
+-        <a href="/pumps/grundfos-cm5-5-review">Grundfos CM5</a>
+-        <a href="/pumps/xylem-goulds-3196-review">Xylem Goulds 3196</a>
++        <a href="/pumps/grundfos-cm5-5-review/">Grundfos CM5</a>
++        <a href="/pumps/xylem-goulds-3196-review/">Xylem Goulds 3196</a>
+         <a href="/pumps/">All Pump Reviews</a>
+       </div>
+       <div class="foot-col">
+diff --git a/public/electrical/fluke-117-review/index.html b/public/electrical/fluke-117-review/index.html
+index 16c483e..96a2a4f 100644
+--- a/public/electrical/fluke-117-review/index.html
++++ b/public/electrical/fluke-117-review/index.html
+@@ -9,7 +9,7 @@
+ <meta name="description" content="Fluke 117 review: True RMS, VoltAlert, 600V CAT III. How the 117 compares to Fluke 115, Klein MM700, and Hioki. Real-world performance for commercial electrical work in 2026.">
+ <link rel="alternate" hreflang="en-us" href="https://industrialrank.com">
+ <link rel="alternate" hreflang="x-default" href="https://industrialrank.com">
+-<link rel="canonical" href="https://industrialrank.com/electrical/fluke-117-review">
++<link rel="canonical" href="https://industrialrank.com/electrical/fluke-117-review/">
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+ <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800;900&family=DM+Sans:wght@400;500&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+ <script type="application/ld+json">{"@context":"https://schema.org","@type":"Review","name":"Fluke 117 Multimeter Review 2026","reviewRating":{"@type":"Rating","ratingValue":"4.9","bestRating":"5"},"author":{"@type":"Organization","name":"IndustrialRank"},"itemReviewed":{"@type":"Product","name":"Fluke 117 True RMS Multimeter","brand":{"@type":"Brand","name":"Fluke"},"offers":{"@type":"AggregateOffer","lowPrice":"155","highPrice":"200","priceCurrency":"USD"}},"datePublished":"2026-05-27"}</script>
+@@ -302,7 +302,7 @@ ul li{font-size:15px;color:var(--ink2);margin-bottom:8px;line-height:1.6}
+   </div>
+   <div style="background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:20px">
+     <div style="font-family:'IBM Plex Mono',monospace;font-size:10px;color:var(--ink3);letter-spacing:0.08em;margin-bottom:14px">// COMPARE WITH</div>
+-    <a href="/electrical/siemens-q2200-review" style="display:flex;justify-content:space-between;align-items:center;padding:10px 0;border-bottom:1px solid var(--border2);text-decoration:none"><span style="font-size:13px;color:var(--ink2)">Siemens Q2200 Panel</span><span style="font-size:12px;color:var(--amber)">Compare →</span></a><a href="/electrical/eaton-br2020-review" style="display:flex;justify-content:space-between;align-items:center;padding:10px 0;text-decoration:none"><span style="font-size:13px;color:var(--ink2)">Eaton BR2020 Panel</span><span style="font-size:12px;color:var(--amber)">Compare →</span></a>
++    <a href="/electrical/siemens-q2200-review/" style="display:flex;justify-content:space-between;align-items:center;padding:10px 0;border-bottom:1px solid var(--border2);text-decoration:none"><span style="font-size:13px;color:var(--ink2)">Siemens Q2200 Panel</span><span style="font-size:12px;color:var(--amber)">Compare →</span></a><a href="/electrical/eaton-br2020-review/" style="display:flex;justify-content:space-between;align-items:center;padding:10px 0;text-decoration:none"><span style="font-size:13px;color:var(--ink2)">Eaton BR2020 Panel</span><span style="font-size:12px;color:var(--amber)">Compare →</span></a>
+   </div>
+ </div></div><footer>
+   <div class="foot-inner">
+@@ -313,22 +313,22 @@ ul li{font-size:15px;color:var(--ink2);margin-bottom:8px;line-height:1.6}
+       </div>
+       <div class="foot-col">
+         <div class="foot-col-h">HVAC</div>
+-        <a href="/hvac/carrier-infinity-20-heat-pump-review">Carrier Infinity 20</a>
++        <a href="/hvac/carrier-infinity-20-heat-pump-review/">Carrier Infinity 20</a>
+         <a href="/hvac/lennox-xc21-review">Lennox XC21</a>
+-        <a href="/hvac/daikin-vrv5-review">Daikin VRV 5</a>
++        <a href="/hvac/daikin-vrv5-review/">Daikin VRV 5</a>
+         <a href="/hvac/">All HVAC Reviews</a>
+       </div>
+       <div class="foot-col">
+         <div class="foot-col-h">Electrical</div>
+-        <a href="/electrical/siemens-q2200-review">Siemens Q2200</a>
+-        <a href="/electrical/eaton-br2020-review">Eaton BR2020</a>
+-        <a href="/electrical/fluke-117-review">Fluke 117</a>
++        <a href="/electrical/siemens-q2200-review/">Siemens Q2200</a>
++        <a href="/electrical/eaton-br2020-review/">Eaton BR2020</a>
++        <a href="/electrical/fluke-117-review/">Fluke 117</a>
+         <a href="/electrical/">All Electrical Reviews</a>
+       </div>
+       <div class="foot-col">
+         <div class="foot-col-h">Pumps</div>
+-        <a href="/pumps/grundfos-cm5-5-review">Grundfos CM5</a>
+-        <a href="/pumps/xylem-goulds-3196-review">Xylem Goulds 3196</a>
++        <a href="/pumps/grundfos-cm5-5-review/">Grundfos CM5</a>
++        <a href="/pumps/xylem-goulds-3196-review/">Xylem Goulds 3196</a>
+         <a href="/pumps/">All Pump Reviews</a>
+       </div>
+       <div class="foot-col">
+diff --git a/public/electrical/index.html b/public/electrical/index.html
+index 1605ad9..3c5a4f4 100644
+--- a/public/electrical/index.html
++++ b/public/electrical/index.html
+@@ -165,7 +165,7 @@ ul li{font-size:15px;color:var(--ink2);margin-bottom:8px;line-height:1.6}
+ <div class="wrap">
+   <h2>Panelboards and Load Centers</h2>
+   <div class="card-grid">
+-    <a href="/electrical/siemens-q2200-review" class="card">
++    <a href="/electrical/siemens-q2200-review/" class="card">
+       <img class="card-img" src="https://images.unsplash.com/photo-1558618047-3c8c4a553a33?w=600&q=80" alt="Siemens Q2200 load center">
+       <div class="card-body">
+         <div class="card-tag">EDITOR'S PICK · LOAD CENTER</div>
+@@ -174,7 +174,7 @@ ul li{font-size:15px;color:var(--ink2);margin-bottom:8px;line-height:1.6}
+         <div class="card-stars">★★★★★</div> <div class="card-score">4.7 / 5</div>
+       </div>
+     </a>
+-    <a href="/electrical/eaton-br2020-review" class="card">
++    <a href="/electrical/eaton-br2020-review/" class="card">
+       <img class="card-img" src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?w=600&q=80" alt="Eaton BR2020 load center">
+       <div class="card-body">
+         <div class="card-tag">BEST VALUE · LOAD CENTER</div>
+@@ -183,7 +183,7 @@ ul li{font-size:15px;color:var(--ink2);margin-bottom:8px;line-height:1.6}
+         <div class="card-stars">★★★★½</div> <div class="card-score">4.4 / 5</div>
+       </div>
+     </a>
+-    <a href="/electrical/fluke-117-review" class="card">
++    <a href="/electrical/fluke-117-review/" class="card">
+       <img class="card-img" src="https://images.unsplash.com/photo-1581092160607-ee22621dd758?w=600&q=80" alt="Fluke 117 multimeter">
+       <div class="card-body">
+         <div class="card-tag">BEST IN CLASS · MULTIMETER</div>
+@@ -195,7 +195,7 @@ ul li{font-size:15px;color:var(--ink2);margin-bottom:8px;line-height:1.6}
+   </div>
+   <h2 style="margin-top:48px">Electrical Buying Guides</h2>
+   <div class="card-grid">
+-    <a href="/blog/industrial-electrical-trends-2026" class="card">
++    <a href="/blog/industrial-electrical-trends-2026/" class="card">
+       <img class="card-img" src="https://images.unsplash.com/photo-1558618047-3c8c4a553a33?w=600&q=80" alt="Electrical trends 2026">
+       <div class="card-body">
+         <div class="card-tag">GUIDE · 2026</div>
+@@ -214,22 +214,22 @@ ul li{font-size:15px;color:var(--ink2);margin-bottom:8px;line-height:1.6}
+       </div>
+       <div class="foot-col">
+         <div class="foot-col-h">HVAC</div>
+-        <a href="/hvac/carrier-infinity-20-heat-pump-review">Carrier Infinity 20</a>
++        <a href="/hvac/carrier-infinity-20-heat-pump-review/">Carrier Infinity 20</a>
+         <a href="/hvac/lennox-xc21-review">Lennox XC21</a>
+-        <a href="/hvac/daikin-vrv5-review">Daikin VRV 5</a>
++        <a href="/hvac/daikin-vrv5-review/">Daikin VRV 5</a>
+         <a href="/hvac/">All HVAC Reviews</a>
+       </div>
+       <div class="foot-col">
+         <div class="foot-col-h">Electrical</div>
+-        <a href="/electrical/siemens-q2200-review">Siemens Q2200</a>
+-        <a href="/electrical/eaton-br2020-review">Eaton BR2020</a>
+-        <a href="/electrical/fluke-117-review">Fluke 117</a>
++        <a href="/electrical/siemens-q2200-review/">Siemens Q2200</a>
++        <a href="/electrical/eaton-br2020-review/">Eaton BR2020</a>
++        <a href="/electrical/fluke-117-review/">Fluke 117</a>
+         <a href="/electrical/">All Electrical Reviews</a>
+       </div>
+       <div class="foot-col">
+         <div class="foot-col-h">Pumps</div>
+-        <a href="/pumps/grundfos-cm5-5-review">Grundfos CM5</a>
+-        <a href="/pumps/xylem-goulds-3196-review">Xylem Goulds 3196</a>
++        <a href="/pumps/grundfos-cm5-5-review/">Grundfos CM5</a>
++        <a href="/pumps/xylem-goulds-3196-review/">Xylem Goulds 3196</a>
+         <a href="/pumps/">All Pump Reviews</a>
+       </div>
+       <div class="foot-col">
+diff --git a/public/electrical/siemens-q2200-review/index.html b/public/electrical/siemens-q2200-review/index.html
+index 68aba97..d17452c 100644
+--- a/public/electrical/siemens-q2200-review/index.html
++++ b/public/electrical/siemens-q2200-review/index.html
+@@ -10,7 +10,7 @@
+ <meta name="description" content="Siemens Q2200 200A circuit breaker review. 10,000 AIC, UL Listed, plug-on neutral. Real specs, who it outperforms, and when to choose Square D instead.">
+ <link rel="alternate" hreflang="en-us" href="https://industrialrank.com">
+ <link rel="alternate" hreflang="x-default" href="https://industrialrank.com">
+-<link rel="canonical" href="https://industrialrank.com/electrical/siemens-q2200-review">
++<link rel="canonical" href="https://industrialrank.com/electrical/siemens-q2200-review/">
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+ <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800;900&family=DM+Sans:wght@400;500&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+ <script type="application/ld+json">
+diff --git a/public/find/index.html b/public/find/index.html
+index 5fbb509..70c58b6 100644
+--- a/public/find/index.html
++++ b/public/find/index.html
+@@ -199,22 +199,22 @@ ul li{font-size:15px;color:var(--ink2);margin-bottom:8px;line-height:1.6}
+       </div>
+       <div class="foot-col">
+         <div class="foot-col-h">HVAC</div>
+-        <a href="/hvac/carrier-infinity-20-heat-pump-review">Carrier Infinity 20</a>
++        <a href="/hvac/carrier-infinity-20-heat-pump-review/">Carrier Infinity 20</a>
+         <a href="/hvac/lennox-xc21-review">Lennox XC21</a>
+-        <a href="/hvac/daikin-vrv5-review">Daikin VRV 5</a>
++        <a href="/hvac/daikin-vrv5-review/">Daikin VRV 5</a>
+         <a href="/hvac/">All HVAC Reviews</a>
+       </div>
+       <div class="foot-col">
+         <div class="foot-col-h">Electrical</div>
+-        <a href="/electrical/siemens-q2200-review">Siemens Q2200</a>
+-        <a href="/electrical/eaton-br2020-review">Eaton BR2020</a>
+-        <a href="/electrical/fluke-117-review">Fluke 117</a>
++        <a href="/electrical/siemens-q2200-review/">Siemens Q2200</a>
++        <a href="/electrical/eaton-br2020-review/">Eaton BR2020</a>
++        <a href="/electrical/fluke-117-review/">Fluke 117</a>
+         <a href="/electrical/">All Electrical Reviews</a>
+       </div>
+       <div class="foot-col">
+         <div class="foot-col-h">Pumps</div>
+-        <a href="/pumps/grundfos-cm5-5-review">Grundfos CM5</a>
+-        <a href="/pumps/xylem-goulds-3196-review">Xylem Goulds 3196</a>
++        <a href="/pumps/grundfos-cm5-5-review/">Grundfos CM5</a>
++        <a href="/pumps/xylem-goulds-3196-review/">Xylem Goulds 3196</a>
+         <a href="/pumps/">All Pump Reviews</a>
+       </div>
+       <div class="foot-col">
+diff --git a/public/hvac/carrier-infinity-20-heat-pump-review/index.html b/public/hvac/carrier-infinity-20-heat-pump-review/index.html
+index c449e3e..1e16b31 100644
+--- a/public/hvac/carrier-infinity-20-heat-pump-review/index.html
++++ b/public/hvac/carrier-infinity-20-heat-pump-review/index.html
+@@ -10,7 +10,7 @@
+ <meta name="description" content="In-depth Carrier Infinity 20 (25VNA0) heat pump review. Real specs: 20 SEER2, 11.5 HSPF2, operates to -15°F. Installed cost $6,500–$14,000. Who should buy it and who shouldn't.">
+ <link rel="alternate" hreflang="en-us" href="https://industrialrank.com">
+ <link rel="alternate" hreflang="x-default" href="https://industrialrank.com">
+-<link rel="canonical" href="https://industrialrank.com/hvac/carrier-infinity-20-heat-pump-review">
++<link rel="canonical" href="https://industrialrank.com/hvac/carrier-infinity-20-heat-pump-review/">
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+ <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800;900&family=DM+Sans:wght@400;500&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+ <script type="application/ld+json">
+@@ -517,7 +517,7 @@ footer{background:var(--steel);padding:28px 40px;margin-top:48px}
+         <span style="font-size:13px;color:var(--ink2)">Lennox XC21</span>
+         <span style="font-size:12px;color:var(--amber)">Compare →</span>
+       </a>
+-      <a href="/hvac/daikin-vrv5-review" style="display:flex;justify-content:space-between;align-items:center;padding:10px 0;text-decoration:none">
++      <a href="/hvac/daikin-vrv5-review/" style="display:flex;justify-content:space-between;align-items:center;padding:10px 0;text-decoration:none">
+         <span style="font-size:13px;color:var(--ink2)">Daikin VRV 5</span>
+         <span style="font-size:12px;color:var(--amber)">Compare →</span>
+       </a>
+diff --git a/public/hvac/daikin-vrv5-review/index.html b/public/hvac/daikin-vrv5-review/index.html
+index 13a2c8d..bcd8823 100644
+--- a/public/hvac/daikin-vrv5-review/index.html
++++ b/public/hvac/daikin-vrv5-review/index.html
+@@ -9,7 +9,7 @@
+ <meta name="description" content="Daikin VRV 5 review for commercial applications. Up to 64 indoor units, 22 COP, -13°F operation. Real installed cost, performance data, and how it compares to Mitsubishi City Multi.">
+ <link rel="alternate" hreflang="en-us" href="https://industrialrank.com">
+ <link rel="alternate" hreflang="x-default" href="https://industrialrank.com">
+-<link rel="canonical" href="https://industrialrank.com/hvac/daikin-vrv5-review">
++<link rel="canonical" href="https://industrialrank.com/hvac/daikin-vrv5-review/">
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+ <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800;900&family=DM+Sans:wght@400;500&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+ <script type="application/ld+json">{"@context":"https://schema.org","@type":"Review","name":"Daikin VRV 5 Review 2026","reviewRating":{"@type":"Rating","ratingValue":"4.6","bestRating":"5"},"author":{"@type":"Organization","name":"IndustrialRank"},"itemReviewed":{"@type":"Product","name":"Daikin VRV 5 Variable Refrigerant Flow System","brand":{"@type":"Brand","name":"Daikin"},"offers":{"@type":"AggregateOffer","lowPrice":"15000","highPrice":"80000","priceCurrency":"USD"}},"datePublished":"2026-05-27"}</script>
+@@ -310,7 +310,7 @@ ul li{font-size:15px;color:var(--ink2);margin-bottom:8px;line-height:1.6}
+   </div>
+   <div style="background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:20px">
+     <div style="font-family:'IBM Plex Mono',monospace;font-size:10px;color:var(--ink3);letter-spacing:0.08em;margin-bottom:14px">// COMPARE WITH</div>
+-    <a href="/hvac/carrier-infinity-20-heat-pump-review" style="display:flex;justify-content:space-between;align-items:center;padding:10px 0;border-bottom:1px solid var(--border2);text-decoration:none"><span style="font-size:13px;color:var(--ink2)">Carrier Infinity 20</span><span style="font-size:12px;color:var(--amber)">Compare →</span></a><a href="/hvac/lennox-xc21-review" style="display:flex;justify-content:space-between;align-items:center;padding:10px 0;text-decoration:none"><span style="font-size:13px;color:var(--ink2)">Lennox XC21</span><span style="font-size:12px;color:var(--amber)">Compare →</span></a>
++    <a href="/hvac/carrier-infinity-20-heat-pump-review/" style="display:flex;justify-content:space-between;align-items:center;padding:10px 0;border-bottom:1px solid var(--border2);text-decoration:none"><span style="font-size:13px;color:var(--ink2)">Carrier Infinity 20</span><span style="font-size:12px;color:var(--amber)">Compare →</span></a><a href="/hvac/lennox-xc21-review" style="display:flex;justify-content:space-between;align-items:center;padding:10px 0;text-decoration:none"><span style="font-size:13px;color:var(--ink2)">Lennox XC21</span><span style="font-size:12px;color:var(--amber)">Compare →</span></a>
+   </div>
+ </div>
+ </div>
+@@ -323,22 +323,22 @@ ul li{font-size:15px;color:var(--ink2);margin-bottom:8px;line-height:1.6}
+       </div>
+       <div class="foot-col">
+         <div class="foot-col-h">HVAC</div>
+-        <a href="/hvac/carrier-infinity-20-heat-pump-review">Carrier Infinity 20</a>
++        <a href="/hvac/carrier-infinity-20-heat-pump-review/">Carrier Infinity 20</a>
+         <a href="/hvac/lennox-xc21-review">Lennox XC21</a>
+-        <a href="/hvac/daikin-vrv5-review">Daikin VRV 5</a>
++        <a href="/hvac/daikin-vrv5-review/">Daikin VRV 5</a>
+         <a href="/hvac/">All HVAC Reviews</a>
+       </div>
+       <div class="foot-col">
+         <div class="foot-col-h">Electrical</div>
+-        <a href="/electrical/siemens-q2200-review">Siemens Q2200</a>
+-        <a href="/electrical/eaton-br2020-review">Eaton BR2020</a>
+-        <a href="/electrical/fluke-117-review">Fluke 117</a>
++        <a href="/electrical/siemens-q2200-review/">Siemens Q2200</a>
++        <a href="/electrical/eaton-br2020-review/">Eaton BR2020</a>
++        <a href="/electrical/fluke-117-review/">Fluke 117</a>
+         <a href="/electrical/">All Electrical Reviews</a>
+       </div>
+       <div class="foot-col">
+         <div class="foot-col-h">Pumps</div>
+-        <a href="/pumps/grundfos-cm5-5-review">Grundfos CM5</a>
+-        <a href="/pumps/xylem-goulds-3196-review">Xylem Goulds 3196</a>
++        <a href="/pumps/grundfos-cm5-5-review/">Grundfos CM5</a>
++        <a href="/pumps/xylem-goulds-3196-review/">Xylem Goulds 3196</a>
+         <a href="/pumps/">All Pump Reviews</a>
+       </div>
+       <div class="foot-col">
+diff --git a/public/hvac/index.html b/public/hvac/index.html
+index 996863f..551d94f 100644
+--- a/public/hvac/index.html
++++ b/public/hvac/index.html
+@@ -165,7 +165,7 @@ ul li{font-size:15px;color:var(--ink2);margin-bottom:8px;line-height:1.6}
+ <div class="wrap">
+   <h2>Heat Pumps</h2>
+   <div class="card-grid">
+-    <a href="/hvac/carrier-infinity-20-heat-pump-review" class="card">
++    <a href="/hvac/carrier-infinity-20-heat-pump-review/" class="card">
+       <img class="card-img" src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=600&q=80" alt="Carrier Infinity 20 heat pump">
+       <div class="card-body">
+         <div class="card-tag">EDITOR'S PICK · HEAT PUMP</div>
+@@ -183,7 +183,7 @@ ul li{font-size:15px;color:var(--ink2);margin-bottom:8px;line-height:1.6}
+         <div class="card-stars">★★★★½</div> <div class="card-score">4.5 / 5</div>
+       </div>
+     </a>
+-    <a href="/hvac/daikin-vrv5-review" class="card">
++    <a href="/hvac/daikin-vrv5-review/" class="card">
+       <img class="card-img" src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=80" alt="Daikin VRV 5 system">
+       <div class="card-body">
+         <div class="card-tag">MULTI-ZONE · VRF SYSTEM</div>
+@@ -195,7 +195,7 @@ ul li{font-size:15px;color:var(--ink2);margin-bottom:8px;line-height:1.6}
+   </div>
+   <h2 style="margin-top:48px">HVAC Buying Guides</h2>
+   <div class="card-grid">
+-    <a href="/blog/hvac-technologies-2026" class="card">
++    <a href="/blog/hvac-technologies-2026/" class="card">
+       <img class="card-img" src="https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=600&q=80" alt="HVAC technology 2026">
+       <div class="card-body">
+         <div class="card-tag">GUIDE · 2026</div>
+@@ -214,22 +214,22 @@ ul li{font-size:15px;color:var(--ink2);margin-bottom:8px;line-height:1.6}
+       </div>
+       <div class="foot-col">
+         <div class="foot-col-h">HVAC</div>
+-        <a href="/hvac/carrier-infinity-20-heat-pump-review">Carrier Infinity 20</a>
++        <a href="/hvac/carrier-infinity-20-heat-pump-review/">Carrier Infinity 20</a>
+         <a href="/hvac/lennox-xc21-review">Lennox XC21</a>
+-        <a href="/hvac/daikin-vrv5-review">Daikin VRV 5</a>
++        <a href="/hvac/daikin-vrv5-review/">Daikin VRV 5</a>
+         <a href="/hvac/">All HVAC Reviews</a>
+       </div>
+       <div class="foot-col">
+         <div class="foot-col-h">Electrical</div>
+-        <a href="/electrical/siemens-q2200-review">Siemens Q2200</a>
+-        <a href="/electrical/eaton-br2020-review">Eaton BR2020</a>
+-        <a href="/electrical/fluke-117-review">Fluke 117</a>
++        <a href="/electrical/siemens-q2200-review/">Siemens Q2200</a>
++        <a href="/electrical/eaton-br2020-review/">Eaton BR2020</a>
++        <a href="/electrical/fluke-117-review/">Fluke 117</a>
+         <a href="/electrical/">All Electrical Reviews</a>
+       </div>
+       <div class="foot-col">
+         <div class="foot-col-h">Pumps</div>
+-        <a href="/pumps/grundfos-cm5-5-review">Grundfos CM5</a>
+-        <a href="/pumps/xylem-goulds-3196-review">Xylem Goulds 3196</a>
++        <a href="/pumps/grundfos-cm5-5-review/">Grundfos CM5</a>
++        <a href="/pumps/xylem-goulds-3196-review/">Xylem Goulds 3196</a>
+         <a href="/pumps/">All Pump Reviews</a>
+       </div>
+       <div class="foot-col">
+diff --git a/public/index.html b/public/index.html
+index 7fca68a..66e8463 100644
+--- a/public/index.html
++++ b/public/index.html
+@@ -76,7 +76,7 @@
+       "@type": "ListItem",
+       "position": 1,
+       "name": "Carrier Infinity 20 Heat Pump (25VNA0)",
+-      "url": "https://industrialrank.com/hvac/carrier-infinity-20-heat-pump-review",
++      "url": "https://industrialrank.com/hvac/carrier-infinity-20-heat-pump-review/",
+       "description": "Industry-leading variable-speed commercial heat pump with SEER2 ratings up to 24. Best-in-class efficiency for commercial retrofits under 100-ton capacity."
+     },
+     {
+@@ -90,14 +90,14 @@
+       "@type": "ListItem",
+       "position": 3,
+       "name": "Daikin VRV 5 Commercial VRF System",
+-      "url": "https://industrialrank.com/hvac/daikin-vrv5-review",
++      "url": "https://industrialrank.com/hvac/daikin-vrv5-review/",
+       "description": "Best-in-class simultaneous heating and cooling for multi-zone commercial buildings over 50,000 sq ft."
+     },
+     {
+       "@type": "ListItem",
+       "position": 4,
+       "name": "Siemens Q2200 200A Main Breaker",
+-      "url": "https://industrialrank.com/electrical/siemens-q2200-review",
++      "url": "https://industrialrank.com/electrical/siemens-q2200-review/",
+       "description": "10,000 AIC interrupting rating, UL Listed, plug-on neutral. Top-rated for industrial panel upgrades in humid facilities."
+     },
+     {
+@@ -680,7 +680,7 @@ footer{background:var(--steel);padding:48px 24px 28px;margin-top:48px}
+         <div class="card-excerpt">10,000 AIC interrupting rating. UL Listed. Plug-on neutral design eliminates pigtail wiring. Consistently outperforms Square D QO series in high-humidity industrial environments.</div>
+         <div class="verdict"><span class="verdict-icon">✓</span> Best for: Industrial panel upgrades in humid facilities</div>
+         <div class="card-foot">
+-          <a href="/electrical/siemens-q2200-review" style="color:var(--amber);font-size:12px;font-weight:600">Read full review →</a>
++          <a href="/electrical/siemens-q2200-review/" style="color:var(--amber);font-size:12px;font-weight:600">Read full review →</a>
+           <span class="card-type-tag">VIDEO REVIEW</span>
+         </div>
+       </div>
+@@ -731,7 +731,7 @@ footer{background:var(--steel);padding:48px 24px 28px;margin-top:48px}
+     <div style="position:relative">
+       <div id="guide-slider" style="display:flex;gap:20px;overflow-x:auto;scroll-behavior:smooth;padding-bottom:16px;scrollbar-width:none;-ms-overflow-style:none">
+ 
+-        <a href="/blog/hvac-technologies-2026" style="text-decoration:none;flex:0 0 300px">
++        <a href="/blog/hvac-technologies-2026/" style="text-decoration:none;flex:0 0 300px">
+           <div style="background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);border-radius:12px;overflow:hidden;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(217,119,6,0.6)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.1)'">
+             <div style="height:160px;overflow:hidden">
+               <img src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=600&q=80" alt="HVAC Technologies 2026" style="width:100%;height:100%;object-fit:cover;display:block">
+@@ -745,7 +745,7 @@ footer{background:var(--steel);padding:48px 24px 28px;margin-top:48px}
+           </div>
+         </a>
+ 
+-        <a href="/blog/industrial-electrical-trends-2026" style="text-decoration:none;flex:0 0 300px">
++        <a href="/blog/industrial-electrical-trends-2026/" style="text-decoration:none;flex:0 0 300px">
+           <div style="background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);border-radius:12px;overflow:hidden;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(217,119,6,0.6)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.1)'">
+             <div style="height:160px;overflow:hidden">
+               <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=80" alt="Electrical Trends 2026" style="width:100%;height:100%;object-fit:cover;display:block">
+@@ -759,7 +759,7 @@ footer{background:var(--steel);padding:48px 24px 28px;margin-top:48px}
+           </div>
+         </a>
+ 
+-        <a href="/blog/industrial-pump-technology-2026" style="text-decoration:none;flex:0 0 300px">
++        <a href="/blog/industrial-pump-technology-2026/" style="text-decoration:none;flex:0 0 300px">
+           <div style="background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);border-radius:12px;overflow:hidden;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(217,119,6,0.6)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.1)'">
+             <div style="height:160px;overflow:hidden">
+               <img src="https://images.unsplash.com/photo-1565008447742-97f6f38c985c?w=600&q=80" alt="Pump Technology 2026" style="width:100%;height:100%;object-fit:cover;display:block">
+@@ -773,7 +773,7 @@ footer{background:var(--steel);padding:48px 24px 28px;margin-top:48px}
+           </div>
+         </a>
+ 
+-        <a href="/blog/industrial-automation-trends-2026" style="text-decoration:none;flex:0 0 300px">
++        <a href="/blog/industrial-automation-trends-2026/" style="text-decoration:none;flex:0 0 300px">
+           <div style="background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);border-radius:12px;overflow:hidden;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(217,119,6,0.6)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.1)'">
+             <div style="height:160px;overflow:hidden">
+               <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?w=600&q=80" alt="Automation Trends 2026" style="width:100%;height:100%;object-fit:cover;display:block">
+@@ -787,7 +787,7 @@ footer{background:var(--steel);padding:48px 24px 28px;margin-top:48px}
+           </div>
+         </a>
+ 
+-        <a href="/blog/compressed-air-systems-2026" style="text-decoration:none;flex:0 0 300px">
++        <a href="/blog/compressed-air-systems-2026/" style="text-decoration:none;flex:0 0 300px">
+           <div style="background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);border-radius:12px;overflow:hidden;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(217,119,6,0.6)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.1)'">
+             <div style="height:160px;overflow:hidden">
+               <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=600&q=80" alt="Compressed Air 2026" style="width:100%;height:100%;object-fit:cover;display:block">
+@@ -992,9 +992,9 @@ footer{background:var(--steel);padding:48px 24px 28px;margin-top:48px}
+       <div class="foot-col">
+         <div class="foot-col-h">HVAC</div>
+         <a href="/hvac/">Heat Pumps</a>
+-        <a href="/hvac/daikin-vrv5-review">VRF Systems</a>
++        <a href="/hvac/daikin-vrv5-review/">VRF Systems</a>
+         <a href="/hvac/">Air Filters</a>
+-        <a href="/blog/hvac-technologies-2026">Refrigerants</a>
++        <a href="/blog/hvac-technologies-2026/">Refrigerants</a>
+         <a href="/compare/">Controls</a>
+       </div>
+       <div class="foot-col">
+@@ -1002,7 +1002,7 @@ footer{background:var(--steel);padding:48px 24px 28px;margin-top:48px}
+         <a href="/electrical/">Circuit Breakers</a>
+         <a href="/electrical/">Arc Flash PPE</a>
+         <a href="/electrical/">Conduit</a>
+-        <a href="/electrical/siemens-q2200-review">Panel Components</a>
++        <a href="/electrical/siemens-q2200-review/">Panel Components</a>
+         <a href="/electrical/">Wire Management</a>
+       </div>
+       <div class="foot-col">
+diff --git a/public/privacy-policy/index.html b/public/privacy-policy/index.html
+index 9dc4dfd..26efc20 100644
+--- a/public/privacy-policy/index.html
++++ b/public/privacy-policy/index.html
+@@ -7,7 +7,7 @@
+ <meta name="description" content="IndustrialRank privacy policy. How we collect, use, and protect your data.">
+ <link rel="alternate" hreflang="en-us" href="https://industrialrank.com">
+ <link rel="alternate" hreflang="x-default" href="https://industrialrank.com">
+-<link rel="canonical" href="https://industrialrank.com/privacy-policy">
++<link rel="canonical" href="https://industrialrank.com/privacy-policy/">
+ <link rel="icon" type="image/x-icon" href="/favicon.ico">
+ <link rel="apple-touch-icon" href="/favicon.png">
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+diff --git a/public/pumps/grundfos-cm5-5-review/index.html b/public/pumps/grundfos-cm5-5-review/index.html
+index d103749..95f1b15 100644
+--- a/public/pumps/grundfos-cm5-5-review/index.html
++++ b/public/pumps/grundfos-cm5-5-review/index.html
+@@ -10,7 +10,7 @@
+ <meta name="description" content="Grundfos CM5-5 multistage centrifugal pump review. 2 HP, 22 GPM max, cast iron or stainless steel. Real field data, who it's for, and how it compares to Xylem and Flowserve.">
+ <link rel="alternate" hreflang="en-us" href="https://industrialrank.com">
+ <link rel="alternate" hreflang="x-default" href="https://industrialrank.com">
+-<link rel="canonical" href="https://industrialrank.com/pumps/grundfos-cm5-5-review">
++<link rel="canonical" href="https://industrialrank.com/pumps/grundfos-cm5-5-review/">
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+ <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800;900&family=DM+Sans:wght@400;500&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+ <script type="application/ld+json">
+diff --git a/public/pumps/index.html b/public/pumps/index.html
+index bd1c7b9..9d257f5 100644
+--- a/public/pumps/index.html
++++ b/public/pumps/index.html
+@@ -165,7 +165,7 @@ ul li{font-size:15px;color:var(--ink2);margin-bottom:8px;line-height:1.6}
+ <div class="wrap">
+   <h2>Centrifugal and Process Pumps</h2>
+   <div class="card-grid">
+-    <a href="/pumps/grundfos-cm5-5-review" class="card">
++    <a href="/pumps/grundfos-cm5-5-review/" class="card">
+       <img class="card-img" src="https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=600&q=80" alt="Grundfos CM5-5 centrifugal pump">
+       <div class="card-body">
+         <div class="card-tag">EDITOR'S PICK · CENTRIFUGAL</div>
+@@ -174,7 +174,7 @@ ul li{font-size:15px;color:var(--ink2);margin-bottom:8px;line-height:1.6}
+         <div class="card-stars">★★★★★</div> <div class="card-score">4.8 / 5</div>
+       </div>
+     </a>
+-    <a href="/pumps/xylem-goulds-3196-review" class="card">
++    <a href="/pumps/xylem-goulds-3196-review/" class="card">
+       <img class="card-img" src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=600&q=80" alt="Xylem Goulds 3196 ANSI pump">
+       <div class="card-body">
+         <div class="card-tag">HEAVY DUTY · ANSI PROCESS</div>
+@@ -186,7 +186,7 @@ ul li{font-size:15px;color:var(--ink2);margin-bottom:8px;line-height:1.6}
+   </div>
+   <h2 style="margin-top:48px">Pump Buying Guides</h2>
+   <div class="card-grid">
+-    <a href="/blog/industrial-pump-technology-2026" class="card">
++    <a href="/blog/industrial-pump-technology-2026/" class="card">
+       <img class="card-img" src="https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=600&q=80" alt="Industrial pump technology 2026">
+       <div class="card-body">
+         <div class="card-tag">GUIDE · 2026</div>
+@@ -205,22 +205,22 @@ ul li{font-size:15px;color:var(--ink2);margin-bottom:8px;line-height:1.6}
+       </div>
+       <div class="foot-col">
+         <div class="foot-col-h">HVAC</div>
+-        <a href="/hvac/carrier-infinity-20-heat-pump-review">Carrier Infinity 20</a>
++        <a href="/hvac/carrier-infinity-20-heat-pump-review/">Carrier Infinity 20</a>
+         <a href="/hvac/lennox-xc21-review">Lennox XC21</a>
+-        <a href="/hvac/daikin-vrv5-review">Daikin VRV 5</a>
++        <a href="/hvac/daikin-vrv5-review/">Daikin VRV 5</a>
+         <a href="/hvac/">All HVAC Reviews</a>
+       </div>
+       <div class="foot-col">
+         <div class="foot-col-h">Electrical</div>
+-        <a href="/electrical/siemens-q2200-review">Siemens Q2200</a>
+-        <a href="/electrical/eaton-br2020-review">Eaton BR2020</a>
+-        <a href="/electrical/fluke-117-review">Fluke 117</a>
++        <a href="/electrical/siemens-q2200-review/">Siemens Q2200</a>
++        <a href="/electrical/eaton-br2020-review/">Eaton BR2020</a>
++        <a href="/electrical/fluke-117-review/">Fluke 117</a>
+         <a href="/electrical/">All Electrical Reviews</a>
+       </div>
+       <div class="foot-col">
+         <div class="foot-col-h">Pumps</div>
+-        <a href="/pumps/grundfos-cm5-5-review">Grundfos CM5</a>
+-        <a href="/pumps/xylem-goulds-3196-review">Xylem Goulds 3196</a>
++        <a href="/pumps/grundfos-cm5-5-review/">Grundfos CM5</a>
++        <a href="/pumps/xylem-goulds-3196-review/">Xylem Goulds 3196</a>
+         <a href="/pumps/">All Pump Reviews</a>
+       </div>
+       <div class="foot-col">
+diff --git a/public/pumps/xylem-goulds-3196-review/index.html b/public/pumps/xylem-goulds-3196-review/index.html
+index 35116b2..b03b1f6 100644
+--- a/public/pumps/xylem-goulds-3196-review/index.html
++++ b/public/pumps/xylem-goulds-3196-review/index.html
+@@ -9,7 +9,7 @@
+ <meta name="description" content="Xylem Goulds 3196 review: ANSI B73.1 process pump. Flows to 5,000 GPM, 316SS and alloy options, API 682 seal compatibility. Real cost, reliability data, and vs ITT Goulds G&L.">
+ <link rel="alternate" hreflang="en-us" href="https://industrialrank.com">
+ <link rel="alternate" hreflang="x-default" href="https://industrialrank.com">
+-<link rel="canonical" href="https://industrialrank.com/pumps/xylem-goulds-3196-review">
++<link rel="canonical" href="https://industrialrank.com/pumps/xylem-goulds-3196-review/">
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+ <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800;900&family=DM+Sans:wght@400;500&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+ <script type="application/ld+json">{"@context":"https://schema.org","@type":"Review","name":"Xylem Goulds 3196 ANSI Pump Review 2026","reviewRating":{"@type":"Rating","ratingValue":"4.6","bestRating":"5"},"author":{"@type":"Organization","name":"IndustrialRank"},"itemReviewed":{"@type":"Product","name":"Xylem Goulds 3196 ANSI Process Pump","brand":{"@type":"Brand","name":"Xylem"}},"datePublished":"2026-05-27"}</script>
+@@ -273,7 +273,7 @@ ul li{font-size:15px;color:var(--ink2);margin-bottom:8px;line-height:1.6}
+   </div>
+   <div style="background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:20px">
+     <div style="font-family:'IBM Plex Mono',monospace;font-size:10px;color:var(--ink3);letter-spacing:0.08em;margin-bottom:14px">// COMPARE WITH</div>
+-    <a href="/pumps/grundfos-cm5-5-review" style="display:flex;justify-content:space-between;align-items:center;padding:10px 0;text-decoration:none"><span style="font-size:13px;color:var(--ink2)">Grundfos CM5-5</span><span style="font-size:12px;color:var(--amber)">Compare →</span></a>
++    <a href="/pumps/grundfos-cm5-5-review/" style="display:flex;justify-content:space-between;align-items:center;padding:10px 0;text-decoration:none"><span style="font-size:13px;color:var(--ink2)">Grundfos CM5-5</span><span style="font-size:12px;color:var(--amber)">Compare →</span></a>
+   </div>
+ </div></div><footer>
+   <div class="foot-inner">
+@@ -284,22 +284,22 @@ ul li{font-size:15px;color:var(--ink2);margin-bottom:8px;line-height:1.6}
+       </div>
+       <div class="foot-col">
+         <div class="foot-col-h">HVAC</div>
+-        <a href="/hvac/carrier-infinity-20-heat-pump-review">Carrier Infinity 20</a>
++        <a href="/hvac/carrier-infinity-20-heat-pump-review/">Carrier Infinity 20</a>
+         <a href="/hvac/lennox-xc21-review">Lennox XC21</a>
+-        <a href="/hvac/daikin-vrv5-review">Daikin VRV 5</a>
++        <a href="/hvac/daikin-vrv5-review/">Daikin VRV 5</a>
+         <a href="/hvac/">All HVAC Reviews</a>
+       </div>
+       <div class="foot-col">
+         <div class="foot-col-h">Electrical</div>
+-        <a href="/electrical/siemens-q2200-review">Siemens Q2200</a>
+-        <a href="/electrical/eaton-br2020-review">Eaton BR2020</a>
+-        <a href="/electrical/fluke-117-review">Fluke 117</a>
++        <a href="/electrical/siemens-q2200-review/">Siemens Q2200</a>
++        <a href="/electrical/eaton-br2020-review/">Eaton BR2020</a>
++        <a href="/electrical/fluke-117-review/">Fluke 117</a>
+         <a href="/electrical/">All Electrical Reviews</a>
+       </div>
+       <div class="foot-col">
+         <div class="foot-col-h">Pumps</div>
+-        <a href="/pumps/grundfos-cm5-5-review">Grundfos CM5</a>
+-        <a href="/pumps/xylem-goulds-3196-review">Xylem Goulds 3196</a>
++        <a href="/pumps/grundfos-cm5-5-review/">Grundfos CM5</a>
++        <a href="/pumps/xylem-goulds-3196-review/">Xylem Goulds 3196</a>
+         <a href="/pumps/">All Pump Reviews</a>
+       </div>
+       <div class="foot-col">
+diff --git a/public/top10/index.html b/public/top10/index.html
+index 91c745b..06c9825 100644
+--- a/public/top10/index.html
++++ b/public/top10/index.html
+@@ -168,10 +168,10 @@ ul li{font-size:15px;color:var(--ink2);margin-bottom:8px;line-height:1.6}
+     <table style="width:100%;border-collapse:collapse">
+       <thead><tr style="background:var(--steel)"><th style="padding:14px 20px;text-align:left;font-family:'IBM Plex Mono',monospace;font-size:10px;color:rgba(255,255,255,0.4);letter-spacing:0.08em">RANK</th><th style="padding:14px 20px;text-align:left;font-family:'IBM Plex Mono',monospace;font-size:10px;color:var(--amber2);letter-spacing:0.08em">MODEL</th><th style="padding:14px 20px;text-align:left;font-family:'IBM Plex Mono',monospace;font-size:10px;color:rgba(255,255,255,0.4);letter-spacing:0.08em">SEER2</th><th style="padding:14px 20px;text-align:left;font-family:'IBM Plex Mono',monospace;font-size:10px;color:rgba(255,255,255,0.4);letter-spacing:0.08em">MIN TEMP</th><th style="padding:14px 20px;text-align:left;font-family:'IBM Plex Mono',monospace;font-size:10px;color:rgba(255,255,255,0.4);letter-spacing:0.08em">SCORE</th></tr></thead>
+       <tbody>
+-        <tr style="border-bottom:1px solid var(--border2)"><td style="padding:14px 20px;font-family:'Barlow Condensed',sans-serif;font-weight:900;font-size:22px;color:var(--amber)">#1</td><td style="padding:14px 20px"><a href="/hvac/carrier-infinity-20-heat-pump-review" style="font-weight:600;color:var(--ink);text-decoration:none;font-size:15px">Carrier Infinity 20 (25VNA0)</a><div style="font-size:12px;color:var(--ink3);margin-top:2px">Best cold climate performance, highest SEER2</div></td><td style="padding:14px 20px;font-weight:600">20</td><td style="padding:14px 20px;color:var(--green);font-weight:600">-15°F</td><td style="padding:14px 20px;font-family:'IBM Plex Mono',monospace;font-weight:600;color:var(--amber)">4.8</td></tr>
++        <tr style="border-bottom:1px solid var(--border2)"><td style="padding:14px 20px;font-family:'Barlow Condensed',sans-serif;font-weight:900;font-size:22px;color:var(--amber)">#1</td><td style="padding:14px 20px"><a href="/hvac/carrier-infinity-20-heat-pump-review/" style="font-weight:600;color:var(--ink);text-decoration:none;font-size:15px">Carrier Infinity 20 (25VNA0)</a><div style="font-size:12px;color:var(--ink3);margin-top:2px">Best cold climate performance, highest SEER2</div></td><td style="padding:14px 20px;font-weight:600">20</td><td style="padding:14px 20px;color:var(--green);font-weight:600">-15°F</td><td style="padding:14px 20px;font-family:'IBM Plex Mono',monospace;font-weight:600;color:var(--amber)">4.8</td></tr>
+         <tr style="border-bottom:1px solid var(--border2)"><td style="padding:14px 20px;font-family:'Barlow Condensed',sans-serif;font-weight:900;font-size:22px;color:var(--ink3)">#2</td><td style="padding:14px 20px"><a href="/hvac/lennox-xc21-review" style="font-weight:600;color:var(--ink);text-decoration:none;font-size:15px">Lennox XC21</a><div style="font-size:12px;color:var(--ink3);margin-top:2px">Best value in moderate climates, open BMS integration</div></td><td style="padding:14px 20px;font-weight:600">19.2</td><td style="padding:14px 20px">-5°F</td><td style="padding:14px 20px;font-family:'IBM Plex Mono',monospace;font-weight:600;color:var(--amber)">4.5</td></tr>
+         <tr style="border-bottom:1px solid var(--border2)"><td style="padding:14px 20px;font-family:'Barlow Condensed',sans-serif;font-weight:900;font-size:22px;color:var(--ink3)">#3</td><td style="padding:14px 20px"><span style="font-weight:600;font-size:15px">Trane XV21</span><div style="font-size:12px;color:var(--ink3);margin-top:2px">Strong reliability record, Nexia home/BMS integration</div></td><td style="padding:14px 20px;font-weight:600">18.0</td><td style="padding:14px 20px">-5°F</td><td style="padding:14px 20px;font-family:'IBM Plex Mono',monospace;font-weight:600;color:var(--amber)">4.3</td></tr>
+-        <tr style="border-bottom:1px solid var(--border2)"><td style="padding:14px 20px;font-family:'Barlow Condensed',sans-serif;font-weight:900;font-size:22px;color:var(--ink3)">#4</td><td style="padding:14px 20px"><a href="/hvac/daikin-vrv5-review" style="font-weight:600;color:var(--ink);text-decoration:none;font-size:15px">Daikin VRV 5 (multi-zone)</a><div style="font-size:12px;color:var(--ink3);margin-top:2px">Best for 30,000+ sq ft multi-zone commercial, R-32 refrigerant</div></td><td style="padding:14px 20px;font-weight:600">N/A (VRF)</td><td style="padding:14px 20px">-13°F</td><td style="padding:14px 20px;font-family:'IBM Plex Mono',monospace;font-weight:600;color:var(--amber)">4.6</td></tr>
++        <tr style="border-bottom:1px solid var(--border2)"><td style="padding:14px 20px;font-family:'Barlow Condensed',sans-serif;font-weight:900;font-size:22px;color:var(--ink3)">#4</td><td style="padding:14px 20px"><a href="/hvac/daikin-vrv5-review/" style="font-weight:600;color:var(--ink);text-decoration:none;font-size:15px">Daikin VRV 5 (multi-zone)</a><div style="font-size:12px;color:var(--ink3);margin-top:2px">Best for 30,000+ sq ft multi-zone commercial, R-32 refrigerant</div></td><td style="padding:14px 20px;font-weight:600">N/A (VRF)</td><td style="padding:14px 20px">-13°F</td><td style="padding:14px 20px;font-family:'IBM Plex Mono',monospace;font-weight:600;color:var(--amber)">4.6</td></tr>
+         <tr><td style="padding:14px 20px;font-family:'Barlow Condensed',sans-serif;font-weight:900;font-size:22px;color:var(--ink3)">#5</td><td style="padding:14px 20px"><span style="font-weight:600;font-size:15px">Bosch IDS 2.0</span><div style="font-size:12px;color:var(--ink3);margin-top:2px">Best quiet operation for noise-sensitive commercial environments</div></td><td style="padding:14px 20px;font-weight:600">18.5</td><td style="padding:14px 20px">-5°F</td><td style="padding:14px 20px;font-family:'IBM Plex Mono',monospace;font-weight:600;color:var(--amber)">4.2</td></tr>
+       </tbody>
+     </table>
+@@ -182,7 +182,7 @@ ul li{font-size:15px;color:var(--ink2);margin-bottom:8px;line-height:1.6}
+     <table style="width:100%;border-collapse:collapse">
+       <thead><tr style="background:var(--steel)"><th style="padding:14px 20px;text-align:left;font-family:'IBM Plex Mono',monospace;font-size:10px;color:rgba(255,255,255,0.4);letter-spacing:0.08em">RANK</th><th style="padding:14px 20px;text-align:left;font-family:'IBM Plex Mono',monospace;font-size:10px;color:var(--amber2);letter-spacing:0.08em">MODEL</th><th style="padding:14px 20px;text-align:left;font-family:'IBM Plex Mono',monospace;font-size:10px;color:rgba(255,255,255,0.4);letter-spacing:0.08em">SAFETY</th><th style="padding:14px 20px;text-align:left;font-family:'IBM Plex Mono',monospace;font-size:10px;color:rgba(255,255,255,0.4);letter-spacing:0.08em">TRUE RMS</th><th style="padding:14px 20px;text-align:left;font-family:'IBM Plex Mono',monospace;font-size:10px;color:rgba(255,255,255,0.4);letter-spacing:0.08em">PRICE</th></tr></thead>
+       <tbody>
+-        <tr style="border-bottom:1px solid var(--border2)"><td style="padding:14px 20px;font-family:'Barlow Condensed',sans-serif;font-weight:900;font-size:22px;color:var(--amber)">#1</td><td style="padding:14px 20px"><a href="/electrical/fluke-117-review" style="font-weight:600;color:var(--ink);text-decoration:none;font-size:15px">Fluke 117</a><div style="font-size:12px;color:var(--ink3);margin-top:2px">LoZ ghost voltage, VoltAlert NCV, lifetime warranty</div></td><td style="padding:14px 20px;font-weight:600">600V CAT III</td><td style="padding:14px 20px;color:var(--green);font-weight:600">Yes</td><td style="padding:14px 20px;font-family:'IBM Plex Mono',monospace">$155–$200</td></tr>
++        <tr style="border-bottom:1px solid var(--border2)"><td style="padding:14px 20px;font-family:'Barlow Condensed',sans-serif;font-weight:900;font-size:22px;color:var(--amber)">#1</td><td style="padding:14px 20px"><a href="/electrical/fluke-117-review/" style="font-weight:600;color:var(--ink);text-decoration:none;font-size:15px">Fluke 117</a><div style="font-size:12px;color:var(--ink3);margin-top:2px">LoZ ghost voltage, VoltAlert NCV, lifetime warranty</div></td><td style="padding:14px 20px;font-weight:600">600V CAT III</td><td style="padding:14px 20px;color:var(--green);font-weight:600">Yes</td><td style="padding:14px 20px;font-family:'IBM Plex Mono',monospace">$155–$200</td></tr>
+         <tr style="border-bottom:1px solid var(--border2)"><td style="padding:14px 20px;font-family:'Barlow Condensed',sans-serif;font-weight:900;font-size:22px;color:var(--ink3)">#2</td><td style="padding:14px 20px"><span style="font-weight:600;font-size:15px">Fluke 115</span><div style="font-size:12px;color:var(--ink3);margin-top:2px">Same True RMS engine, no LoZ or NCV — simpler jobs</div></td><td style="padding:14px 20px;font-weight:600">600V CAT III</td><td style="padding:14px 20px;color:var(--green);font-weight:600">Yes</td><td style="padding:14px 20px;font-family:'IBM Plex Mono',monospace">$130–$165</td></tr>
+         <tr><td style="padding:14px 20px;font-family:'Barlow Condensed',sans-serif;font-weight:900;font-size:22px;color:var(--ink3)">#3</td><td style="padding:14px 20px"><span style="font-weight:600;font-size:15px">Klein MM700</span><div style="font-size:12px;color:var(--ink3);margin-top:2px">Best value True RMS with NCV for budget-conscious teams</div></td><td style="padding:14px 20px;font-weight:600">600V CAT III</td><td style="padding:14px 20px;color:var(--green);font-weight:600">Yes</td><td style="padding:14px 20px;font-family:'IBM Plex Mono',monospace">$90–$120</td></tr>
+       </tbody>
+@@ -198,22 +198,22 @@ ul li{font-size:15px;color:var(--ink2);margin-bottom:8px;line-height:1.6}
+       </div>
+       <div class="foot-col">
+         <div class="foot-col-h">HVAC</div>
+-        <a href="/hvac/carrier-infinity-20-heat-pump-review">Carrier Infinity 20</a>
++        <a href="/hvac/carrier-infinity-20-heat-pump-review/">Carrier Infinity 20</a>
+         <a href="/hvac/lennox-xc21-review">Lennox XC21</a>
+-        <a href="/hvac/daikin-vrv5-review">Daikin VRV 5</a>
++        <a href="/hvac/daikin-vrv5-review/">Daikin VRV 5</a>
+         <a href="/hvac/">All HVAC Reviews</a>
+       </div>
+       <div class="foot-col">
+         <div class="foot-col-h">Electrical</div>
+-        <a href="/electrical/siemens-q2200-review">Siemens Q2200</a>
+-        <a href="/electrical/eaton-br2020-review">Eaton BR2020</a>
+-        <a href="/electrical/fluke-117-review">Fluke 117</a>
++        <a href="/electrical/siemens-q2200-review/">Siemens Q2200</a>
++        <a href="/electrical/eaton-br2020-review/">Eaton BR2020</a>
++        <a href="/electrical/fluke-117-review/">Fluke 117</a>
+         <a href="/electrical/">All Electrical Reviews</a>
+       </div>
+       <div class="foot-col">
+         <div class="foot-col-h">Pumps</div>
+-        <a href="/pumps/grundfos-cm5-5-review">Grundfos CM5</a>
+-        <a href="/pumps/xylem-goulds-3196-review">Xylem Goulds 3196</a>
++        <a href="/pumps/grundfos-cm5-5-review/">Grundfos CM5</a>
++        <a href="/pumps/xylem-goulds-3196-review/">Xylem Goulds 3196</a>
+         <a href="/pumps/">All Pump Reviews</a>
+       </div>
+       <div class="foot-col">
+diff --git a/worker.js b/worker.js
+index ad3ef2c..58f20f6 100644
+--- a/worker.js
++++ b/worker.js
+@@ -7,20 +7,19 @@ const SITEMAP = `<?xml version="1.0" encoding="UTF-8"?>
+   <url><loc>https://industrialrank.com/compare/</loc><lastmod>2026-05-27</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+   <url><loc>https://industrialrank.com/top10/</loc><lastmod>2026-05-27</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+   <url><loc>https://industrialrank.com/find/</loc><lastmod>2026-05-27</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+-  <url><loc>https://industrialrank.com/hvac/carrier-infinity-20-heat-pump-review</loc><lastmod>2026-05-27</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+-  <url><loc>https://industrialrank.com/hvac/lennox-xc21-review</loc><lastmod>2026-05-27</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+-  <url><loc>https://industrialrank.com/hvac/daikin-vrv5-review</loc><lastmod>2026-05-27</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+-  <url><loc>https://industrialrank.com/electrical/siemens-q2200-review</loc><lastmod>2026-05-27</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+-  <url><loc>https://industrialrank.com/electrical/eaton-br2020-review</loc><lastmod>2026-05-27</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+-  <url><loc>https://industrialrank.com/electrical/fluke-117-review</loc><lastmod>2026-05-27</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+-  <url><loc>https://industrialrank.com/pumps/grundfos-cm5-5-review</loc><lastmod>2026-05-27</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+-  <url><loc>https://industrialrank.com/pumps/xylem-goulds-3196-review</loc><lastmod>2026-05-27</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
++  <url><loc>https://industrialrank.com/hvac/carrier-infinity-20-heat-pump-review/</loc><lastmod>2026-05-27</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
++  <url><loc>https://industrialrank.com/hvac/daikin-vrv5-review/</loc><lastmod>2026-05-27</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
++  <url><loc>https://industrialrank.com/electrical/siemens-q2200-review/</loc><lastmod>2026-05-27</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
++  <url><loc>https://industrialrank.com/electrical/eaton-br2020-review/</loc><lastmod>2026-05-27</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
++  <url><loc>https://industrialrank.com/electrical/fluke-117-review/</loc><lastmod>2026-05-27</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
++  <url><loc>https://industrialrank.com/pumps/grundfos-cm5-5-review/</loc><lastmod>2026-05-27</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
++  <url><loc>https://industrialrank.com/pumps/xylem-goulds-3196-review/</loc><lastmod>2026-05-27</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+   <url><loc>https://industrialrank.com/blog/</loc><lastmod>2026-05-27</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+-  <url><loc>https://industrialrank.com/blog/hvac-technologies-2026</loc><lastmod>2026-05-27</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+-  <url><loc>https://industrialrank.com/blog/industrial-electrical-trends-2026</loc><lastmod>2026-05-27</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+-  <url><loc>https://industrialrank.com/blog/industrial-pump-technology-2026</loc><lastmod>2026-05-27</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+-  <url><loc>https://industrialrank.com/blog/industrial-automation-trends-2026</loc><lastmod>2026-05-27</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+-  <url><loc>https://industrialrank.com/blog/compressed-air-systems-2026</loc><lastmod>2026-05-27</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
++  <url><loc>https://industrialrank.com/blog/hvac-technologies-2026/</loc><lastmod>2026-05-27</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
++  <url><loc>https://industrialrank.com/blog/industrial-electrical-trends-2026/</loc><lastmod>2026-05-27</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
++  <url><loc>https://industrialrank.com/blog/industrial-pump-technology-2026/</loc><lastmod>2026-05-27</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
++  <url><loc>https://industrialrank.com/blog/industrial-automation-trends-2026/</loc><lastmod>2026-05-27</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
++  <url><loc>https://industrialrank.com/blog/compressed-air-systems-2026/</loc><lastmod>2026-05-27</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+   <url><loc>https://industrialrank.com/about/</loc><lastmod>2026-05-27</lastmod><changefreq>yearly</changefreq><priority>0.5</priority></url>
+   <url><loc>https://industrialrank.com/contact/</loc><lastmod>2026-05-27</lastmod><changefreq>yearly</changefreq><priority>0.5</priority></url>
+ </urlset>`;
+diff --git a/wrangler.toml b/wrangler.toml
+index 86dd58c..a86bc8a 100644
+--- a/wrangler.toml
++++ b/wrangler.toml
+@@ -4,4 +4,4 @@ main = "./worker.js"
+ 
+ [assets]
+ directory = "./public"
+-not_found_handling = "single-page-application"
++not_found_handling = "404-page"
