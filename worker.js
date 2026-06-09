@@ -60,6 +60,19 @@ const SITEMAP = `<?xml version="1.0" encoding="UTF-8"?>
   <url><loc>https://industrialrank.com/blog/industrial-pump-technology-2026/</loc><lastmod>2026-06-09</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://industrialrank.com/blog/industrial-automation-trends-2026/</loc><lastmod>2026-06-09</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://industrialrank.com/blog/compressed-air-systems-2026/</loc><lastmod>2026-06-09</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://industrialrank.com/heat-pumps/carrier-infinity-20-heat-pump-review/</loc><lastmod>2026-06-09</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://industrialrank.com/mini-splits/mitsubishi-mxz-3c24na-review/</loc><lastmod>2026-06-09</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://industrialrank.com/mini-splits/mrcool-diy-36k-mini-split-review/</loc><lastmod>2026-06-09</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://industrialrank.com/heat-pumps/goodman-gsx160481-heat-pump-review/</loc><lastmod>2026-06-09</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://industrialrank.com/heat-pumps/lennox-xp21-heat-pump-review/</loc><lastmod>2026-06-09</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://industrialrank.com/heat-pumps/trane-xr15-heat-pump-review/</loc><lastmod>2026-06-09</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://industrialrank.com/brands/carrier/</loc><lastmod>2026-06-09</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://industrialrank.com/brands/mitsubishi/</loc><lastmod>2026-06-09</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://industrialrank.com/brands/mrcool/</loc><lastmod>2026-06-09</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://industrialrank.com/best/mini-splits-2026/</loc><lastmod>2026-06-09</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://industrialrank.com/best/heat-pumps-2026/</loc><lastmod>2026-06-09</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://industrialrank.com/best/</loc><lastmod>2026-06-09</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://industrialrank.com/brands/</loc><lastmod>2026-06-09</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
 </urlset>`;
 
 export default {
