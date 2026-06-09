@@ -31,6 +31,11 @@ const SITEMAP = `<?xml version="1.0" encoding="UTF-8"?>
   <url><loc>https://industrialrank.com/pumps/zoeller-m53-sump-pump-review/</loc><lastmod>2026-06-09</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
   <url><loc>https://industrialrank.com/electrical/fluke-323-clamp-meter-review/</loc><lastmod>2026-06-09</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
   <url><loc>https://industrialrank.com/pumps/grundfos-up15-29su-circulator-review/</loc><lastmod>2026-06-09</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://industrialrank.com/hvac/mrcool-diy-24k-mini-split-review/</loc><lastmod>2026-06-09</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://industrialrank.com/hvac/lennox-xp21-heat-pump-review/</loc><lastmod>2026-06-09</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://industrialrank.com/electrical/klein-tools-mm400-multimeter-review/</loc><lastmod>2026-06-09</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://industrialrank.com/electrical/square-d-hom2160pcvp-panel-review/</loc><lastmod>2026-06-09</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://industrialrank.com/pumps/wayne-cdu980e-sump-pump-review/</loc><lastmod>2026-06-09</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
 </urlset>`;
 
 export default {
