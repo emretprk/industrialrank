@@ -138,6 +138,28 @@ ul li{font-size:15px;color:var(--ink2);margin-bottom:8px;line-height:1.6}
 @media(max-width:768px){.review-body{grid-template-columns:1fr}.sidebar{position:static}.img-strip{grid-template-columns:1fr}.img-strip img:not(:first-child){display:none}.pros-cons{grid-template-columns:1fr}.test-metrics{grid-template-columns:repeat(2,1fr)}.card-grid{grid-template-columns:1fr}}
 .wrap{padding:48px 40px}
 </style>
+<script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What is SEER2 and how does it differ from SEER?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "SEER2 is the updated efficiency standard introduced by the U.S. Department of Energy in 2023. It uses a higher external static pressure in testing. SEER2 ratings are typically 4-7% lower than SEER ratings for the same equipment."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "When should I choose a VRF system over a conventional heat pump?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "VRF systems make economic sense when you need simultaneous heating and cooling in different zones, or when you have more than 4 separate zones to condition."
+      }
+    }
+  ]
+}</script>
 </head>
 <body><nav>
   <a href="/" class="logo"><img src="/logo.png" alt="IndustrialRank"></a>
@@ -251,4 +273,55 @@ ul li{font-size:15px;color:var(--ink2);margin-bottom:8px;line-height:1.6}
 function toggleMenu(btn){btn.classList.toggle('active');document.getElementById('mobileMenu').classList.toggle('open')}
 function closeMenu(){document.getElementById('mobileMenu').classList.remove('open')}
 function toggleFaq(el){const a=el.nextElementSibling;const icon=el.querySelector('span');a.classList.toggle('open');icon.textContent=a.classList.contains('open')?'−':'+'}
-</script></body></html>
+</script>
+<section style="max-width:900px;margin:48px auto;padding:0 24px;">
+  <h2 style="font-size:1.4rem;font-weight:700;color:#1a1f2e;margin-bottom:12px;">HVAC Equipment for Industrial and Commercial Applications</h2>
+  <p style="color:#444;line-height:1.7;margin-bottom:16px;">Industrial HVAC covers a wide range of equipment: rooftop packaged units for commercial buildings, variable refrigerant flow (VRF) systems for multi-zone applications, chiller plants for large facilities, and heat pumps for combined heating and cooling. Selecting the wrong category of equipment is a common and costly mistake.</p>
+  <p style="color:#444;line-height:1.7;margin-bottom:16px;">The shift to variable-speed compressors and inverter-driven fans has fundamentally changed the efficiency landscape. Systems rated at SEER2 18 or higher use between 30-45% less energy than fixed-speed equipment from 10 years ago. For facilities paying commercial electricity rates above $0.12/kWh, the payback on high-efficiency equipment is typically 3-6 years.</p>
+  <p style="color:#444;line-height:1.7;margin-bottom:24px;">Our HVAC reviews focus on verified field performance rather than manufacturer-published data. We cross-reference utility rebate program performance data, independent lab tests, and contractor installation feedback to produce scores that reflect real operating conditions.</p>
+
+  <h2 style="font-size:1.4rem;font-weight:700;color:#1a1f2e;margin-bottom:16px;">HVAC Categories We Cover</h2>
+  <table style="width:100%;border-collapse:collapse;margin-bottom:32px;font-size:0.95rem;">
+    <thead>
+      <tr style="background:#1a1f2e;color:#fff;">
+        <th style="padding:12px;text-align:left;">System Type</th>
+        <th style="padding:12px;text-align:left;">Best For</th>
+        <th style="padding:12px;text-align:left;">Efficiency Metric</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr style="border-bottom:1px solid #e4e0d8;">
+        <td style="padding:12px;">Heat Pumps</td>
+        <td style="padding:12px;">Moderate climates, combined heating/cooling</td>
+        <td style="padding:12px;">SEER2, HSPF2, COP</td>
+      </tr>
+      <tr style="background:#f9f8f6;border-bottom:1px solid #e4e0d8;">
+        <td style="padding:12px;">VRF/VRV Systems</td>
+        <td style="padding:12px;">Multi-zone commercial buildings</td>
+        <td style="padding:12px;">IEER, part-load efficiency</td>
+      </tr>
+      <tr style="border-bottom:1px solid #e4e0d8;">
+        <td style="padding:12px;">Rooftop Units (RTU)</td>
+        <td style="padding:12px;">Single-story commercial, retail</td>
+        <td style="padding:12px;">EER2, IEER</td>
+      </tr>
+      <tr style="background:#f9f8f6;">
+        <td style="padding:12px;">Chillers</td>
+        <td style="padding:12px;">Large facilities, process cooling</td>
+        <td style="padding:12px;">kW/ton, IPLV</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h2 style="font-size:1.4rem;font-weight:700;color:#1a1f2e;margin-bottom:12px;">Frequently Asked Questions</h2>
+  <div style="margin-bottom:20px;">
+    <h3 style="font-size:1.05rem;font-weight:600;color:#1a1f2e;margin-bottom:6px;">What is SEER2 and how does it differ from SEER?</h3>
+    <p style="color:#444;line-height:1.7;">SEER2 is the updated efficiency standard introduced by the U.S. Department of Energy in 2023. It uses a higher external static pressure in testing, which more accurately reflects real installation conditions. SEER2 ratings are typically 4-7% lower than SEER ratings for the same equipment. A SEER 16 unit is roughly equivalent to SEER2 15.</p>
+  </div>
+  <div style="margin-bottom:20px;">
+    <h3 style="font-size:1.05rem;font-weight:600;color:#1a1f2e;margin-bottom:6px;">When should I choose a VRF system over a conventional heat pump?</h3>
+    <p style="color:#444;line-height:1.7;">VRF systems make economic sense when you need simultaneous heating and cooling in different zones, or when you have more than 4 separate zones to condition. The refrigerant piping flexibility also reduces installation cost in retrofit applications where ductwork installation would be disruptive or expensive.</p>
+  </div>
+</section>
+
+</body></html>
