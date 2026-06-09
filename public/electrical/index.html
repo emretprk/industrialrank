@@ -138,6 +138,28 @@ ul li{font-size:15px;color:var(--ink2);margin-bottom:8px;line-height:1.6}
 @media(max-width:768px){.review-body{grid-template-columns:1fr}.sidebar{position:static}.img-strip{grid-template-columns:1fr}.img-strip img:not(:first-child){display:none}.pros-cons{grid-template-columns:1fr}.test-metrics{grid-template-columns:repeat(2,1fr)}.card-grid{grid-template-columns:1fr}}
 .wrap{padding:48px 40px}
 </style>
+<script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What is AIC rating on an electrical panel?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "AIC (Ampere Interrupting Capacity) is the maximum fault current a breaker or panel can safely interrupt without failing. Commercial and industrial facilities often have available fault currents of 22kAIC or higher at the service entrance."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What does True RMS mean on a multimeter?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "True RMS meters accurately measure both sinusoidal and non-sinusoidal waveforms. Average-responding meters can be off by 10-40% when measuring distorted waveforms from variable frequency drives and other non-linear loads."
+      }
+    }
+  ]
+}</script>
 </head>
 <body><nav>
   <a href="/" class="logo"><img src="/logo.png" alt="IndustrialRank"></a>
@@ -251,4 +273,55 @@ ul li{font-size:15px;color:var(--ink2);margin-bottom:8px;line-height:1.6}
 function toggleMenu(btn){btn.classList.toggle('active');document.getElementById('mobileMenu').classList.toggle('open')}
 function closeMenu(){document.getElementById('mobileMenu').classList.remove('open')}
 function toggleFaq(el){const a=el.nextElementSibling;const icon=el.querySelector('span');a.classList.toggle('open');icon.textContent=a.classList.contains('open')?'−':'+'}
-</script></body></html>
+</script>
+<section style="max-width:900px;margin:48px auto;padding:0 24px;">
+  <h2 style="font-size:1.4rem;font-weight:700;color:#1a1f2e;margin-bottom:12px;">Industrial Electrical Equipment Reviews</h2>
+  <p style="color:#444;line-height:1.7;margin-bottom:16px;">Industrial electrical equipment spans from load centers and panelboards to precision measurement instruments. The common thread is safety: electrical equipment failures cause more workplace fatalities and facility fires than any other equipment category. Specification decisions here are not primarily about cost per unit but about fault tolerance, arc flash hazard reduction, and long-term serviceability.</p>
+  <p style="color:#444;line-height:1.7;margin-bottom:16px;">NFPA 70 (National Electrical Code) sets the baseline requirements for equipment installation in the U.S., but equipment selection must also account for the specific application. A residential-grade panel in a light commercial setting is a code violation in most jurisdictions. Equipment rated for the correct interrupting capacity, ambient temperature range, and duty cycle is the starting point for any specification.</p>
+  <p style="color:#444;line-height:1.7;margin-bottom:24px;">Our electrical equipment reviews prioritize independently verified safety ratings, field failure data from contractor networks, and total cost including installation labor requirements.</p>
+
+  <h2 style="font-size:1.4rem;font-weight:700;color:#1a1f2e;margin-bottom:16px;">Electrical Equipment Categories</h2>
+  <table style="width:100%;border-collapse:collapse;margin-bottom:32px;font-size:0.95rem;">
+    <thead>
+      <tr style="background:#1a1f2e;color:#fff;">
+        <th style="padding:12px;text-align:left;">Category</th>
+        <th style="padding:12px;text-align:left;">Key Standard</th>
+        <th style="padding:12px;text-align:left;">Critical Rating</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr style="border-bottom:1px solid #e4e0d8;">
+        <td style="padding:12px;">Load Centers / Panels</td>
+        <td style="padding:12px;">UL 67, NFPA 70</td>
+        <td style="padding:12px;">AIC (interrupting capacity)</td>
+      </tr>
+      <tr style="background:#f9f8f6;border-bottom:1px solid #e4e0d8;">
+        <td style="padding:12px;">Circuit Breakers</td>
+        <td style="padding:12px;">UL 489</td>
+        <td style="padding:12px;">Ampere rating, trip curve</td>
+      </tr>
+      <tr style="border-bottom:1px solid #e4e0d8;">
+        <td style="padding:12px;">Multimeters / Test Equipment</td>
+        <td style="padding:12px;">IEC 61010 CAT III/IV</td>
+        <td style="padding:12px;">CAT rating, True RMS</td>
+      </tr>
+      <tr style="background:#f9f8f6;">
+        <td style="padding:12px;">Motor Controls (VFDs)</td>
+        <td style="padding:12px;">NEMA MG1, UL 508C</td>
+        <td style="padding:12px;">HP range, enclosure rating</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h2 style="font-size:1.4rem;font-weight:700;color:#1a1f2e;margin-bottom:12px;">Frequently Asked Questions</h2>
+  <div style="margin-bottom:20px;">
+    <h3 style="font-size:1.05rem;font-weight:600;color:#1a1f2e;margin-bottom:6px;">What is AIC rating on an electrical panel?</h3>
+    <p style="color:#444;line-height:1.7;">AIC (Ampere Interrupting Capacity) is the maximum fault current a breaker or panel can safely interrupt without failing. Most residential panels are rated 10kAIC. Commercial and industrial facilities often have available fault currents of 22kAIC or higher at the service entrance, requiring equipment with a matching or higher AIC rating.</p>
+  </div>
+  <div style="margin-bottom:20px;">
+    <h3 style="font-size:1.05rem;font-weight:600;color:#1a1f2e;margin-bottom:6px;">What does True RMS mean on a multimeter?</h3>
+    <p style="color:#444;line-height:1.7;">True RMS (Root Mean Square) meters accurately measure both sinusoidal and non-sinusoidal waveforms. Average-responding meters can be off by 10-40% when measuring the distorted waveforms produced by variable frequency drives, switching power supplies, and other non-linear loads common in industrial settings.</p>
+  </div>
+</section>
+
+</body></html>
