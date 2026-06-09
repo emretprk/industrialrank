@@ -45,6 +45,21 @@ const SITEMAP = `<?xml version="1.0" encoding="UTF-8"?>
   <url><loc>https://industrialrank.com/mini-splits/mrcool-diy-2-zone-27k-review/</loc><lastmod>2026-06-09</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
   <url><loc>https://industrialrank.com/mini-splits/pioneer-3-zone-27k-mini-split-review/</loc><lastmod>2026-06-09</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
   <url><loc>https://industrialrank.com/mini-splits/mitsubishi-mxz-3c24na-review/</loc><lastmod>2026-06-09</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://industrialrank.com/hvac/aciq-2ton-18seer2-heat-pump-review/</loc><lastmod>2026-06-09</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://industrialrank.com/hvac/trane-runtru-2ton-heat-pump-review/</loc><lastmod>2026-06-09</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://industrialrank.com/hvac/rheem-rp1648aj1na-heat-pump-review/</loc><lastmod>2026-06-09</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://industrialrank.com/hvac/goodman-gsxh503610-ac-system-review/</loc><lastmod>2026-06-09</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://industrialrank.com/hvac/carrier-performance-14-ac-review/</loc><lastmod>2026-06-09</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://industrialrank.com/air-quality/</loc><lastmod>2026-06-09</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://industrialrank.com/air-quality/aprilaire-5000-whole-house-filter-review/</loc><lastmod>2026-06-09</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://industrialrank.com/air-quality/santa-fe-ultra120-dehumidifier-review/</loc><lastmod>2026-06-09</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://industrialrank.com/air-quality/aprilaire-8100-erv-review/</loc><lastmod>2026-06-09</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://industrialrank.com/water-heating/</loc><lastmod>2026-06-09</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://industrialrank.com/water-heating/aciq-50gal-hybrid-heat-pump-wh-review/</loc><lastmod>2026-06-09</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://industrialrank.com/water-heating/rinnai-rl75in-tankless-review/</loc><lastmod>2026-06-09</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://industrialrank.com/commercial-hvac/</loc><lastmod>2026-06-09</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://industrialrank.com/commercial-hvac/reznor-udxc-unit-heater-review/</loc><lastmod>2026-06-09</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://industrialrank.com/commercial-hvac/carrier-50xp-packaged-heat-pump-review/</loc><lastmod>2026-06-09</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
 </urlset>`;
 
 export default {
