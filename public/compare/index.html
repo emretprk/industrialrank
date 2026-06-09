@@ -138,6 +138,36 @@ ul li{font-size:15px;color:var(--ink2);margin-bottom:8px;line-height:1.6}
 @media(max-width:768px){.review-body{grid-template-columns:1fr}.sidebar{position:static}.img-strip{grid-template-columns:1fr}.img-strip img:not(:first-child){display:none}.pros-cons{grid-template-columns:1fr}.test-metrics{grid-template-columns:repeat(2,1fr)}.card-grid{grid-template-columns:1fr}}
 .wrap{padding:48px 40px}
 </style>
+<script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What is the most important factor when comparing HVAC systems?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Efficiency rating (SEER2 for cooling, HSPF2 for heat pumps) determines long-term operating cost. In commercial facilities running 3,000+ hours per year, a 2-point SEER2 difference can translate to $800-$1,500 in annual energy savings per ton of cooling capacity."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I compare industrial pumps for my application?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Start with your system curve: required flow rate in GPM and total dynamic head in feet. Plot these against the pump curve from the manufacturer. The best pump is one whose best efficiency point (BEP) sits closest to your operating conditions."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What does CAT rating mean on a multimeter?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "CAT ratings classify the electrical environment where a meter can be safely used. CAT III covers distribution-level circuits up to 1,000V, while CAT IV covers utility and outdoor service entrance equipment."
+      }
+    }
+  ]
+}</script>
 </head>
 <body><nav>
   <a href="/" class="logo"><img src="/logo.png" alt="IndustrialRank"></a>
@@ -259,4 +289,65 @@ ul li{font-size:15px;color:var(--ink2);margin-bottom:8px;line-height:1.6}
 function toggleMenu(btn){btn.classList.toggle('active');document.getElementById('mobileMenu').classList.toggle('open')}
 function closeMenu(){document.getElementById('mobileMenu').classList.remove('open')}
 function toggleFaq(el){const a=el.nextElementSibling;const icon=el.querySelector('span');a.classList.toggle('open');icon.textContent=a.classList.contains('open')?'−':'+'}
-</script></body></html>
+</script>
+<section style="max-width:900px;margin:48px auto;padding:0 24px;">
+  <h2 style="font-size:1.4rem;font-weight:700;color:#1a1f2e;margin-bottom:12px;">How to Compare Industrial Equipment</h2>
+  <p style="color:#444;line-height:1.7;margin-bottom:16px;">Choosing the right industrial equipment comes down to three variables: efficiency rating, operating cost over a 10-year horizon, and compatibility with your existing infrastructure. A heat pump rated at SEER2 22 may cost 30% more upfront than a SEER2 16 unit but delivers payback within 4-5 years in most commercial applications.</p>
+  <p style="color:#444;line-height:1.7;margin-bottom:16px;">For electrical equipment, the comparison shifts to interrupting capacity, voltage range, and UL listing. A panel rated at 200A with a 10kAIC interrupting capacity is not suitable for facilities where fault current exceeds that threshold, regardless of price.</p>
+  <p style="color:#444;line-height:1.7;margin-bottom:24px;">Pump selection follows the affinity laws: doubling impeller speed increases flow proportionally but cubes the power draw. Centrifugal pumps dominate general industrial use, while positive displacement pumps handle high-viscosity fluids where centrifugal designs lose efficiency rapidly.</p>
+
+  <h2 style="font-size:1.4rem;font-weight:700;color:#1a1f2e;margin-bottom:12px;">Key Comparison Metrics by Category</h2>
+  <table style="width:100%;border-collapse:collapse;margin-bottom:32px;font-size:0.95rem;">
+    <thead>
+      <tr style="background:#1a1f2e;color:#fff;">
+        <th style="padding:12px;text-align:left;">Category</th>
+        <th style="padding:12px;text-align:left;">Primary Metric</th>
+        <th style="padding:12px;text-align:left;">Secondary Metric</th>
+        <th style="padding:12px;text-align:left;">Typical Lifespan</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr style="border-bottom:1px solid #e4e0d8;">
+        <td style="padding:12px;">HVAC Systems</td>
+        <td style="padding:12px;">SEER2 / COP</td>
+        <td style="padding:12px;">BTU capacity</td>
+        <td style="padding:12px;">15-20 years</td>
+      </tr>
+      <tr style="background:#f9f8f6;border-bottom:1px solid #e4e0d8;">
+        <td style="padding:12px;">Industrial Pumps</td>
+        <td style="padding:12px;">Flow rate (GPM)</td>
+        <td style="padding:12px;">Head pressure (PSI)</td>
+        <td style="padding:12px;">10-15 years</td>
+      </tr>
+      <tr style="border-bottom:1px solid #e4e0d8;">
+        <td style="padding:12px;">Electrical Panels</td>
+        <td style="padding:12px;">Amperage rating</td>
+        <td style="padding:12px;">Interrupting capacity</td>
+        <td style="padding:12px;">25-40 years</td>
+      </tr>
+      <tr style="background:#f9f8f6;">
+        <td style="padding:12px;">Multimeters</td>
+        <td style="padding:12px;">CAT rating</td>
+        <td style="padding:12px;">True RMS capability</td>
+        <td style="padding:12px;">10+ years</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h2 style="font-size:1.4rem;font-weight:700;color:#1a1f2e;margin-bottom:12px;">Frequently Asked Questions</h2>
+
+  <div style="margin-bottom:20px;">
+    <h3 style="font-size:1.05rem;font-weight:600;color:#1a1f2e;margin-bottom:6px;">What is the most important factor when comparing HVAC systems?</h3>
+    <p style="color:#444;line-height:1.7;">Efficiency rating (SEER2 for cooling, HSPF2 for heat pumps) determines long-term operating cost. In commercial facilities running 3,000+ hours per year, a 2-point SEER2 difference can translate to $800-$1,500 in annual energy savings per ton of cooling capacity.</p>
+  </div>
+  <div style="margin-bottom:20px;">
+    <h3 style="font-size:1.05rem;font-weight:600;color:#1a1f2e;margin-bottom:6px;">How do I compare industrial pumps for my application?</h3>
+    <p style="color:#444;line-height:1.7;">Start with your system curve: required flow rate in GPM and total dynamic head in feet. Plot these against the pump curve from the manufacturer. The best pump is one whose best efficiency point (BEP) sits closest to your operating conditions. Running a pump far from BEP accelerates wear and increases energy costs by 15-25%.</p>
+  </div>
+  <div style="margin-bottom:20px;">
+    <h3 style="font-size:1.05rem;font-weight:600;color:#1a1f2e;margin-bottom:6px;">What does CAT rating mean on a multimeter?</h3>
+    <p style="color:#444;line-height:1.7;">CAT (Category) ratings classify the electrical environment where a meter can be safely used. CAT III covers distribution-level circuits up to 1,000V, while CAT IV covers utility and outdoor service entrance equipment. Using a CAT II meter in a CAT III environment creates a serious arc flash risk.</p>
+  </div>
+</section>
+
+</body></html>
