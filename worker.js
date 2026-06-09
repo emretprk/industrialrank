@@ -36,6 +36,15 @@ const SITEMAP = `<?xml version="1.0" encoding="UTF-8"?>
   <url><loc>https://industrialrank.com/electrical/klein-tools-mm400-multimeter-review/</loc><lastmod>2026-06-09</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
   <url><loc>https://industrialrank.com/electrical/square-d-hom2160pcvp-panel-review/</loc><lastmod>2026-06-09</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
   <url><loc>https://industrialrank.com/pumps/wayne-cdu980e-sump-pump-review/</loc><lastmod>2026-06-09</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://industrialrank.com/mini-splits/</loc><lastmod>2026-06-09</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://industrialrank.com/mini-splits/mrcool-diy-36k-mini-split-review/</loc><lastmod>2026-06-09</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://industrialrank.com/mini-splits/senville-leto-12k-mini-split-review/</loc><lastmod>2026-06-09</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://industrialrank.com/mini-splits/pioneer-wb009gmfi22m-mini-split-review/</loc><lastmod>2026-06-09</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://industrialrank.com/mini-splits/lg-ls120hev2-mini-split-review/</loc><lastmod>2026-06-09</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://industrialrank.com/mini-splits/cooper-hunter-sophia-24k-review/</loc><lastmod>2026-06-09</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://industrialrank.com/mini-splits/mrcool-diy-2-zone-27k-review/</loc><lastmod>2026-06-09</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://industrialrank.com/mini-splits/pioneer-3-zone-27k-mini-split-review/</loc><lastmod>2026-06-09</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://industrialrank.com/mini-splits/mitsubishi-mxz-3c24na-review/</loc><lastmod>2026-06-09</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
 </urlset>`;
 
 export default {
