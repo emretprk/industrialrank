@@ -138,6 +138,28 @@ ul li{font-size:15px;color:var(--ink2);margin-bottom:8px;line-height:1.6}
 @media(max-width:768px){.review-body{grid-template-columns:1fr}.sidebar{position:static}.img-strip{grid-template-columns:1fr}.img-strip img:not(:first-child){display:none}.pros-cons{grid-template-columns:1fr}.test-metrics{grid-template-columns:repeat(2,1fr)}.card-grid{grid-template-columns:1fr}}
 .wrap{padding:48px 40px}
 </style>
+<script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How do I know what size HVAC system I need?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The correct method is a Manual J load calculation, which accounts for square footage, insulation values, window area, local climate data, and occupancy. A rule-of-thumb estimate (1 ton per 500 sq ft) is often inaccurate by 20-40%."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is the difference between a centrifugal and positive displacement pump?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Centrifugal pumps move fluid using rotational kinetic energy and work best with low-viscosity fluids at variable flow rates. Positive displacement pumps move a fixed volume per revolution regardless of pressure, making them ideal for high-viscosity fluids or applications requiring consistent flow at high pressure."
+      }
+    }
+  ]
+}</script>
 </head>
 <body><nav>
   <a href="/" class="logo"><img src="/logo.png" alt="IndustrialRank"></a>
@@ -236,4 +258,64 @@ ul li{font-size:15px;color:var(--ink2);margin-bottom:8px;line-height:1.6}
 function toggleMenu(btn){btn.classList.toggle('active');document.getElementById('mobileMenu').classList.toggle('open')}
 function closeMenu(){document.getElementById('mobileMenu').classList.remove('open')}
 function toggleFaq(el){const a=el.nextElementSibling;const icon=el.querySelector('span');a.classList.toggle('open');icon.textContent=a.classList.contains('open')?'−':'+'}
-</script></body></html>
+</script>
+<section style="max-width:900px;margin:48px auto;padding:0 24px;">
+  <h2 style="font-size:1.4rem;font-weight:700;color:#1a1f2e;margin-bottom:12px;">How to Find the Right Industrial Equipment</h2>
+  <p style="color:#444;line-height:1.7;margin-bottom:16px;">Finding the right equipment starts with defining the operating envelope: the minimum and maximum conditions the equipment must handle, not just the average case. Undersized equipment running continuously near its limit fails faster and consumes more energy than a correctly sized unit running at 70-80% of capacity.</p>
+  <p style="color:#444;line-height:1.7;margin-bottom:24px;">For HVAC, load calculation per ACCA Manual J determines the correct BTU requirement. Oversizing by more than 15% causes short-cycling, which reduces dehumidification efficiency and accelerates compressor wear. For pumps, the system curve intersection with the pump curve defines your operating point. For electrical equipment, load analysis and fault current calculations are non-negotiable before specifying panels or switchgear.</p>
+
+  <h2 style="font-size:1.4rem;font-weight:700;color:#1a1f2e;margin-bottom:16px;">Equipment Selection Guide by Application</h2>
+  <table style="width:100%;border-collapse:collapse;margin-bottom:32px;font-size:0.95rem;">
+    <thead>
+      <tr style="background:#1a1f2e;color:#fff;">
+        <th style="padding:12px;text-align:left;">Application</th>
+        <th style="padding:12px;text-align:left;">Recommended Type</th>
+        <th style="padding:12px;text-align:left;">Key Spec to Check</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr style="border-bottom:1px solid #e4e0d8;">
+        <td style="padding:12px;">Office building cooling</td>
+        <td style="padding:12px;">Variable-speed heat pump</td>
+        <td style="padding:12px;">SEER2 rating, zoning capability</td>
+      </tr>
+      <tr style="background:#f9f8f6;border-bottom:1px solid #e4e0d8;">
+        <td style="padding:12px;">Cold climate heating</td>
+        <td style="padding:12px;">Hyper-heat mini split or dual fuel</td>
+        <td style="padding:12px;">Rated capacity at 5°F ambient</td>
+      </tr>
+      <tr style="border-bottom:1px solid #e4e0d8;">
+        <td style="padding:12px;">Process water circulation</td>
+        <td style="padding:12px;">ANSI centrifugal pump</td>
+        <td style="padding:12px;">BEP at your operating point</td>
+      </tr>
+      <tr style="background:#f9f8f6;border-bottom:1px solid #e4e0d8;">
+        <td style="padding:12px;">Chemical transfer</td>
+        <td style="padding:12px;">Mag-drive or mechanical seal centrifugal</td>
+        <td style="padding:12px;">Material compatibility with fluid</td>
+      </tr>
+      <tr style="border-bottom:1px solid #e4e0d8;">
+        <td style="padding:12px;">Panel upgrade</td>
+        <td style="padding:12px;">Main breaker panel, 200A minimum</td>
+        <td style="padding:12px;">AIC rating vs available fault current</td>
+      </tr>
+      <tr style="background:#f9f8f6;">
+        <td style="padding:12px;">Field electrical testing</td>
+        <td style="padding:12px;">True RMS multimeter, CAT III/IV</td>
+        <td style="padding:12px;">Input impedance, display resolution</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h2 style="font-size:1.4rem;font-weight:700;color:#1a1f2e;margin-bottom:12px;">Frequently Asked Questions</h2>
+  <div style="margin-bottom:20px;">
+    <h3 style="font-size:1.05rem;font-weight:600;color:#1a1f2e;margin-bottom:6px;">How do I know what size HVAC system I need?</h3>
+    <p style="color:#444;line-height:1.7;">The correct method is a Manual J load calculation, which accounts for square footage, insulation values, window area, local climate data, and occupancy. A rule-of-thumb estimate (1 ton per 500 sq ft) is often inaccurate by 20-40% and leads to oversized or undersized equipment.</p>
+  </div>
+  <div style="margin-bottom:20px;">
+    <h3 style="font-size:1.05rem;font-weight:600;color:#1a1f2e;margin-bottom:6px;">What is the difference between a centrifugal and positive displacement pump?</h3>
+    <p style="color:#444;line-height:1.7;">Centrifugal pumps move fluid using rotational kinetic energy and work best with low-viscosity fluids at variable flow rates. Positive displacement pumps move a fixed volume per revolution regardless of pressure, making them ideal for high-viscosity fluids or applications requiring consistent flow at high pressure.</p>
+  </div>
+</section>
+
+</body></html>
