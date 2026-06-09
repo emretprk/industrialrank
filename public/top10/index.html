@@ -138,6 +138,28 @@ ul li{font-size:15px;color:var(--ink2);margin-bottom:8px;line-height:1.6}
 @media(max-width:768px){.review-body{grid-template-columns:1fr}.sidebar{position:static}.img-strip{grid-template-columns:1fr}.img-strip img:not(:first-child){display:none}.pros-cons{grid-template-columns:1fr}.test-metrics{grid-template-columns:repeat(2,1fr)}.card-grid{grid-template-columns:1fr}}
 .wrap{padding:48px 40px}
 </style>
+<script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How often are IndustrialRank top 10 rankings updated?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Rankings are reviewed quarterly and updated when new model data becomes available or when field performance reports indicate a significant change in reliability or efficiency ratings."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Are IndustrialRank rankings sponsored by manufacturers?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. IndustrialRank does not accept payment from manufacturers to influence rankings. Revenue comes from affiliate commissions when readers purchase through our links, which does not affect evaluation scores."
+      }
+    }
+  ]
+}</script>
 </head>
 <body><nav>
   <a href="/" class="logo"><img src="/logo.png" alt="IndustrialRank"></a>
@@ -235,4 +257,49 @@ ul li{font-size:15px;color:var(--ink2);margin-bottom:8px;line-height:1.6}
 function toggleMenu(btn){btn.classList.toggle('active');document.getElementById('mobileMenu').classList.toggle('open')}
 function closeMenu(){document.getElementById('mobileMenu').classList.remove('open')}
 function toggleFaq(el){const a=el.nextElementSibling;const icon=el.querySelector('span');a.classList.toggle('open');icon.textContent=a.classList.contains('open')?'−':'+'}
-</script></body></html>
+</script>
+<section style="max-width:900px;margin:48px auto;padding:0 24px;">
+  <h2 style="font-size:1.4rem;font-weight:700;color:#1a1f2e;margin-bottom:12px;">How We Rank Industrial Equipment</h2>
+  <p style="color:#444;line-height:1.7;margin-bottom:16px;">Every product on IndustrialRank is evaluated across five dimensions: verified performance data from independent testing, total cost of ownership over a standard 10-year service life, installation complexity, parts availability in North America, and warranty terms. We do not accept manufacturer payments to influence rankings.</p>
+  <p style="color:#444;line-height:1.7;margin-bottom:24px;">Rankings are updated when new model years are released or when significant field data shifts the performance picture. Last update: June 2026.</p>
+
+  <h2 style="font-size:1.4rem;font-weight:700;color:#1a1f2e;margin-bottom:16px;">Top 10 Heat Pumps for Commercial Use (2026)</h2>
+  <ol style="padding-left:20px;color:#444;line-height:1.9;margin-bottom:32px;">
+    <li><strong>Carrier Infinity 20</strong> – Best overall efficiency, SEER2 22, 10-year parts warranty</li>
+    <li><strong>Daikin DX20VC</strong> – Variable-speed compressor, quiet operation, strong cold-climate performance</li>
+    <li><strong>Trane XV20i</strong> – TruComfort variable speed, reliable service network across North America</li>
+    <li><strong>Lennox XC21</strong> – SilentComfort technology, rated at SEER2 21.5 in independent tests</li>
+    <li><strong>Bosch IDS Premium</strong> – Best value in the 3-5 ton range, reliable in extreme temperatures</li>
+    <li><strong>Mitsubishi Hyper Heat</strong> – Operates at -13°F, best choice for cold climates</li>
+    <li><strong>Bryant Evolution 280A</strong> – Carrier-built platform at a lower price point</li>
+    <li><strong>Rheem Prestige</strong> – Mid-tier efficiency, strongest warranty in its class</li>
+    <li><strong>Goodman GSZC18</strong> – Best budget option for light commercial, reliable compressor</li>
+    <li><strong>American Standard Platinum 18</strong> – Trane-derived platform, solid distributor network</li>
+  </ol>
+
+  <h2 style="font-size:1.4rem;font-weight:700;color:#1a1f2e;margin-bottom:16px;">Top 10 Industrial Pumps (2026)</h2>
+  <ol style="padding-left:20px;color:#444;line-height:1.9;margin-bottom:32px;">
+    <li><strong>Xylem Goulds 3196</strong> – Industry standard ANSI centrifugal pump, 40+ year track record</li>
+    <li><strong>Grundfos CM5-5</strong> – Best multi-stage for pressure boosting applications</li>
+    <li><strong>Flowserve Mark 3</strong> – Chemical process standard, widest seal selection</li>
+    <li><strong>Armstrong Design Envelope</strong> – Intelligent pump, EC motor, best energy savings</li>
+    <li><strong>ITT Goulds 3996</strong> – Heavy-duty API 610 for refinery and petrochemical</li>
+    <li><strong>Bell &amp; Gossett Series e-90</strong> – Dominant in HVAC hydronic systems</li>
+    <li><strong>Sulzer CPT</strong> – Best for high-temperature process applications</li>
+    <li><strong>KSB Etanorm</strong> – EN733 standard, strong in European-spec facilities</li>
+    <li><strong>Pentair Aurora 340</strong> – Municipal water best-seller in North America</li>
+    <li><strong>Gorman-Rupp T-Series</strong> – Best self-priming for wastewater applications</li>
+  </ol>
+
+  <h2 style="font-size:1.4rem;font-weight:700;color:#1a1f2e;margin-bottom:12px;">Frequently Asked Questions</h2>
+  <div style="margin-bottom:20px;">
+    <h3 style="font-size:1.05rem;font-weight:600;color:#1a1f2e;margin-bottom:6px;">How often are these rankings updated?</h3>
+    <p style="color:#444;line-height:1.7;">Rankings are reviewed quarterly and updated when new model data becomes available or when field performance reports indicate a significant change in reliability or efficiency ratings.</p>
+  </div>
+  <div style="margin-bottom:20px;">
+    <h3 style="font-size:1.05rem;font-weight:600;color:#1a1f2e;margin-bottom:6px;">Are these rankings sponsored by manufacturers?</h3>
+    <p style="color:#444;line-height:1.7;">No. IndustrialRank does not accept payment from manufacturers to influence rankings. Revenue comes from affiliate commissions when readers purchase through our links, which does not affect evaluation scores.</p>
+  </div>
+</section>
+
+</body></html>
