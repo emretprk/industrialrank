@@ -22,6 +22,15 @@ const SITEMAP = `<?xml version="1.0" encoding="UTF-8"?>
   <url><loc>https://industrialrank.com/blog/compressed-air-systems-2026/</loc><lastmod>2026-06-09</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://industrialrank.com/about/</loc><lastmod>2026-06-09</lastmod><changefreq>yearly</changefreq><priority>0.5</priority></url>
   <url><loc>https://industrialrank.com/contact/</loc><lastmod>2026-06-09</lastmod><changefreq>yearly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://industrialrank.com/hvac/lennox-xc21-air-conditioner-review/</loc><lastmod>2026-06-09</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://industrialrank.com/hvac/goodman-gsx160481-heat-pump-review/</loc><lastmod>2026-06-09</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://industrialrank.com/hvac/mitsubishi-mxz-4c36na-mini-split-review/</loc><lastmod>2026-06-09</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://industrialrank.com/hvac/trane-xr15-heat-pump-review/</loc><lastmod>2026-06-09</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://industrialrank.com/hvac/bosch-bova-60hdn1-heat-pump-review/</loc><lastmod>2026-06-09</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://industrialrank.com/pumps/little-giant-553271-sump-pump-review/</loc><lastmod>2026-06-09</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://industrialrank.com/pumps/zoeller-m53-sump-pump-review/</loc><lastmod>2026-06-09</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://industrialrank.com/electrical/fluke-323-clamp-meter-review/</loc><lastmod>2026-06-09</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://industrialrank.com/pumps/grundfos-up15-29su-circulator-review/</loc><lastmod>2026-06-09</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
 </urlset>`;
 
 export default {
