@@ -138,6 +138,28 @@ ul li{font-size:15px;color:var(--ink2);margin-bottom:8px;line-height:1.6}
 @media(max-width:768px){.review-body{grid-template-columns:1fr}.sidebar{position:static}.img-strip{grid-template-columns:1fr}.img-strip img:not(:first-child){display:none}.pros-cons{grid-template-columns:1fr}.test-metrics{grid-template-columns:repeat(2,1fr)}.card-grid{grid-template-columns:1fr}}
 .wrap{padding:48px 40px}
 </style>
+<script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What is Best Efficiency Point (BEP) in a pump?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "BEP is the flow rate at which a pump operates at maximum hydraulic efficiency. Good pump selection targets operation between 80-110% of BEP under normal conditions."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is NPSH and why does it matter for pump selection?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Net Positive Suction Head (NPSH) is the minimum pressure required at the pump inlet to prevent cavitation. NPSHa (available) must exceed NPSHr (required) by a margin of at least 2-3 feet to prevent impeller erosion and pump failure."
+      }
+    }
+  ]
+}</script>
 </head>
 <body><nav>
   <a href="/" class="logo"><img src="/logo.png" alt="IndustrialRank"></a>
@@ -242,4 +264,60 @@ ul li{font-size:15px;color:var(--ink2);margin-bottom:8px;line-height:1.6}
 function toggleMenu(btn){btn.classList.toggle('active');document.getElementById('mobileMenu').classList.toggle('open')}
 function closeMenu(){document.getElementById('mobileMenu').classList.remove('open')}
 function toggleFaq(el){const a=el.nextElementSibling;const icon=el.querySelector('span');a.classList.toggle('open');icon.textContent=a.classList.contains('open')?'−':'+'}
-</script></body></html>
+</script>
+<section style="max-width:900px;margin:48px auto;padding:0 24px;">
+  <h2 style="font-size:1.4rem;font-weight:700;color:#1a1f2e;margin-bottom:12px;">Industrial Pump Reviews and Selection Guide</h2>
+  <p style="color:#444;line-height:1.7;margin-bottom:16px;">Industrial pumps account for roughly 20% of global electricity consumption and up to 50% of energy use in some process industries. Pump selection is an engineering decision with long-term cost consequences. A pump operating at 60% of its best efficiency point (BEP) uses 15-25% more energy than one sized correctly, and typically fails 3-5 years earlier due to radial thrust loads and seal stress.</p>
+  <p style="color:#444;line-height:1.7;margin-bottom:16px;">The Hydraulic Institute (HI) and ANSI/ASME standards define the geometric and performance requirements for centrifugal pumps used in industrial service. ANSI B73.1 covers horizontal end-suction pumps, the most common configuration in general industrial use. API 610 covers heavier-duty pumps for refinery and petrochemical service.</p>
+  <p style="color:#444;line-height:1.7;margin-bottom:24px;">Our pump reviews include independently sourced performance curve data where available, along with reliability data from plant maintenance databases and contractor feedback. We cover centrifugal, positive displacement, submersible, and specialty pump categories.</p>
+
+  <h2 style="font-size:1.4rem;font-weight:700;color:#1a1f2e;margin-bottom:16px;">Pump Types by Application</h2>
+  <table style="width:100%;border-collapse:collapse;margin-bottom:32px;font-size:0.95rem;">
+    <thead>
+      <tr style="background:#1a1f2e;color:#fff;">
+        <th style="padding:12px;text-align:left;">Pump Type</th>
+        <th style="padding:12px;text-align:left;">Best Application</th>
+        <th style="padding:12px;text-align:left;">Key Standard</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr style="border-bottom:1px solid #e4e0d8;">
+        <td style="padding:12px;">ANSI Centrifugal</td>
+        <td style="padding:12px;">General process, water, light chemicals</td>
+        <td style="padding:12px;">ANSI/ASME B73.1</td>
+      </tr>
+      <tr style="background:#f9f8f6;border-bottom:1px solid #e4e0d8;">
+        <td style="padding:12px;">API Centrifugal</td>
+        <td style="padding:12px;">Refinery, petrochemical, high-temp</td>
+        <td style="padding:12px;">API 610</td>
+      </tr>
+      <tr style="border-bottom:1px solid #e4e0d8;">
+        <td style="padding:12px;">Multi-stage</td>
+        <td style="padding:12px;">High pressure, boiler feed, RO systems</td>
+        <td style="padding:12px;">ISO 5199</td>
+      </tr>
+      <tr style="background:#f9f8f6;border-bottom:1px solid #e4e0d8;">
+        <td style="padding:12px;">Positive Displacement</td>
+        <td style="padding:12px;">High viscosity, metering, slurries</td>
+        <td style="padding:12px;">HI 3.1-3.5</td>
+      </tr>
+      <tr>
+        <td style="padding:12px;">Submersible</td>
+        <td style="padding:12px;">Wastewater, dewatering, sump</td>
+        <td style="padding:12px;">UL 778</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h2 style="font-size:1.4rem;font-weight:700;color:#1a1f2e;margin-bottom:12px;">Frequently Asked Questions</h2>
+  <div style="margin-bottom:20px;">
+    <h3 style="font-size:1.05rem;font-weight:600;color:#1a1f2e;margin-bottom:6px;">What is Best Efficiency Point (BEP) in a pump?</h3>
+    <p style="color:#444;line-height:1.7;">BEP is the flow rate at which a pump operates at maximum hydraulic efficiency. Operating far from BEP increases radial thrust on the shaft and impeller, accelerates seal and bearing wear, and raises energy consumption. Good pump selection targets operation between 80-110% of BEP under normal conditions.</p>
+  </div>
+  <div style="margin-bottom:20px;">
+    <h3 style="font-size:1.05rem;font-weight:600;color:#1a1f2e;margin-bottom:6px;">What is NPSH and why does it matter for pump selection?</h3>
+    <p style="color:#444;line-height:1.7;">Net Positive Suction Head (NPSH) is the minimum pressure required at the pump inlet to prevent cavitation. NPSHa (available) must exceed NPSHr (required) by a margin of at least 2-3 feet. Cavitation causes impeller erosion, vibration, and noise, and can destroy a pump within months of installation.</p>
+  </div>
+</section>
+
+</body></html>
