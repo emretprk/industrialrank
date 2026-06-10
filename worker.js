@@ -109,7 +109,6 @@ export default {
     }
 
     // Image Proxy — HVACDirect hotlink bypass
-    // URL format: /img/?u=https://hvacdirect.com/media/...
     if (url.pathname === '/img/') {
       const imgUrl = url.searchParams.get('u');
       if (!imgUrl || !imgUrl.startsWith('https://hvacdirect.com/')) {
@@ -117,25 +116,32 @@ export default {
       }
       try {
         const imgResponse = await fetch(imgUrl, {
+          cf: { cacheEverything: false },
           headers: {
-            'User-Agent': 'Mozilla/5.0 (compatible; Googlebot/2.1)',
+            'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
             'Referer': 'https://hvacdirect.com/',
-            'Accept': 'image/webp,image/apng,image/*,*/*;q=0.8',
+            'Accept': 'image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8',
+            'Accept-Language': 'en-US,en;q=0.9',
+            'Accept-Encoding': 'gzip, deflate, br',
+            'Sec-Fetch-Dest': 'image',
+            'Sec-Fetch-Mode': 'no-cors',
+            'Sec-Fetch-Site': 'same-origin',
           }
         });
-        if (!imgResponse.ok) {
-          return new Response('Image not found', { status: 404 });
+        if (imgResponse.ok) {
+          const contentType = imgResponse.headers.get('Content-Type') || 'image/jpeg';
+          return new Response(imgResponse.body, {
+            headers: {
+              'Content-Type': contentType,
+              'Cache-Control': 'public, max-age=2592000',
+              'Access-Control-Allow-Origin': '*',
+            }
+          });
         }
-        const contentType = imgResponse.headers.get('Content-Type') || 'image/jpeg';
-        return new Response(imgResponse.body, {
-          headers: {
-            'Content-Type': contentType,
-            'Cache-Control': 'public, max-age=2592000', // 30 gün cache
-            'Access-Control-Allow-Origin': '*',
-          }
-        });
+        // Fallback: redirect to HVACDirect directly
+        return Response.redirect(imgUrl, 302);
       } catch(e) {
-        return new Response('Proxy error', { status: 502 });
+        return Response.redirect(imgUrl, 302);
       }
     }
 
