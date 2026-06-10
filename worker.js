@@ -108,6 +108,37 @@ export default {
       return Response.redirect('https://industrialrank.com' + target, 301);
     }
 
+    // Image Proxy — HVACDirect hotlink bypass
+    // URL format: /img/?u=https://hvacdirect.com/media/...
+    if (url.pathname === '/img/') {
+      const imgUrl = url.searchParams.get('u');
+      if (!imgUrl || !imgUrl.startsWith('https://hvacdirect.com/')) {
+        return new Response('Bad Request', { status: 400 });
+      }
+      try {
+        const imgResponse = await fetch(imgUrl, {
+          headers: {
+            'User-Agent': 'Mozilla/5.0 (compatible; Googlebot/2.1)',
+            'Referer': 'https://hvacdirect.com/',
+            'Accept': 'image/webp,image/apng,image/*,*/*;q=0.8',
+          }
+        });
+        if (!imgResponse.ok) {
+          return new Response('Image not found', { status: 404 });
+        }
+        const contentType = imgResponse.headers.get('Content-Type') || 'image/jpeg';
+        return new Response(imgResponse.body, {
+          headers: {
+            'Content-Type': contentType,
+            'Cache-Control': 'public, max-age=2592000', // 30 gün cache
+            'Access-Control-Allow-Origin': '*',
+          }
+        });
+      } catch(e) {
+        return new Response('Proxy error', { status: 502 });
+      }
+    }
+
     // Sitemap
     if (url.pathname === '/sitemap.xml') {
       return new Response(SITEMAP, {
