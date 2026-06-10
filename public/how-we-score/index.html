@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>How IndustrialRank Scores Products | IndustrialRank</title>
+<meta name="description" content="IndustrialRank scoring methodology explained. How we calculate product scores using verified specs, data sources, and weighting formulas. Transparent and updated.">
+<link rel="canonical" href="https://industrialrank.com/how-we-score/">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "name": "How IndustrialRank Scores Products",
+  "url": "https://industrialrank.com/how-we-score/",
+  "description": "IndustrialRank scoring methodology: data sources, weighting formula, and update logic.",
+  "publisher": {"@type": "Organization", "name": "IndustrialRank", "url": "https://industrialrank.com/"}
+}
+</script>
+<style>
+:root{--ink:#0F1923;--sig:#FF5C1A;--stl:#F0F4F7;--grn:#1A7A4A;--rul:#E2E8ED;--mid:#4A5568;
+  --fh:'Inter',sans-serif;--fb:'Georgia',serif;--fd:'IBM Plex Mono',monospace;}
+*{box-sizing:border-box;margin:0;padding:0;}
+body{font-family:var(--fb);color:var(--ink);line-height:1.7;background:#fff;}
+.hdr{background:var(--ink);padding:0 24px;height:56px;display:flex;align-items:center;justify-content:space-between;}
+.logo{color:#fff;font-family:var(--fh);font-size:20px;font-weight:800;text-decoration:none;}
+.logo span{color:var(--sig);}
+.nav a{color:rgba(255,255,255,.7);font-family:var(--fh);font-size:13px;text-decoration:none;margin-left:20px;}
+.bc{padding:10px 24px;font-family:var(--fh);font-size:12px;color:var(--mid);background:var(--stl);border-bottom:1px solid var(--rul);}
+.bc a{color:var(--mid);text-decoration:none;}
+.pw{max-width:800px;margin:0 auto;padding:40px 24px 80px;}
+h1{font-family:var(--fh);font-size:32px;font-weight:800;margin-bottom:12px;}
+.lead{font-size:18px;color:var(--mid);margin-bottom:40px;line-height:1.6;}
+h2{font-family:var(--fh);font-size:20px;font-weight:700;margin:36px 0 14px;padding-bottom:8px;border-bottom:2px solid var(--rul);}
+h3{font-family:var(--fh);font-size:16px;font-weight:700;margin:20px 0 8px;}
+p{font-size:16px;line-height:1.75;margin-bottom:14px;}
+/* Score breakdown table */
+.score-table{width:100%;border-collapse:collapse;font-family:var(--fh);font-size:14px;margin:16px 0 24px;}
+.score-table th{background:var(--ink);color:#fff;padding:12px 16px;text-align:left;}
+.score-table td{padding:12px 16px;border-bottom:1px solid var(--rul);}
+.score-table tr:nth-child(even) td{background:var(--stl);}
+.score-table td:first-child{font-weight:600;width:20%;}
+.score-table td:nth-child(2){width:15%;font-family:var(--fd);color:var(--sig);}
+/* Formula box */
+.formula{background:var(--ink);color:#fff;border-radius:8px;padding:24px 28px;margin:20px 0;font-family:var(--fd);font-size:15px;line-height:2;}
+.formula span{color:var(--sig);}
+/* Source list */
+.source-list{list-style:none;display:grid;gap:10px;margin:14px 0;}
+.source-list li{font-family:var(--fh);font-size:14px;padding:12px 16px;background:var(--stl);border-radius:6px;border-left:3px solid var(--sig);}
+.source-list a{color:var(--sig);text-decoration:none;}
+.source-list a:hover{text-decoration:underline;}
+/* Warning box */
+.warn{background:#FFF5F0;border:1px solid var(--sig);border-radius:6px;padding:16px 20px;margin:20px 0;font-family:var(--fh);font-size:14px;color:var(--ink);}
+.warn strong{color:var(--sig);}
+/* Footer */
+.ftr{background:var(--ink);color:rgba(255,255,255,.5);padding:24px;font-family:var(--fh);font-size:12px;text-align:center;}
+.ftr a{color:rgba(255,255,255,.5);}
+</style>
+</head>
+<body>
+
+<header class="hdr">
+  <a href="/" class="logo">Industrial<span>Rank</span></a>
+  <nav class="nav">
+    <a href="/mini-splits/">Mini Splits</a>
+    <a href="/heat-pumps/">Heat Pumps</a>
+    <a href="/brands/">Brands</a>
+  </nav>
+</header>
+
+<div class="bc"><a href="/">Home</a> › How We Score</div>
+
+<div class="pw">
+
+  <h1>How IndustrialRank Scores Products</h1>
+  <p class="lead">The IndustrialRank Score is a calculated metric derived entirely from verified, publicly available product specifications. It is not a user review score, an editorial opinion score, or a paid placement score.</p>
+
+  <div class="warn">
+    <strong>Important:</strong> IndustrialRank Scores are calculated metrics based on manufacturer-published and AHRI-certified specifications. They reflect objective performance characteristics — not subjective quality assessments. Always verify specifications on the merchant product page before purchasing.
+  </div>
+
+  <h2>What the IndustrialRank Score Is (and Isn't)</h2>
+  <p><strong>It is:</strong> A weighted composite of four objective, verifiable product attributes derived from certified spec data. Each sub-score maps to a specific data source that you can verify independently.</p>
+  <p><strong>It is not:</strong> A user review score, an editorial recommendation, a paid ranking, or a prediction of long-term reliability. IndustrialRank does not conduct independent laboratory testing.</p>
+
+  <h2>The Four Sub-Scores</h2>
+
+  <table class="score-table">
+    <thead>
+      <tr>
+        <th>Sub-Score</th>
+        <th>Weight</th>
+        <th>What It Measures</th>
+        <th>Data Source</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Efficiency</td>
+        <td>25%</td>
+        <td>SEER2 cooling efficiency rating (higher = better)</td>
+        <td>AHRI Certified Directory (ahridirectory.org)</td>
+      </tr>
+      <tr>
+        <td>Installation</td>
+        <td>25%</td>
+        <td>Ease of installation: DIY-capable systems score higher</td>
+        <td>Manufacturer product page, EPA 608 requirements</td>
+      </tr>
+      <tr>
+        <td>Warranty</td>
+        <td>25%</td>
+        <td>Combined compressor + parts warranty years</td>
+        <td>Manufacturer warranty documentation, merchant listing</td>
+      </tr>
+      <tr>
+        <td>Cold Climate</td>
+        <td>25%</td>
+        <td>Minimum operating temperature (lower = better)</td>
+        <td>AHRI, NEEP Cold Climate ASHP Listing (neep.org)</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h2>Scoring Formula</h2>
+
+  <div class="formula">
+    IndustrialRank Score = (<span>Efficiency</span> + <span>Installation</span> + <span>Warranty</span> + <span>Cold Climate</span>) ÷ 4
+  </div>
+
+  <h3>Efficiency sub-score mapping (SEER2)</h3>
+  <table class="score-table">
+    <thead><tr><th>SEER2 Rating</th><th>Sub-Score</th><th>Context</th></tr></thead>
+    <tbody>
+      <tr><td>≥ 22 SEER2</td><td>9.5</td><td>Best-in-class (e.g. Mitsubishi H2i+)</td></tr>
+      <tr><td>≥ 20 SEER2</td><td>9.0</td><td>High efficiency (e.g. MRCOOL DIY 5th Gen)</td></tr>
+      <tr><td>≥ 18 SEER2</td><td>8.5</td><td>Above average</td></tr>
+      <tr><td>≥ 16 SEER2</td><td>7.8</td><td>Mid-tier</td></tr>
+      <tr><td>&lt; 16 SEER2</td><td>7.0</td><td>Entry-level</td></tr>
+    </tbody>
+  </table>
+
+  <h3>Installation sub-score mapping</h3>
+  <table class="score-table">
+    <thead><tr><th>Type</th><th>Sub-Score</th><th>Rationale</th></tr></thead>
+    <tbody>
+      <tr><td>DIY (pre-charged lineset)</td><td>9.5</td><td>No contractor required, saves $800–$2,500</td></tr>
+      <tr><td>Professional (standard)</td><td>7.0</td><td>EPA 608 technician required</td></tr>
+    </tbody>
+  </table>
+
+  <h3>Warranty sub-score mapping (combined years)</h3>
+  <table class="score-table">
+    <thead><tr><th>Combined Years</th><th>Sub-Score</th><th>Example</th></tr></thead>
+    <tbody>
+      <tr><td>≥ 12 years</td><td>9.5</td><td>Mitsubishi GL (12-yr parts)</td></tr>
+      <tr><td>≥ 7 years</td><td>8.0</td><td>Daikin 17 Series (10-yr)</td></tr>
+      <tr><td>≥ 5 years</td><td>7.0</td><td>Pioneer WYS (5-yr)</td></tr>
+      <tr><td>&lt; 5 years</td><td>6.0</td><td>MRCOOL Easy Pro (1+2 yr = 3 yr)</td></tr>
+    </tbody>
+  </table>
+
+  <h3>Cold Climate sub-score mapping (min. operating temp)</h3>
+  <table class="score-table">
+    <thead><tr><th>Min. Temp</th><th>Sub-Score</th><th>Climate Zones</th></tr></thead>
+    <tbody>
+      <tr><td>≤ -13°F</td><td>9.5</td><td>Zones 6–7 primary heat capable</td></tr>
+      <tr><td>≤ 0°F</td><td>8.0</td><td>Zone 4–5 with backup heat</td></tr>
+      <tr><td>≤ 5°F</td><td>7.0</td><td>Zone 1–4 suitable</td></tr>
+      <tr><td>&gt; 5°F</td><td>6.0</td><td>Warm climates only</td></tr>
+    </tbody>
+  </table>
+
+  <h2>Data Sources</h2>
+  <ul class="source-list">
+    <li><strong>AHRI Directory</strong> — <a href="https://www.ahridirectory.org/" rel="nofollow" target="_blank">ahridirectory.org</a> — Certified SEER2, HSPF2, and capacity ratings for all HVAC equipment sold in North America.</li>
+    <li><strong>NEEP Cold Climate ASHP Listing</strong> — <a href="https://neep.org/" rel="nofollow" target="_blank">neep.org</a> — Independent third-party cold-climate performance verification.</li>
+    <li><strong>ENERGY STAR</strong> — <a href="https://www.energystar.gov/" rel="nofollow" target="_blank">energystar.gov</a> — Certification status and IRA Section 25C tax credit eligibility.</li>
+    <li><strong>Merchant product pages</strong> — HVACDirect.com — Warranty terms, pricing, and installation specifications. Verified at time of page creation.</li>
+    <li><strong>Manufacturer documentation</strong> — Official product manuals and warranty documents from brand websites.</li>
+  </ul>
+
+  <h2>Update Policy</h2>
+  <p>IndustrialRank scores are recalculated when any of the following change:</p>
+  <ul style="padding-left:20px;margin-bottom:16px;font-family:var(--fh);font-size:14px;">
+    <li style="margin-bottom:6px;">AHRI-certified SEER2 rating is revised</li>
+    <li style="margin-bottom:6px;">Manufacturer updates warranty terms</li>
+    <li style="margin-bottom:6px;">Product is discontinued or replaced by a new generation</li>
+    <li style="margin-bottom:6px;">New minimum temperature data is published by NEEP</li>
+  </ul>
+  <p>Each product page displays a "Last updated" date in the footer. Prices are not used in score calculations — they change frequently and are shown for informational purposes only.</p>
+
+  <h2>What We Don't Score</h2>
+  <p>IndustrialRank does not score: build quality (no independent lab testing), noise levels (manufacturer-reported figures are not standardized), aesthetics, color availability, or long-term reliability (insufficient independent data for most brands). These factors are discussed qualitatively in product reviews where relevant.</p>
+
+  <h2>Affiliate Disclosure</h2>
+  <p>IndustrialRank earns a commission on qualifying purchases made through affiliate links on this site, at no extra cost to you. Affiliate relationships do not influence IndustrialRank Scores. Scores are calculated from public data before any merchant relationship exists. No merchant pays for a higher score.</p>
+
+  <p style="font-family:var(--fh);font-size:12px;color:var(--mid);margin-top:40px;border-top:1px solid var(--rul);padding-top:16px;">
+    Questions about scoring methodology? Contact us at <a href="mailto:hello@industrialrank.com" style="color:var(--sig);">hello@industrialrank.com</a> · Last updated: June 2026
+  </p>
+
+</div>
+
+<footer class="ftr">
+  <p>© 2026 IndustrialRank · <a href="/privacy/">Privacy</a> · <a href="/about/">About</a> · <a href="/how-we-score/">How We Score</a></p>
+</footer>
+
+</body>
+</html>
