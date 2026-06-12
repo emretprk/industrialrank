@@ -73,7 +73,7 @@ Return ONLY valid JSON with these exact keys:
 
     response = requests.post(
         "https://api.anthropic.com/v1/messages",
-        headers={"Content-Type": "application/json", "x-api-key": "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", "anthropic-version": "2023-06-01"},
+        headers={"Content-Type": "application/json", "x-api-key": "YOUR_API_KEY_HERE", "anthropic-version": "2023-06-01"},
         json={
             "model": "claude-haiku-4-5-20251001",
             "max_tokens": 2000,
