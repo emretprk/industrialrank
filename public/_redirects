@@ -1,0 +1,20 @@
+# www -> apex
+https://www.industrialrank.com/* https://industrialrank.com/:splat 301
+
+# Old /hvac/ paths from the original site structure.
+# These used to redirect to other fabricated slugs that never existed either;
+# now pointed at the real category pages instead.
+/hvac/carrier-infinity-20-heat-pump-review/      /heat-pumps/        301
+/hvac/trane-xr15-heat-pump-review/               /heat-pumps/        301
+/hvac/goodman-gsx160481-heat-pump-review/        /heat-pumps/        301
+/hvac/bosch-bova-60hdn1-heat-pump-review/        /heat-pumps/        301
+/hvac/lennox-xp21-heat-pump-review/              /heat-pumps/        301
+/hvac/aciq-2ton-18seer2-heat-pump-review/        /heat-pumps/        301
+/hvac/trane-runtru-2ton-heat-pump-review/        /heat-pumps/        301
+/hvac/rheem-rp1648aj1na-heat-pump-review/        /heat-pumps/        301
+/hvac/lennox-xc21-air-conditioner-review/        /air-conditioners/  301
+/hvac/goodman-gsxh503610-ac-system-review/       /air-conditioners/  301
+/hvac/carrier-performance-14-ac-review/          /air-conditioners/  301
+/hvac/daikin-vrv5-review/                        /mini-splits/       301
+/hvac/mitsubishi-mxz-4c36na-mini-split-review/   /mini-splits/       301
+/hvac/mrcool-diy-24k-mini-split-review/          /mini-splits/       301
