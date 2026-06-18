@@ -67,8 +67,6 @@ export default {
         return Response.redirect(imgUrl, 302);
       }
     }
-      });
-    }
 
     return env.ASSETS.fetch(request);
   }
