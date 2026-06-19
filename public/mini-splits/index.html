@@ -383,7 +383,7 @@ footer a{color:#d97706;text-decoration:none;font-weight:600}
         html += '<div class="search-result-count">'+results.length+' results</div>';
         results.forEach(function(p){
           var imgHtml = p.image
-            ? '<img class="sri-img" src="'+p.image+'" alt="'+p.title+'" loading="lazy" referrerpolicy="no-referrer">'
+            ? '<img class="sri-img" src="/img?u='+encodeURIComponent(p.image)+'" alt="'+p.title+'" loading="lazy" referrerpolicy="no-referrer">'
             : '<div class="sri-img-placeholder">⚙</div>';
           var catLabel = (p.category||'').replace(/-/g,' ').replace(/\w/g,function(c){return c.toUpperCase();});
           html += '<a href="'+p.url+'" class="search-result-item" onclick="closeSearch()">'
@@ -422,7 +422,7 @@ footer a{color:#d97706;text-decoration:none;font-weight:600}
 <div class="section">
 <div class="product-grid" id="productGrid">
 <a href="/mini-splits/15-000-btu-21-6-seer-wall-mounted-mitsubishi-mini-split-gs-single-zone-heat-pump-id8959/" class="product-card">
-      <img src="https://hvacdirect.com/media/catalog/product/cache/c831b74073e8f93ee349897f877fc397/m/z/mz-gl09-15na_3.png" alt="15,000 BTU 21.6 SEER Wall Mounted Mitsubishi Mini Split GS Single Zone Heat Pump - MZ-GS15NA-R410A" loading="lazy" referrerpolicy="no-referrer" style="width:100%;height:160px;object-fit:contain;background:#f9fafb;border-radius:6px;margin-bottom:12px">
+      <img src="/img?u=https%3A%2F%2Fhvacdirect.com%2Fmedia%2Fcatalog%2Fproduct%2Fcache%2Fc831b74073e8f93ee349897f877fc397%2Fm%2Fz%2Fmz-gl09-15na_3.png" alt="15,000 BTU 21.6 SEER Wall Mounted Mitsubishi Mini Split GS Single Zone Heat Pump - MZ-GS15NA-R410A" loading="lazy" referrerpolicy="no-referrer" style="width:100%;height:160px;object-fit:contain;background:#f9fafb;border-radius:6px;margin-bottom:12px">
       <div class="card-badge">15,000</div>
       <div class="card-title">15,000 BTU 21.6 SEER Wall Mounted Mitsubishi Mini Split GS Single Zone Heat Pump - MZ-GS15NA-R410A</div>
       <div class="card-desc">15,000</div>
@@ -430,7 +430,7 @@ footer a{color:#d97706;text-decoration:none;font-weight:600}
       <div style="font-size:13px;font-weight:700;color:var(--ink);margin-top:4px">$2225</div>
     </a>
 <a href="/mini-splits/30-000-btu-14-5-seer-wall-mounted-mitsubishi-mini-split-single-zone-heat-pump-8965/" class="product-card">
-      <img src="https://hvacdirect.com/media/catalog/product/cache/c831b74073e8f93ee349897f877fc397/m/z/mz-d.png" alt="30,000 BTU 14.5 SEER Wall Mounted Mitsubishi Mini Split Single Zone Heat Pump - MUZ-GS30NA-U1-R410A" loading="lazy" referrerpolicy="no-referrer" style="width:100%;height:160px;object-fit:contain;background:#f9fafb;border-radius:6px;margin-bottom:12px">
+      <img src="/img?u=https%3A%2F%2Fhvacdirect.com%2Fmedia%2Fcatalog%2Fproduct%2Fcache%2Fc831b74073e8f93ee349897f877fc397%2Fm%2Fz%2Fmz-d.png" alt="30,000 BTU 14.5 SEER Wall Mounted Mitsubishi Mini Split Single Zone Heat Pump - MUZ-GS30NA-U1-R410A" loading="lazy" referrerpolicy="no-referrer" style="width:100%;height:160px;object-fit:contain;background:#f9fafb;border-radius:6px;margin-bottom:12px">
       <div class="card-badge">30,000</div>
       <div class="card-title">30,000 BTU 14.5 SEER Wall Mounted Mitsubishi Mini Split Single Zone Heat Pump - MUZ-GS30NA-U1-R410A</div>
       <div class="card-desc">30,000</div>
@@ -438,7 +438,7 @@ footer a{color:#d97706;text-decoration:none;font-weight:600}
       <div style="font-size:13px;font-weight:700;color:var(--ink);margin-top:4px">$3691</div>
     </a>
 <a href="/mini-splits/36-000-btu-17-seer-dual-zone-wall-mounted-daikin-mini-split-heat-pump-system-9-24-1519/" class="product-card">
-      <img src="https://hvacdirect.com/media/catalog/product/cache/c831b74073e8f93ee349897f877fc397/d/a/daikin-dual-zone.jpg" alt="36,000 BTU 17 SEER Dual Zone Wall Mounted Daikin Mini-Split Heat Pump System 9+24" loading="lazy" referrerpolicy="no-referrer" style="width:100%;height:160px;object-fit:contain;background:#f9fafb;border-radius:6px;margin-bottom:12px">
+      <img src="/img?u=https%3A%2F%2Fhvacdirect.com%2Fmedia%2Fcatalog%2Fproduct%2Fcache%2Fc831b74073e8f93ee349897f877fc397%2Fd%2Fa%2Fdaikin-dual-zone.jpg" alt="36,000 BTU 17 SEER Dual Zone Wall Mounted Daikin Mini-Split Heat Pump System 9+24" loading="lazy" referrerpolicy="no-referrer" style="width:100%;height:160px;object-fit:contain;background:#f9fafb;border-radius:6px;margin-bottom:12px">
       <div class="card-badge">36,000</div>
       <div class="card-title">36,000 BTU 17 SEER Dual Zone Wall Mounted Daikin Mini-Split Heat Pump System 9+24</div>
       <div class="card-desc">36,000</div>
@@ -446,7 +446,7 @@ footer a{color:#d97706;text-decoration:none;font-weight:600}
       <div style="font-size:13px;font-weight:700;color:var(--ink);margin-top:4px">$0</div>
     </a>
 <a href="/mini-splits/control-wire-for-ductlss-mini-split-systems-50-feet-pwez14450/" class="product-card">
-      <img src="https://hvacdirect.com/media/catalog/product/cache/c831b74073e8f93ee349897f877fc397/c/o/control_wire_for_ductless_mini_split_system.jpg" alt="14-4 Control Wire for Ductless Mini Split Systems - 50 Feet" loading="lazy" referrerpolicy="no-referrer" style="width:100%;height:160px;object-fit:contain;background:#f9fafb;border-radius:6px;margin-bottom:12px">
+      <img src="/img?u=https%3A%2F%2Fhvacdirect.com%2Fmedia%2Fcatalog%2Fproduct%2Fcache%2Fc831b74073e8f93ee349897f877fc397%2Fc%2Fo%2Fcontrol_wire_for_ductless_mini_split_system.jpg" alt="14-4 Control Wire for Ductless Mini Split Systems - 50 Feet" loading="lazy" referrerpolicy="no-referrer" style="width:100%;height:160px;object-fit:contain;background:#f9fafb;border-radius:6px;margin-bottom:12px">
       <div class="card-badge">14-4</div>
       <div class="card-title">14-4 Control Wire for Ductless Mini Split Systems - 50 Feet</div>
       <div class="card-desc">14-4</div>
@@ -454,7 +454,7 @@ footer a{color:#d97706;text-decoration:none;font-weight:600}
       <div style="font-size:13px;font-weight:700;color:var(--ink);margin-top:4px">$92</div>
     </a>
 <a href="/mini-splits/daikin-21-000-btu-tri-zone-mini-split-system-7-7-7-id1521/" class="product-card">
-      <img src="https://hvacdirect.com/media/catalog/product/cache/c831b74073e8f93ee349897f877fc397/d/a/daikin-tri-zone.jpg" alt="24,000 BTU 17 SEER Tri Zone Wall Mounted Daikin Mini-Split Heat Pump System 7+7+7" loading="lazy" referrerpolicy="no-referrer" style="width:100%;height:160px;object-fit:contain;background:#f9fafb;border-radius:6px;margin-bottom:12px">
+      <img src="/img?u=https%3A%2F%2Fhvacdirect.com%2Fmedia%2Fcatalog%2Fproduct%2Fcache%2Fc831b74073e8f93ee349897f877fc397%2Fd%2Fa%2Fdaikin-tri-zone.jpg" alt="24,000 BTU 17 SEER Tri Zone Wall Mounted Daikin Mini-Split Heat Pump System 7+7+7" loading="lazy" referrerpolicy="no-referrer" style="width:100%;height:160px;object-fit:contain;background:#f9fafb;border-radius:6px;margin-bottom:12px">
       <div class="card-badge">24,000</div>
       <div class="card-title">24,000 BTU 17 SEER Tri Zone Wall Mounted Daikin Mini-Split Heat Pump System 7+7+7</div>
       <div class="card-desc">24,000</div>
@@ -462,7 +462,7 @@ footer a{color:#d97706;text-decoration:none;font-weight:600}
       <div style="font-size:13px;font-weight:700;color:var(--ink);margin-top:4px">$0</div>
     </a>
 <a href="/mini-splits/daikin-23-000-btu-tri-zone-mini-split-system-7-7-9-id1522/" class="product-card">
-      <img src="https://hvacdirect.com/media/catalog/product/cache/c831b74073e8f93ee349897f877fc397/d/a/daikin-tri-zone.jpg" alt="24,000 BTU 17 SEER Tri Zone Wall Mounted Daikin Mini-Split Heat Pump System 7+7+9" loading="lazy" referrerpolicy="no-referrer" style="width:100%;height:160px;object-fit:contain;background:#f9fafb;border-radius:6px;margin-bottom:12px">
+      <img src="/img?u=https%3A%2F%2Fhvacdirect.com%2Fmedia%2Fcatalog%2Fproduct%2Fcache%2Fc831b74073e8f93ee349897f877fc397%2Fd%2Fa%2Fdaikin-tri-zone.jpg" alt="24,000 BTU 17 SEER Tri Zone Wall Mounted Daikin Mini-Split Heat Pump System 7+7+9" loading="lazy" referrerpolicy="no-referrer" style="width:100%;height:160px;object-fit:contain;background:#f9fafb;border-radius:6px;margin-bottom:12px">
       <div class="card-badge">24,000</div>
       <div class="card-title">24,000 BTU 17 SEER Tri Zone Wall Mounted Daikin Mini-Split Heat Pump System 7+7+9</div>
       <div class="card-desc">24,000</div>
@@ -470,7 +470,7 @@ footer a{color:#d97706;text-decoration:none;font-weight:600}
       <div style="font-size:13px;font-weight:700;color:var(--ink);margin-top:4px">$0</div>
     </a>
 <a href="/mini-splits/daikin-25-000-btu-tri-zone-mini-split-system-7-9-9-id1525/" class="product-card">
-      <img src="https://hvacdirect.com/media/catalog/product/cache/c831b74073e8f93ee349897f877fc397/d/a/daikin-tri-zone.jpg" alt="36,000 BTU 17 SEER Tri Zone Wall Mounted Daikin Mini-Split Heat Pump System 7+9+9" loading="lazy" referrerpolicy="no-referrer" style="width:100%;height:160px;object-fit:contain;background:#f9fafb;border-radius:6px;margin-bottom:12px">
+      <img src="/img?u=https%3A%2F%2Fhvacdirect.com%2Fmedia%2Fcatalog%2Fproduct%2Fcache%2Fc831b74073e8f93ee349897f877fc397%2Fd%2Fa%2Fdaikin-tri-zone.jpg" alt="36,000 BTU 17 SEER Tri Zone Wall Mounted Daikin Mini-Split Heat Pump System 7+9+9" loading="lazy" referrerpolicy="no-referrer" style="width:100%;height:160px;object-fit:contain;background:#f9fafb;border-radius:6px;margin-bottom:12px">
       <div class="card-badge">36,000</div>
       <div class="card-title">36,000 BTU 17 SEER Tri Zone Wall Mounted Daikin Mini-Split Heat Pump System 7+9+9</div>
       <div class="card-desc">36,000</div>
@@ -478,7 +478,7 @@ footer a{color:#d97706;text-decoration:none;font-weight:600}
       <div style="font-size:13px;font-weight:700;color:var(--ink);margin-top:4px">$0</div>
     </a>
 <a href="/mini-splits/daikin-26-000-btu-tri-zone-mini-split-system-7-7-12-id1531/" class="product-card">
-      <img src="https://hvacdirect.com/media/catalog/product/cache/c831b74073e8f93ee349897f877fc397/d/a/daikin-tri-zone.jpg" alt="36,000 BTU 17 SEER Tri Zone Wall Mounted Daikin Mini-Split Heat Pump System 7+7+12" loading="lazy" referrerpolicy="no-referrer" style="width:100%;height:160px;object-fit:contain;background:#f9fafb;border-radius:6px;margin-bottom:12px">
+      <img src="/img?u=https%3A%2F%2Fhvacdirect.com%2Fmedia%2Fcatalog%2Fproduct%2Fcache%2Fc831b74073e8f93ee349897f877fc397%2Fd%2Fa%2Fdaikin-tri-zone.jpg" alt="36,000 BTU 17 SEER Tri Zone Wall Mounted Daikin Mini-Split Heat Pump System 7+7+12" loading="lazy" referrerpolicy="no-referrer" style="width:100%;height:160px;object-fit:contain;background:#f9fafb;border-radius:6px;margin-bottom:12px">
       <div class="card-badge">36,000</div>
       <div class="card-title">36,000 BTU 17 SEER Tri Zone Wall Mounted Daikin Mini-Split Heat Pump System 7+7+12</div>
       <div class="card-desc">36,000</div>
@@ -486,7 +486,7 @@ footer a{color:#d97706;text-decoration:none;font-weight:600}
       <div style="font-size:13px;font-weight:700;color:var(--ink);margin-top:4px">$0</div>
     </a>
 <a href="/mini-splits/daikin-27-000-btu-tri-zone-mini-split-system-9-9-9-id1523/" class="product-card">
-      <img src="https://hvacdirect.com/media/catalog/product/cache/c831b74073e8f93ee349897f877fc397/d/a/daikin-tri-zone.jpg" alt="36,000 BTU 17 SEER Tri Zone Wall Mounted Daikin Mini-Split Heat Pump System 9+9+9" loading="lazy" referrerpolicy="no-referrer" style="width:100%;height:160px;object-fit:contain;background:#f9fafb;border-radius:6px;margin-bottom:12px">
+      <img src="/img?u=https%3A%2F%2Fhvacdirect.com%2Fmedia%2Fcatalog%2Fproduct%2Fcache%2Fc831b74073e8f93ee349897f877fc397%2Fd%2Fa%2Fdaikin-tri-zone.jpg" alt="36,000 BTU 17 SEER Tri Zone Wall Mounted Daikin Mini-Split Heat Pump System 9+9+9" loading="lazy" referrerpolicy="no-referrer" style="width:100%;height:160px;object-fit:contain;background:#f9fafb;border-radius:6px;margin-bottom:12px">
       <div class="card-badge">36,000</div>
       <div class="card-title">36,000 BTU 17 SEER Tri Zone Wall Mounted Daikin Mini-Split Heat Pump System 9+9+9</div>
       <div class="card-desc">36,000</div>
@@ -494,7 +494,7 @@ footer a{color:#d97706;text-decoration:none;font-weight:600}
       <div style="font-size:13px;font-weight:700;color:var(--ink);margin-top:4px">$0</div>
     </a>
 <a href="/mini-splits/daikin-28-000-btu-quad-zone-mini-split-system-7-7-7-7-id1539/" class="product-card">
-      <img src="https://hvacdirect.com/media/catalog/product/cache/c831b74073e8f93ee349897f877fc397/d/a/daikin-quad-zone.jpg" alt="36,000 BTU 17 SEER Quad Zone Wall Mounted Daikin Mini-Split Heat Pump System 7+7+7+7" loading="lazy" referrerpolicy="no-referrer" style="width:100%;height:160px;object-fit:contain;background:#f9fafb;border-radius:6px;margin-bottom:12px">
+      <img src="/img?u=https%3A%2F%2Fhvacdirect.com%2Fmedia%2Fcatalog%2Fproduct%2Fcache%2Fc831b74073e8f93ee349897f877fc397%2Fd%2Fa%2Fdaikin-quad-zone.jpg" alt="36,000 BTU 17 SEER Quad Zone Wall Mounted Daikin Mini-Split Heat Pump System 7+7+7+7" loading="lazy" referrerpolicy="no-referrer" style="width:100%;height:160px;object-fit:contain;background:#f9fafb;border-radius:6px;margin-bottom:12px">
       <div class="card-badge">36,000</div>
       <div class="card-title">36,000 BTU 17 SEER Quad Zone Wall Mounted Daikin Mini-Split Heat Pump System 7+7+7+7</div>
       <div class="card-desc">36,000</div>
@@ -502,7 +502,7 @@ footer a{color:#d97706;text-decoration:none;font-weight:600}
       <div style="font-size:13px;font-weight:700;color:var(--ink);margin-top:4px">$0</div>
     </a>
 <a href="/mini-splits/daikin-28-000-btu-tri-zone-mini-split-system-7-9-12-id1533/" class="product-card">
-      <img src="https://hvacdirect.com/media/catalog/product/cache/c831b74073e8f93ee349897f877fc397/d/a/daikin-tri-zone.jpg" alt="36,000 BTU 17 SEER Tri Zone Wall Mounted Daikin Mini-Split Heat Pump System 7+9+12" loading="lazy" referrerpolicy="no-referrer" style="width:100%;height:160px;object-fit:contain;background:#f9fafb;border-radius:6px;margin-bottom:12px">
+      <img src="/img?u=https%3A%2F%2Fhvacdirect.com%2Fmedia%2Fcatalog%2Fproduct%2Fcache%2Fc831b74073e8f93ee349897f877fc397%2Fd%2Fa%2Fdaikin-tri-zone.jpg" alt="36,000 BTU 17 SEER Tri Zone Wall Mounted Daikin Mini-Split Heat Pump System 7+9+12" loading="lazy" referrerpolicy="no-referrer" style="width:100%;height:160px;object-fit:contain;background:#f9fafb;border-radius:6px;margin-bottom:12px">
       <div class="card-badge">36,000</div>
       <div class="card-title">36,000 BTU 17 SEER Tri Zone Wall Mounted Daikin Mini-Split Heat Pump System 7+9+12</div>
       <div class="card-desc">36,000</div>
@@ -510,7 +510,7 @@ footer a{color:#d97706;text-decoration:none;font-weight:600}
       <div style="font-size:13px;font-weight:700;color:var(--ink);margin-top:4px">$0</div>
     </a>
 <a href="/mini-splits/daikin-29-000-btu-tri-zone-mini-split-system-7-7-15-id1526/" class="product-card">
-      <img src="https://hvacdirect.com/media/catalog/product/cache/c831b74073e8f93ee349897f877fc397/d/a/daikin-tri-zone.jpg" alt="36,000 BTU 17 SEER Tri Zone Wall Mounted Daikin Mini-Split Heat Pump System 7+7+15" loading="lazy" referrerpolicy="no-referrer" style="width:100%;height:160px;object-fit:contain;background:#f9fafb;border-radius:6px;margin-bottom:12px">
+      <img src="/img?u=https%3A%2F%2Fhvacdirect.com%2Fmedia%2Fcatalog%2Fproduct%2Fcache%2Fc831b74073e8f93ee349897f877fc397%2Fd%2Fa%2Fdaikin-tri-zone.jpg" alt="36,000 BTU 17 SEER Tri Zone Wall Mounted Daikin Mini-Split Heat Pump System 7+7+15" loading="lazy" referrerpolicy="no-referrer" style="width:100%;height:160px;object-fit:contain;background:#f9fafb;border-radius:6px;margin-bottom:12px">
       <div class="card-badge">36,000</div>
       <div class="card-title">36,000 BTU 17 SEER Tri Zone Wall Mounted Daikin Mini-Split Heat Pump System 7+7+15</div>
       <div class="card-desc">36,000</div>
@@ -518,7 +518,7 @@ footer a{color:#d97706;text-decoration:none;font-weight:600}
       <div style="font-size:13px;font-weight:700;color:var(--ink);margin-top:4px">$0</div>
     </a>
 <a href="/mini-splits/daikin-30-000-btu-tri-zone-mini-split-system-9-9-12-id1529/" class="product-card">
-      <img src="https://hvacdirect.com/media/catalog/product/cache/c831b74073e8f93ee349897f877fc397/d/a/daikin-tri-zone.jpg" alt="36,000 BTU 17 SEER Tri Zone Wall Mounted Daikin Mini-Split Heat Pump System 9+9+12" loading="lazy" referrerpolicy="no-referrer" style="width:100%;height:160px;object-fit:contain;background:#f9fafb;border-radius:6px;margin-bottom:12px">
+      <img src="/img?u=https%3A%2F%2Fhvacdirect.com%2Fmedia%2Fcatalog%2Fproduct%2Fcache%2Fc831b74073e8f93ee349897f877fc397%2Fd%2Fa%2Fdaikin-tri-zone.jpg" alt="36,000 BTU 17 SEER Tri Zone Wall Mounted Daikin Mini-Split Heat Pump System 9+9+12" loading="lazy" referrerpolicy="no-referrer" style="width:100%;height:160px;object-fit:contain;background:#f9fafb;border-radius:6px;margin-bottom:12px">
       <div class="card-badge">36,000</div>
       <div class="card-title">36,000 BTU 17 SEER Tri Zone Wall Mounted Daikin Mini-Split Heat Pump System 9+9+12</div>
       <div class="card-desc">36,000</div>
@@ -526,7 +526,7 @@ footer a{color:#d97706;text-decoration:none;font-weight:600}
       <div style="font-size:13px;font-weight:700;color:var(--ink);margin-top:4px">$0</div>
     </a>
 <a href="/mini-splits/daikin-31-000-btu-tri-zone-mini-split-system-7-12-12-id1528/" class="product-card">
-      <img src="https://hvacdirect.com/media/catalog/product/cache/c831b74073e8f93ee349897f877fc397/d/a/daikin-tri-zone.jpg" alt="36,000 BTU 17 SEER Tri Zone Wall Mounted Daikin Mini-Split Heat Pump System 7+12+12" loading="lazy" referrerpolicy="no-referrer" style="width:100%;height:160px;object-fit:contain;background:#f9fafb;border-radius:6px;margin-bottom:12px">
+      <img src="/img?u=https%3A%2F%2Fhvacdirect.com%2Fmedia%2Fcatalog%2Fproduct%2Fcache%2Fc831b74073e8f93ee349897f877fc397%2Fd%2Fa%2Fdaikin-tri-zone.jpg" alt="36,000 BTU 17 SEER Tri Zone Wall Mounted Daikin Mini-Split Heat Pump System 7+12+12" loading="lazy" referrerpolicy="no-referrer" style="width:100%;height:160px;object-fit:contain;background:#f9fafb;border-radius:6px;margin-bottom:12px">
       <div class="card-badge">36,000</div>
       <div class="card-title">36,000 BTU 17 SEER Tri Zone Wall Mounted Daikin Mini-Split Heat Pump System 7+12+12</div>
       <div class="card-desc">36,000</div>
@@ -534,7 +534,7 @@ footer a{color:#d97706;text-decoration:none;font-weight:600}
       <div style="font-size:13px;font-weight:700;color:var(--ink);margin-top:4px">$0</div>
     </a>
 <a href="/mini-splits/daikin-31-000-btu-tri-zone-mini-split-system-7-9-15-id1536/" class="product-card">
-      <img src="https://hvacdirect.com/media/catalog/product/cache/c831b74073e8f93ee349897f877fc397/d/a/daikin-tri-zone.jpg" alt="36,000 BTU 17 SEER Tri Zone Wall Mounted Daikin Mini-Split Heat Pump System 7+9+15" loading="lazy" referrerpolicy="no-referrer" style="width:100%;height:160px;object-fit:contain;background:#f9fafb;border-radius:6px;margin-bottom:12px">
+      <img src="/img?u=https%3A%2F%2Fhvacdirect.com%2Fmedia%2Fcatalog%2Fproduct%2Fcache%2Fc831b74073e8f93ee349897f877fc397%2Fd%2Fa%2Fdaikin-tri-zone.jpg" alt="36,000 BTU 17 SEER Tri Zone Wall Mounted Daikin Mini-Split Heat Pump System 7+9+15" loading="lazy" referrerpolicy="no-referrer" style="width:100%;height:160px;object-fit:contain;background:#f9fafb;border-radius:6px;margin-bottom:12px">
       <div class="card-badge">36,000</div>
       <div class="card-title">36,000 BTU 17 SEER Tri Zone Wall Mounted Daikin Mini-Split Heat Pump System 7+9+15</div>
       <div class="card-desc">36,000</div>
@@ -542,7 +542,7 @@ footer a{color:#d97706;text-decoration:none;font-weight:600}
       <div style="font-size:13px;font-weight:700;color:var(--ink);margin-top:4px">$0</div>
     </a>
 <a href="/mini-splits/daikin-32-000-btu-seer-quad-zone-mini-split-system-7-7-9-9-id1544/" class="product-card">
-      <img src="https://hvacdirect.com/media/catalog/product/cache/c831b74073e8f93ee349897f877fc397/d/a/daikin-quad-zone.jpg" alt="36,000 BTU 17 SEER Quad Zone Wall Mounted Daikin Mini-Split Heat Pump System 7+7+9+9" loading="lazy" referrerpolicy="no-referrer" style="width:100%;height:160px;object-fit:contain;background:#f9fafb;border-radius:6px;margin-bottom:12px">
+      <img src="/img?u=https%3A%2F%2Fhvacdirect.com%2Fmedia%2Fcatalog%2Fproduct%2Fcache%2Fc831b74073e8f93ee349897f877fc397%2Fd%2Fa%2Fdaikin-quad-zone.jpg" alt="36,000 BTU 17 SEER Quad Zone Wall Mounted Daikin Mini-Split Heat Pump System 7+7+9+9" loading="lazy" referrerpolicy="no-referrer" style="width:100%;height:160px;object-fit:contain;background:#f9fafb;border-radius:6px;margin-bottom:12px">
       <div class="card-badge">36,000</div>
       <div class="card-title">36,000 BTU 17 SEER Quad Zone Wall Mounted Daikin Mini-Split Heat Pump System 7+7+9+9</div>
       <div class="card-desc">36,000</div>
@@ -550,7 +550,7 @@ footer a{color:#d97706;text-decoration:none;font-weight:600}
       <div style="font-size:13px;font-weight:700;color:var(--ink);margin-top:4px">$0</div>
     </a>
 <a href="/mini-splits/daikin-32-000-btu-tri-zone-mini-split-system-7-7-18-id2254/" class="product-card">
-      <img src="https://hvacdirect.com/media/catalog/product/cache/c831b74073e8f93ee349897f877fc397/d/a/daikin-tri-zone_1.jpg" alt="36,000 BTU 17 SEER Tri Zone Wall Mounted Daikin Mini-Split Heat Pump System 7+7+18" loading="lazy" referrerpolicy="no-referrer" style="width:100%;height:160px;object-fit:contain;background:#f9fafb;border-radius:6px;margin-bottom:12px">
+      <img src="/img?u=https%3A%2F%2Fhvacdirect.com%2Fmedia%2Fcatalog%2Fproduct%2Fcache%2Fc831b74073e8f93ee349897f877fc397%2Fd%2Fa%2Fdaikin-tri-zone_1.jpg" alt="36,000 BTU 17 SEER Tri Zone Wall Mounted Daikin Mini-Split Heat Pump System 7+7+18" loading="lazy" referrerpolicy="no-referrer" style="width:100%;height:160px;object-fit:contain;background:#f9fafb;border-radius:6px;margin-bottom:12px">
       <div class="card-badge">36,000</div>
       <div class="card-title">36,000 BTU 17 SEER Tri Zone Wall Mounted Daikin Mini-Split Heat Pump System 7+7+18</div>
       <div class="card-desc">36,000</div>
@@ -558,7 +558,7 @@ footer a{color:#d97706;text-decoration:none;font-weight:600}
       <div style="font-size:13px;font-weight:700;color:var(--ink);margin-top:4px">$0</div>
     </a>
 <a href="/mini-splits/daikin-33-000-btu-quad-zone-mini-split-system-7-7-7-12-id1542/" class="product-card">
-      <img src="https://hvacdirect.com/media/catalog/product/cache/c831b74073e8f93ee349897f877fc397/d/a/daikin-quad-zone.jpg" alt="36,000 BTU 17 SEER Quad Zone Wall Mounted Daikin Mini-Split Heat Pump System 7+7+7+12" loading="lazy" referrerpolicy="no-referrer" style="width:100%;height:160px;object-fit:contain;background:#f9fafb;border-radius:6px;margin-bottom:12px">
+      <img src="/img?u=https%3A%2F%2Fhvacdirect.com%2Fmedia%2Fcatalog%2Fproduct%2Fcache%2Fc831b74073e8f93ee349897f877fc397%2Fd%2Fa%2Fdaikin-quad-zone.jpg" alt="36,000 BTU 17 SEER Quad Zone Wall Mounted Daikin Mini-Split Heat Pump System 7+7+7+12" loading="lazy" referrerpolicy="no-referrer" style="width:100%;height:160px;object-fit:contain;background:#f9fafb;border-radius:6px;margin-bottom:12px">
       <div class="card-badge">36,000</div>
       <div class="card-title">36,000 BTU 17 SEER Quad Zone Wall Mounted Daikin Mini-Split Heat Pump System 7+7+7+12</div>
       <div class="card-desc">36,000</div>
@@ -566,7 +566,7 @@ footer a{color:#d97706;text-decoration:none;font-weight:600}
       <div style="font-size:13px;font-weight:700;color:var(--ink);margin-top:4px">$0</div>
     </a>
 <a href="/mini-splits/daikin-33-000-btu-tri-zone-mini-split-system-9-12-12-id1532/" class="product-card">
-      <img src="https://hvacdirect.com/media/catalog/product/cache/c831b74073e8f93ee349897f877fc397/d/a/daikin-tri-zone.jpg" alt="36,000 BTU 17 SEER Tri Zone Wall Mounted Daikin Mini-Split Heat Pump System 9+12+12" loading="lazy" referrerpolicy="no-referrer" style="width:100%;height:160px;object-fit:contain;background:#f9fafb;border-radius:6px;margin-bottom:12px">
+      <img src="/img?u=https%3A%2F%2Fhvacdirect.com%2Fmedia%2Fcatalog%2Fproduct%2Fcache%2Fc831b74073e8f93ee349897f877fc397%2Fd%2Fa%2Fdaikin-tri-zone.jpg" alt="36,000 BTU 17 SEER Tri Zone Wall Mounted Daikin Mini-Split Heat Pump System 9+12+12" loading="lazy" referrerpolicy="no-referrer" style="width:100%;height:160px;object-fit:contain;background:#f9fafb;border-radius:6px;margin-bottom:12px">
       <div class="card-badge">36,000</div>
       <div class="card-title">36,000 BTU 17 SEER Tri Zone Wall Mounted Daikin Mini-Split Heat Pump System 9+12+12</div>
       <div class="card-desc">36,000</div>
@@ -574,7 +574,7 @@ footer a{color:#d97706;text-decoration:none;font-weight:600}
       <div style="font-size:13px;font-weight:700;color:var(--ink);margin-top:4px">$0</div>
     </a>
 <a href="/mini-splits/daikin-33-000-btu-tri-zone-mini-split-system-9-9-15-id1527/" class="product-card">
-      <img src="https://hvacdirect.com/media/catalog/product/cache/c831b74073e8f93ee349897f877fc397/d/a/daikin-tri-zone.jpg" alt="36,000 BTU 17 SEER Tri Zone Wall Mounted Daikin Mini-Split Heat Pump System 9+9+15" loading="lazy" referrerpolicy="no-referrer" style="width:100%;height:160px;object-fit:contain;background:#f9fafb;border-radius:6px;margin-bottom:12px">
+      <img src="/img?u=https%3A%2F%2Fhvacdirect.com%2Fmedia%2Fcatalog%2Fproduct%2Fcache%2Fc831b74073e8f93ee349897f877fc397%2Fd%2Fa%2Fdaikin-tri-zone.jpg" alt="36,000 BTU 17 SEER Tri Zone Wall Mounted Daikin Mini-Split Heat Pump System 9+9+15" loading="lazy" referrerpolicy="no-referrer" style="width:100%;height:160px;object-fit:contain;background:#f9fafb;border-radius:6px;margin-bottom:12px">
       <div class="card-badge">36,000</div>
       <div class="card-title">36,000 BTU 17 SEER Tri Zone Wall Mounted Daikin Mini-Split Heat Pump System 9+9+15</div>
       <div class="card-desc">36,000</div>
@@ -582,7 +582,7 @@ footer a{color:#d97706;text-decoration:none;font-weight:600}
       <div style="font-size:13px;font-weight:700;color:var(--ink);margin-top:4px">$0</div>
     </a>
 <a href="/mini-splits/daikin-34-000-btu-quad-zone-mini-split-system-7-9-9-9-id1543/" class="product-card">
-      <img src="https://hvacdirect.com/media/catalog/product/cache/c831b74073e8f93ee349897f877fc397/d/a/daikin-quad-zone.jpg" alt="36,000 BTU 17 SEER Quad Zone Wall Mounted Daikin Mini-Split Heat Pump System 7+9+9+9" loading="lazy" referrerpolicy="no-referrer" style="width:100%;height:160px;object-fit:contain;background:#f9fafb;border-radius:6px;margin-bottom:12px">
+      <img src="/img?u=https%3A%2F%2Fhvacdirect.com%2Fmedia%2Fcatalog%2Fproduct%2Fcache%2Fc831b74073e8f93ee349897f877fc397%2Fd%2Fa%2Fdaikin-quad-zone.jpg" alt="36,000 BTU 17 SEER Quad Zone Wall Mounted Daikin Mini-Split Heat Pump System 7+9+9+9" loading="lazy" referrerpolicy="no-referrer" style="width:100%;height:160px;object-fit:contain;background:#f9fafb;border-radius:6px;margin-bottom:12px">
       <div class="card-badge">36,000</div>
       <div class="card-title">36,000 BTU 17 SEER Quad Zone Wall Mounted Daikin Mini-Split Heat Pump System 7+9+9+9</div>
       <div class="card-desc">36,000</div>
@@ -590,7 +590,7 @@ footer a{color:#d97706;text-decoration:none;font-weight:600}
       <div style="font-size:13px;font-weight:700;color:var(--ink);margin-top:4px">$0</div>
     </a>
 <a href="/mini-splits/daikin-34-000-btu-tri-zone-mini-split-system-7-12-15-id1534/" class="product-card">
-      <img src="https://hvacdirect.com/media/catalog/product/cache/c831b74073e8f93ee349897f877fc397/d/a/daikin-tri-zone.jpg" alt="36,000 BTU 17 SEER Tri Zone Wall Mounted Daikin Mini-Split Heat Pump System 7+12+15" loading="lazy" referrerpolicy="no-referrer" style="width:100%;height:160px;object-fit:contain;background:#f9fafb;border-radius:6px;margin-bottom:12px">
+      <img src="/img?u=https%3A%2F%2Fhvacdirect.com%2Fmedia%2Fcatalog%2Fproduct%2Fcache%2Fc831b74073e8f93ee349897f877fc397%2Fd%2Fa%2Fdaikin-tri-zone.jpg" alt="36,000 BTU 17 SEER Tri Zone Wall Mounted Daikin Mini-Split Heat Pump System 7+12+15" loading="lazy" referrerpolicy="no-referrer" style="width:100%;height:160px;object-fit:contain;background:#f9fafb;border-radius:6px;margin-bottom:12px">
       <div class="card-badge">36,000</div>
       <div class="card-title">36,000 BTU 17 SEER Tri Zone Wall Mounted Daikin Mini-Split Heat Pump System 7+12+15</div>
       <div class="card-desc">36,000</div>
@@ -598,7 +598,7 @@ footer a{color:#d97706;text-decoration:none;font-weight:600}
       <div style="font-size:13px;font-weight:700;color:var(--ink);margin-top:4px">$0</div>
     </a>
 <a href="/mini-splits/daikin-34-000-btu-tri-zone-mini-split-system-7-9-18-id1537/" class="product-card">
-      <img src="https://hvacdirect.com/media/catalog/product/cache/c831b74073e8f93ee349897f877fc397/d/a/daikin-tri-zone.jpg" alt="36,000 BTU 17 SEER Tri Zone Wall Mounted Daikin Mini-Split Heat Pump System 7+9+18" loading="lazy" referrerpolicy="no-referrer" style="width:100%;height:160px;object-fit:contain;background:#f9fafb;border-radius:6px;margin-bottom:12px">
+      <img src="/img?u=https%3A%2F%2Fhvacdirect.com%2Fmedia%2Fcatalog%2Fproduct%2Fcache%2Fc831b74073e8f93ee349897f877fc397%2Fd%2Fa%2Fdaikin-tri-zone.jpg" alt="36,000 BTU 17 SEER Tri Zone Wall Mounted Daikin Mini-Split Heat Pump System 7+9+18" loading="lazy" referrerpolicy="no-referrer" style="width:100%;height:160px;object-fit:contain;background:#f9fafb;border-radius:6px;margin-bottom:12px">
       <div class="card-badge">36,000</div>
       <div class="card-title">36,000 BTU 17 SEER Tri Zone Wall Mounted Daikin Mini-Split Heat Pump System 7+9+18</div>
       <div class="card-desc">36,000</div>
@@ -606,7 +606,7 @@ footer a{color:#d97706;text-decoration:none;font-weight:600}
       <div style="font-size:13px;font-weight:700;color:var(--ink);margin-top:4px">$0</div>
     </a>
 <a href="/mini-splits/daikin-35-000-btu-quad-zone-mini-split-system-7-7-9-12-id1545/" class="product-card">
-      <img src="https://hvacdirect.com/media/catalog/product/cache/c831b74073e8f93ee349897f877fc397/d/a/daikin-quad-zone.jpg" alt="36,000 BTU 17 SEER Quad Zone Wall Mounted Daikin Mini-Split Heat Pump System 7+7+9+12" loading="lazy" referrerpolicy="no-referrer" style="width:100%;height:160px;object-fit:contain;background:#f9fafb;border-radius:6px;margin-bottom:12px">
+      <img src="/img?u=https%3A%2F%2Fhvacdirect.com%2Fmedia%2Fcatalog%2Fproduct%2Fcache%2Fc831b74073e8f93ee349897f877fc397%2Fd%2Fa%2Fdaikin-quad-zone.jpg" alt="36,000 BTU 17 SEER Quad Zone Wall Mounted Daikin Mini-Split Heat Pump System 7+7+9+12" loading="lazy" referrerpolicy="no-referrer" style="width:100%;height:160px;object-fit:contain;background:#f9fafb;border-radius:6px;margin-bottom:12px">
       <div class="card-badge">36,000</div>
       <div class="card-title">36,000 BTU 17 SEER Quad Zone Wall Mounted Daikin Mini-Split Heat Pump System 7+7+9+12</div>
       <div class="card-desc">36,000</div>
@@ -614,7 +614,7 @@ footer a{color:#d97706;text-decoration:none;font-weight:600}
       <div style="font-size:13px;font-weight:700;color:var(--ink);margin-top:4px">$0</div>
     </a>
 <a href="/mini-splits/daikin-36-000-btu-quad-zone-mini-split-system-7-7-7-15-id1540/" class="product-card">
-      <img src="https://hvacdirect.com/media/catalog/product/cache/c831b74073e8f93ee349897f877fc397/d/a/daikin-quad-zone.jpg" alt="36,000 BTU 17 SEER Quad Zone Wall Mounted Daikin Mini-Split Heat Pump System 7+7+7+15" loading="lazy" referrerpolicy="no-referrer" style="width:100%;height:160px;object-fit:contain;background:#f9fafb;border-radius:6px;margin-bottom:12px">
+      <img src="/img?u=https%3A%2F%2Fhvacdirect.com%2Fmedia%2Fcatalog%2Fproduct%2Fcache%2Fc831b74073e8f93ee349897f877fc397%2Fd%2Fa%2Fdaikin-quad-zone.jpg" alt="36,000 BTU 17 SEER Quad Zone Wall Mounted Daikin Mini-Split Heat Pump System 7+7+7+15" loading="lazy" referrerpolicy="no-referrer" style="width:100%;height:160px;object-fit:contain;background:#f9fafb;border-radius:6px;margin-bottom:12px">
       <div class="card-badge">36,000</div>
       <div class="card-title">36,000 BTU 17 SEER Quad Zone Wall Mounted Daikin Mini-Split Heat Pump System 7+7+7+15</div>
       <div class="card-desc">36,000</div>
@@ -622,7 +622,7 @@ footer a{color:#d97706;text-decoration:none;font-weight:600}
       <div style="font-size:13px;font-weight:700;color:var(--ink);margin-top:4px">$0</div>
     </a>
 <a href="/mini-splits/daikin-36-000-btu-quad-zone-mini-split-system-7-7-7-9-id1541/" class="product-card">
-      <img src="https://hvacdirect.com/media/catalog/product/cache/c831b74073e8f93ee349897f877fc397/d/a/daikin-quad-zone.jpg" alt="36,000 BTU 17 SEER Quad Zone Wall Mounted Daikin Mini-Split Heat Pump System 7+7+7+9" loading="lazy" referrerpolicy="no-referrer" style="width:100%;height:160px;object-fit:contain;background:#f9fafb;border-radius:6px;margin-bottom:12px">
+      <img src="/img?u=https%3A%2F%2Fhvacdirect.com%2Fmedia%2Fcatalog%2Fproduct%2Fcache%2Fc831b74073e8f93ee349897f877fc397%2Fd%2Fa%2Fdaikin-quad-zone.jpg" alt="36,000 BTU 17 SEER Quad Zone Wall Mounted Daikin Mini-Split Heat Pump System 7+7+7+9" loading="lazy" referrerpolicy="no-referrer" style="width:100%;height:160px;object-fit:contain;background:#f9fafb;border-radius:6px;margin-bottom:12px">
       <div class="card-badge">36,000</div>
       <div class="card-title">36,000 BTU 17 SEER Quad Zone Wall Mounted Daikin Mini-Split Heat Pump System 7+7+7+9</div>
       <div class="card-desc">36,000</div>
@@ -630,7 +630,7 @@ footer a{color:#d97706;text-decoration:none;font-weight:600}
       <div style="font-size:13px;font-weight:700;color:var(--ink);margin-top:4px">$0</div>
     </a>
 <a href="/mini-splits/daikin-36-000-btu-quad-zone-mini-split-system-9-9-12-12-id2796/" class="product-card">
-      <img src="https://hvacdirect.com/media/catalog/product/cache/c831b74073e8f93ee349897f877fc397/d/a/daikin-quad-zone.jpg" alt="36,000 BTU 17 SEER Quad Zone Wall Mounted Daikin Mini-Split Heat Pump System 9+9+12+12" loading="lazy" referrerpolicy="no-referrer" style="width:100%;height:160px;object-fit:contain;background:#f9fafb;border-radius:6px;margin-bottom:12px">
+      <img src="/img?u=https%3A%2F%2Fhvacdirect.com%2Fmedia%2Fcatalog%2Fproduct%2Fcache%2Fc831b74073e8f93ee349897f877fc397%2Fd%2Fa%2Fdaikin-quad-zone.jpg" alt="36,000 BTU 17 SEER Quad Zone Wall Mounted Daikin Mini-Split Heat Pump System 9+9+12+12" loading="lazy" referrerpolicy="no-referrer" style="width:100%;height:160px;object-fit:contain;background:#f9fafb;border-radius:6px;margin-bottom:12px">
       <div class="card-badge">36,000</div>
       <div class="card-title">36,000 BTU 17 SEER Quad Zone Wall Mounted Daikin Mini-Split Heat Pump System 9+9+12+12</div>
       <div class="card-desc">36,000</div>
@@ -638,7 +638,7 @@ footer a{color:#d97706;text-decoration:none;font-weight:600}
       <div style="font-size:13px;font-weight:700;color:var(--ink);margin-top:4px">$0</div>
     </a>
 <a href="/mini-splits/daikin-36-000-btu-quad-zone-mini-split-system-9-9-9-9-id1538/" class="product-card">
-      <img src="https://hvacdirect.com/media/catalog/product/cache/c831b74073e8f93ee349897f877fc397/d/a/daikin-quad-zone.jpg" alt="36,000 BTU 17 SEER Quad Zone Wall Mounted Daikin Mini-Split Heat Pump System 9+9+9+9" loading="lazy" referrerpolicy="no-referrer" style="width:100%;height:160px;object-fit:contain;background:#f9fafb;border-radius:6px;margin-bottom:12px">
+      <img src="/img?u=https%3A%2F%2Fhvacdirect.com%2Fmedia%2Fcatalog%2Fproduct%2Fcache%2Fc831b74073e8f93ee349897f877fc397%2Fd%2Fa%2Fdaikin-quad-zone.jpg" alt="36,000 BTU 17 SEER Quad Zone Wall Mounted Daikin Mini-Split Heat Pump System 9+9+9+9" loading="lazy" referrerpolicy="no-referrer" style="width:100%;height:160px;object-fit:contain;background:#f9fafb;border-radius:6px;margin-bottom:12px">
       <div class="card-badge">36,000</div>
       <div class="card-title">36,000 BTU 17 SEER Quad Zone Wall Mounted Daikin Mini-Split Heat Pump System 9+9+9+9</div>
       <div class="card-desc">36,000</div>
@@ -646,7 +646,7 @@ footer a{color:#d97706;text-decoration:none;font-weight:600}
       <div style="font-size:13px;font-weight:700;color:var(--ink);margin-top:4px">$0</div>
     </a>
 <a href="/mini-splits/daikin-36-000-btu-tri-zone-mini-split-system-12-12-12-id1524/" class="product-card">
-      <img src="https://hvacdirect.com/media/catalog/product/cache/c831b74073e8f93ee349897f877fc397/d/a/daikin-tri-zone.jpg" alt="36,000 BTU 17 SEER Tri Zone Wall Mounted Daikin Mini-Split Heat Pump System 12+12+12" loading="lazy" referrerpolicy="no-referrer" style="width:100%;height:160px;object-fit:contain;background:#f9fafb;border-radius:6px;margin-bottom:12px">
+      <img src="/img?u=https%3A%2F%2Fhvacdirect.com%2Fmedia%2Fcatalog%2Fproduct%2Fcache%2Fc831b74073e8f93ee349897f877fc397%2Fd%2Fa%2Fdaikin-tri-zone.jpg" alt="36,000 BTU 17 SEER Tri Zone Wall Mounted Daikin Mini-Split Heat Pump System 12+12+12" loading="lazy" referrerpolicy="no-referrer" style="width:100%;height:160px;object-fit:contain;background:#f9fafb;border-radius:6px;margin-bottom:12px">
       <div class="card-badge">36,000</div>
       <div class="card-title">36,000 BTU 17 SEER Tri Zone Wall Mounted Daikin Mini-Split Heat Pump System 12+12+12</div>
       <div class="card-desc">36,000</div>
@@ -654,7 +654,7 @@ footer a{color:#d97706;text-decoration:none;font-weight:600}
       <div style="font-size:13px;font-weight:700;color:var(--ink);margin-top:4px">$0</div>
     </a>
 <a href="/mini-splits/daikin-36-000-btu-tri-zone-mini-split-system-9-12-15-id1535/" class="product-card">
-      <img src="https://hvacdirect.com/media/catalog/product/cache/c831b74073e8f93ee349897f877fc397/d/a/daikin-tri-zone.jpg" alt="36,000 BTU 17 SEER Tri Zone Wall Mounted Daikin Mini-Split Heat Pump System 9+12+15" loading="lazy" referrerpolicy="no-referrer" style="width:100%;height:160px;object-fit:contain;background:#f9fafb;border-radius:6px;margin-bottom:12px">
+      <img src="/img?u=https%3A%2F%2Fhvacdirect.com%2Fmedia%2Fcatalog%2Fproduct%2Fcache%2Fc831b74073e8f93ee349897f877fc397%2Fd%2Fa%2Fdaikin-tri-zone.jpg" alt="36,000 BTU 17 SEER Tri Zone Wall Mounted Daikin Mini-Split Heat Pump System 9+12+15" loading="lazy" referrerpolicy="no-referrer" style="width:100%;height:160px;object-fit:contain;background:#f9fafb;border-radius:6px;margin-bottom:12px">
       <div class="card-badge">36,000</div>
       <div class="card-title">36,000 BTU 17 SEER Tri Zone Wall Mounted Daikin Mini-Split Heat Pump System 9+12+15</div>
       <div class="card-desc">36,000</div>
@@ -662,7 +662,7 @@ footer a{color:#d97706;text-decoration:none;font-weight:600}
       <div style="font-size:13px;font-weight:700;color:var(--ink);margin-top:4px">$0</div>
     </a>
 <a href="/mini-splits/daikin-36-000-btu-tri-zone-mini-split-system-9-9-18-id1530/" class="product-card">
-      <img src="https://hvacdirect.com/media/catalog/product/cache/c831b74073e8f93ee349897f877fc397/d/a/daikin-tri-zone.jpg" alt="36,000 BTU 17 SEER Tri Zone Wall Mounted Daikin Mini-Split Heat Pump System 9+9+18" loading="lazy" referrerpolicy="no-referrer" style="width:100%;height:160px;object-fit:contain;background:#f9fafb;border-radius:6px;margin-bottom:12px">
+      <img src="/img?u=https%3A%2F%2Fhvacdirect.com%2Fmedia%2Fcatalog%2Fproduct%2Fcache%2Fc831b74073e8f93ee349897f877fc397%2Fd%2Fa%2Fdaikin-tri-zone.jpg" alt="36,000 BTU 17 SEER Tri Zone Wall Mounted Daikin Mini-Split Heat Pump System 9+9+18" loading="lazy" referrerpolicy="no-referrer" style="width:100%;height:160px;object-fit:contain;background:#f9fafb;border-radius:6px;margin-bottom:12px">
       <div class="card-badge">36,000</div>
       <div class="card-title">36,000 BTU 17 SEER Tri Zone Wall Mounted Daikin Mini-Split Heat Pump System 9+9+18</div>
       <div class="card-desc">36,000</div>
@@ -670,7 +670,7 @@ footer a{color:#d97706;text-decoration:none;font-weight:600}
       <div style="font-size:13px;font-weight:700;color:var(--ink);margin-top:4px">$0</div>
     </a>
 <a href="/mini-splits/daikin-mxs-14-000-btu-dual-zone-mini-split-system-7-7-id1503/" class="product-card">
-      <img src="https://hvacdirect.com/media/catalog/product/cache/c831b74073e8f93ee349897f877fc397/d/a/daikin-dual-zone.jpg" alt="18,000 BTU 18 SEER Dual Zone Wall Mounted Daikin Mini-Split Heat Pump System 7+7" loading="lazy" referrerpolicy="no-referrer" style="width:100%;height:160px;object-fit:contain;background:#f9fafb;border-radius:6px;margin-bottom:12px">
+      <img src="/img?u=https%3A%2F%2Fhvacdirect.com%2Fmedia%2Fcatalog%2Fproduct%2Fcache%2Fc831b74073e8f93ee349897f877fc397%2Fd%2Fa%2Fdaikin-dual-zone.jpg" alt="18,000 BTU 18 SEER Dual Zone Wall Mounted Daikin Mini-Split Heat Pump System 7+7" loading="lazy" referrerpolicy="no-referrer" style="width:100%;height:160px;object-fit:contain;background:#f9fafb;border-radius:6px;margin-bottom:12px">
       <div class="card-badge">18,000</div>
       <div class="card-title">18,000 BTU 18 SEER Dual Zone Wall Mounted Daikin Mini-Split Heat Pump System 7+7</div>
       <div class="card-desc">18,000</div>
@@ -678,7 +678,7 @@ footer a{color:#d97706;text-decoration:none;font-weight:600}
       <div style="font-size:13px;font-weight:700;color:var(--ink);margin-top:4px">$1908</div>
     </a>
 <a href="/mini-splits/daikin-mxs-16-000-btu-dual-zone-mini-split-system-7-9-id1504/" class="product-card">
-      <img src="https://hvacdirect.com/media/catalog/product/cache/c831b74073e8f93ee349897f877fc397/d/a/daikin-dual-zone.jpg" alt="18,000 BTU 18 SEER Dual Zone Wall Mounted Daikin Mini-Split Heat Pump System 7+9" loading="lazy" referrerpolicy="no-referrer" style="width:100%;height:160px;object-fit:contain;background:#f9fafb;border-radius:6px;margin-bottom:12px">
+      <img src="/img?u=https%3A%2F%2Fhvacdirect.com%2Fmedia%2Fcatalog%2Fproduct%2Fcache%2Fc831b74073e8f93ee349897f877fc397%2Fd%2Fa%2Fdaikin-dual-zone.jpg" alt="18,000 BTU 18 SEER Dual Zone Wall Mounted Daikin Mini-Split Heat Pump System 7+9" loading="lazy" referrerpolicy="no-referrer" style="width:100%;height:160px;object-fit:contain;background:#f9fafb;border-radius:6px;margin-bottom:12px">
       <div class="card-badge">18,000</div>
       <div class="card-title">18,000 BTU 18 SEER Dual Zone Wall Mounted Daikin Mini-Split Heat Pump System 7+9</div>
       <div class="card-desc">18,000</div>
@@ -686,7 +686,7 @@ footer a{color:#d97706;text-decoration:none;font-weight:600}
       <div style="font-size:13px;font-weight:700;color:var(--ink);margin-top:4px">$1908</div>
     </a>
 <a href="/mini-splits/daikin-mxs-18000-btu-dual-zone-mini-split-system-9-9-id1505/" class="product-card">
-      <img src="https://hvacdirect.com/media/catalog/product/cache/c831b74073e8f93ee349897f877fc397/d/a/daikin-dual-zone.jpg" alt="Daikin 18,000 BTU MXS 18.9 SEER2 Dual Zone Wall Mounted Mini Split Heat Pump System 9+9- R410A | 230V" loading="lazy" referrerpolicy="no-referrer" style="width:100%;height:160px;object-fit:contain;background:#f9fafb;border-radius:6px;margin-bottom:12px">
+      <img src="/img?u=https%3A%2F%2Fhvacdirect.com%2Fmedia%2Fcatalog%2Fproduct%2Fcache%2Fc831b74073e8f93ee349897f877fc397%2Fd%2Fa%2Fdaikin-dual-zone.jpg" alt="Daikin 18,000 BTU MXS 18.9 SEER2 Dual Zone Wall Mounted Mini Split Heat Pump System 9+9- R410A | 230V" loading="lazy" referrerpolicy="no-referrer" style="width:100%;height:160px;object-fit:contain;background:#f9fafb;border-radius:6px;margin-bottom:12px">
       <div class="card-badge">DAIKIN</div>
       <div class="card-title">Daikin 18,000 BTU MXS 18.9 SEER2 Dual Zone Wall Mounted Mini Split Heat Pump System 9+9- R410A | 230V</div>
       <div class="card-desc">Daikin</div>
@@ -694,7 +694,7 @@ footer a{color:#d97706;text-decoration:none;font-weight:600}
       <div style="font-size:13px;font-weight:700;color:var(--ink);margin-top:4px">$1526.4</div>
     </a>
 <a href="/mini-splits/daikin-mxs-19-000-btu-dual-zone-mini-split-system-7-12-id1508/" class="product-card">
-      <img src="https://hvacdirect.com/media/catalog/product/cache/c831b74073e8f93ee349897f877fc397/d/a/daikin-dual-zone.jpg" alt="Daikin 24,000 BTU MXS 18 SEER2 Dual Zone Wall Mounted Mini Split Heat Pump System - R410A | 230V -  7+12" loading="lazy" referrerpolicy="no-referrer" style="width:100%;height:160px;object-fit:contain;background:#f9fafb;border-radius:6px;margin-bottom:12px">
+      <img src="/img?u=https%3A%2F%2Fhvacdirect.com%2Fmedia%2Fcatalog%2Fproduct%2Fcache%2Fc831b74073e8f93ee349897f877fc397%2Fd%2Fa%2Fdaikin-dual-zone.jpg" alt="Daikin 24,000 BTU MXS 18 SEER2 Dual Zone Wall Mounted Mini Split Heat Pump System - R410A | 230V -  7+12" loading="lazy" referrerpolicy="no-referrer" style="width:100%;height:160px;object-fit:contain;background:#f9fafb;border-radius:6px;margin-bottom:12px">
       <div class="card-badge">DAIKIN</div>
       <div class="card-title">Daikin 24,000 BTU MXS 18 SEER2 Dual Zone Wall Mounted Mini Split Heat Pump System - R410A | 230V -  7+12</div>
       <div class="card-desc">Daikin</div>
@@ -702,7 +702,7 @@ footer a{color:#d97706;text-decoration:none;font-weight:600}
       <div style="font-size:13px;font-weight:700;color:var(--ink);margin-top:4px">$0</div>
     </a>
 <a href="/mini-splits/daikin-mxs-21-000-btu-dual-zone-mini-split-system-9-12-id1509/" class="product-card">
-      <img src="https://hvacdirect.com/media/catalog/product/cache/c831b74073e8f93ee349897f877fc397/d/a/daikin-dual-zone.jpg" alt="Daikin 24,000 BTU MXS 18 SEER2 Dual Zone Wall Mounted Mini Split Heat Pump System - R410A | 230V -  9+12" loading="lazy" referrerpolicy="no-referrer" style="width:100%;height:160px;object-fit:contain;background:#f9fafb;border-radius:6px;margin-bottom:12px">
+      <img src="/img?u=https%3A%2F%2Fhvacdirect.com%2Fmedia%2Fcatalog%2Fproduct%2Fcache%2Fc831b74073e8f93ee349897f877fc397%2Fd%2Fa%2Fdaikin-dual-zone.jpg" alt="Daikin 24,000 BTU MXS 18 SEER2 Dual Zone Wall Mounted Mini Split Heat Pump System - R410A | 230V -  9+12" loading="lazy" referrerpolicy="no-referrer" style="width:100%;height:160px;object-fit:contain;background:#f9fafb;border-radius:6px;margin-bottom:12px">
       <div class="card-badge">DAIKIN</div>
       <div class="card-title">Daikin 24,000 BTU MXS 18 SEER2 Dual Zone Wall Mounted Mini Split Heat Pump System - R410A | 230V -  9+12</div>
       <div class="card-desc">Daikin</div>
@@ -710,7 +710,7 @@ footer a{color:#d97706;text-decoration:none;font-weight:600}
       <div style="font-size:13px;font-weight:700;color:var(--ink);margin-top:4px">$0</div>
     </a>
 <a href="/mini-splits/daikin-mxs-22-000-btu-dual-zone-mini-split-system-7-15-id1506/" class="product-card">
-      <img src="https://hvacdirect.com/media/catalog/product/cache/c831b74073e8f93ee349897f877fc397/d/a/daikin-dual-zone.jpg" alt="24,000 BTU 17 SEER Dual Zone Wall Mounted Daikin Mini-Split Heat Pump System 7+15" loading="lazy" referrerpolicy="no-referrer" style="width:100%;height:160px;object-fit:contain;background:#f9fafb;border-radius:6px;margin-bottom:12px">
+      <img src="/img?u=https%3A%2F%2Fhvacdirect.com%2Fmedia%2Fcatalog%2Fproduct%2Fcache%2Fc831b74073e8f93ee349897f877fc397%2Fd%2Fa%2Fdaikin-dual-zone.jpg" alt="24,000 BTU 17 SEER Dual Zone Wall Mounted Daikin Mini-Split Heat Pump System 7+15" loading="lazy" referrerpolicy="no-referrer" style="width:100%;height:160px;object-fit:contain;background:#f9fafb;border-radius:6px;margin-bottom:12px">
       <div class="card-badge">24,000</div>
       <div class="card-title">24,000 BTU 17 SEER Dual Zone Wall Mounted Daikin Mini-Split Heat Pump System 7+15</div>
       <div class="card-desc">24,000</div>
@@ -718,7 +718,7 @@ footer a{color:#d97706;text-decoration:none;font-weight:600}
       <div style="font-size:13px;font-weight:700;color:var(--ink);margin-top:4px">$0</div>
     </a>
 <a href="/mini-splits/daikin-mxs-24-000-btu-dual-zone-mini-split-system-12-12-id1510/" class="product-card">
-      <img src="https://hvacdirect.com/media/catalog/product/cache/c831b74073e8f93ee349897f877fc397/d/a/daikin-dual-zone.jpg" alt="Daikin 24,000 BTU MXS 18 SEER2 Dual Zone Wall Mounted Mini Split Heat Pump System - R410A | 230V -  12+12" loading="lazy" referrerpolicy="no-referrer" style="width:100%;height:160px;object-fit:contain;background:#f9fafb;border-radius:6px;margin-bottom:12px">
+      <img src="/img?u=https%3A%2F%2Fhvacdirect.com%2Fmedia%2Fcatalog%2Fproduct%2Fcache%2Fc831b74073e8f93ee349897f877fc397%2Fd%2Fa%2Fdaikin-dual-zone.jpg" alt="Daikin 24,000 BTU MXS 18 SEER2 Dual Zone Wall Mounted Mini Split Heat Pump System - R410A | 230V -  12+12" loading="lazy" referrerpolicy="no-referrer" style="width:100%;height:160px;object-fit:contain;background:#f9fafb;border-radius:6px;margin-bottom:12px">
       <div class="card-badge">DAIKIN</div>
       <div class="card-title">Daikin 24,000 BTU MXS 18 SEER2 Dual Zone Wall Mounted Mini Split Heat Pump System - R410A | 230V -  12+12</div>
       <div class="card-desc">Daikin</div>
@@ -726,7 +726,7 @@ footer a{color:#d97706;text-decoration:none;font-weight:600}
       <div style="font-size:13px;font-weight:700;color:var(--ink);margin-top:4px">$0</div>
     </a>
 <a href="/mini-splits/daikin-mxs-24-000-btu-dual-zone-mini-split-system-9-15-id1507/" class="product-card">
-      <img src="https://hvacdirect.com/media/catalog/product/cache/c831b74073e8f93ee349897f877fc397/d/a/daikin-dual-zone.jpg" alt="24,000 BTU 17 SEER Dual Zone Wall Mounted Daikin Mini-Split Heat Pump System 9+15" loading="lazy" referrerpolicy="no-referrer" style="width:100%;height:160px;object-fit:contain;background:#f9fafb;border-radius:6px;margin-bottom:12px">
+      <img src="/img?u=https%3A%2F%2Fhvacdirect.com%2Fmedia%2Fcatalog%2Fproduct%2Fcache%2Fc831b74073e8f93ee349897f877fc397%2Fd%2Fa%2Fdaikin-dual-zone.jpg" alt="24,000 BTU 17 SEER Dual Zone Wall Mounted Daikin Mini-Split Heat Pump System 9+15" loading="lazy" referrerpolicy="no-referrer" style="width:100%;height:160px;object-fit:contain;background:#f9fafb;border-radius:6px;margin-bottom:12px">
       <div class="card-badge">24,000</div>
       <div class="card-title">24,000 BTU 17 SEER Dual Zone Wall Mounted Daikin Mini-Split Heat Pump System 9+15</div>
       <div class="card-desc">24,000</div>
@@ -734,7 +734,7 @@ footer a{color:#d97706;text-decoration:none;font-weight:600}
       <div style="font-size:13px;font-weight:700;color:var(--ink);margin-top:4px">$0</div>
     </a>
 <a href="/mini-splits/daikin-mxs-25-000-btu-dual-zone-mini-split-system-7-18-id1513/" class="product-card">
-      <img src="https://hvacdirect.com/media/catalog/product/cache/c831b74073e8f93ee349897f877fc397/d/a/daikin-dual-zone.jpg" alt="36,000 BTU 17 SEER Dual Zone Wall Mounted Daikin Mini-Split Heat Pump System 7+18" loading="lazy" referrerpolicy="no-referrer" style="width:100%;height:160px;object-fit:contain;background:#f9fafb;border-radius:6px;margin-bottom:12px">
+      <img src="/img?u=https%3A%2F%2Fhvacdirect.com%2Fmedia%2Fcatalog%2Fproduct%2Fcache%2Fc831b74073e8f93ee349897f877fc397%2Fd%2Fa%2Fdaikin-dual-zone.jpg" alt="36,000 BTU 17 SEER Dual Zone Wall Mounted Daikin Mini-Split Heat Pump System 7+18" loading="lazy" referrerpolicy="no-referrer" style="width:100%;height:160px;object-fit:contain;background:#f9fafb;border-radius:6px;margin-bottom:12px">
       <div class="card-badge">36,000</div>
       <div class="card-title">36,000 BTU 17 SEER Dual Zone Wall Mounted Daikin Mini-Split Heat Pump System 7+18</div>
       <div class="card-desc">36,000</div>
@@ -742,7 +742,7 @@ footer a{color:#d97706;text-decoration:none;font-weight:600}
       <div style="font-size:13px;font-weight:700;color:var(--ink);margin-top:4px">$0</div>
     </a>
 <a href="/mini-splits/daikin-mxs-27-000-btu-dual-zone-mini-split-system-12-15-id1516/" class="product-card">
-      <img src="https://hvacdirect.com/media/catalog/product/cache/c831b74073e8f93ee349897f877fc397/d/a/daikin-dual-zone.jpg" alt="Daikin 36,000 BTU FTXS 18.1 SEER2 Dual Zone Wall Mounted Mini Split Heat Pump System \u2013 R410A | 230V \u2013 12 + 15" loading="lazy" referrerpolicy="no-referrer" style="width:100%;height:160px;object-fit:contain;background:#f9fafb;border-radius:6px;margin-bottom:12px">
+      <img src="/img?u=https%3A%2F%2Fhvacdirect.com%2Fmedia%2Fcatalog%2Fproduct%2Fcache%2Fc831b74073e8f93ee349897f877fc397%2Fd%2Fa%2Fdaikin-dual-zone.jpg" alt="Daikin 36,000 BTU FTXS 18.1 SEER2 Dual Zone Wall Mounted Mini Split Heat Pump System \u2013 R410A | 230V \u2013 12 + 15" loading="lazy" referrerpolicy="no-referrer" style="width:100%;height:160px;object-fit:contain;background:#f9fafb;border-radius:6px;margin-bottom:12px">
       <div class="card-badge">DAIKIN</div>
       <div class="card-title">Daikin 36,000 BTU FTXS 18.1 SEER2 Dual Zone Wall Mounted Mini Split Heat Pump System \u2013 R410A | 230V \u2013 12 + 15</div>
       <div class="card-desc">Daikin</div>
@@ -750,7 +750,7 @@ footer a{color:#d97706;text-decoration:none;font-weight:600}
       <div style="font-size:13px;font-weight:700;color:var(--ink);margin-top:4px">$0</div>
     </a>
 <a href="/mini-splits/daikin-mxs-27-000-btu-dual-zone-mini-split-system-9-18-id1515/" class="product-card">
-      <img src="https://hvacdirect.com/media/catalog/product/cache/c831b74073e8f93ee349897f877fc397/d/a/daikin-dual-zone.jpg" alt="36,000 BTU 17 SEER Dual Zone Wall Mounted Daikin Mini-Split Heat Pump System 9+18" loading="lazy" referrerpolicy="no-referrer" style="width:100%;height:160px;object-fit:contain;background:#f9fafb;border-radius:6px;margin-bottom:12px">
+      <img src="/img?u=https%3A%2F%2Fhvacdirect.com%2Fmedia%2Fcatalog%2Fproduct%2Fcache%2Fc831b74073e8f93ee349897f877fc397%2Fd%2Fa%2Fdaikin-dual-zone.jpg" alt="36,000 BTU 17 SEER Dual Zone Wall Mounted Daikin Mini-Split Heat Pump System 9+18" loading="lazy" referrerpolicy="no-referrer" style="width:100%;height:160px;object-fit:contain;background:#f9fafb;border-radius:6px;margin-bottom:12px">
       <div class="card-badge">36,000</div>
       <div class="card-title">36,000 BTU 17 SEER Dual Zone Wall Mounted Daikin Mini-Split Heat Pump System 9+18</div>
       <div class="card-desc">36,000</div>
@@ -758,7 +758,7 @@ footer a{color:#d97706;text-decoration:none;font-weight:600}
       <div style="font-size:13px;font-weight:700;color:var(--ink);margin-top:4px">$0</div>
     </a>
 <a href="/mini-splits/daikin-mxs-30-000-btu-dual-zone-mini-split-system-12-18-id1517/" class="product-card">
-      <img src="https://hvacdirect.com/media/catalog/product/cache/c831b74073e8f93ee349897f877fc397/d/a/daikin-dual-zone.jpg" alt="36,000 BTU 17 SEER Dual Zone Wall Mounted Daikin Mini-Split Heat Pump System 12+18" loading="lazy" referrerpolicy="no-referrer" style="width:100%;height:160px;object-fit:contain;background:#f9fafb;border-radius:6px;margin-bottom:12px">
+      <img src="/img?u=https%3A%2F%2Fhvacdirect.com%2Fmedia%2Fcatalog%2Fproduct%2Fcache%2Fc831b74073e8f93ee349897f877fc397%2Fd%2Fa%2Fdaikin-dual-zone.jpg" alt="36,000 BTU 17 SEER Dual Zone Wall Mounted Daikin Mini-Split Heat Pump System 12+18" loading="lazy" referrerpolicy="no-referrer" style="width:100%;height:160px;object-fit:contain;background:#f9fafb;border-radius:6px;margin-bottom:12px">
       <div class="card-badge">36,000</div>
       <div class="card-title">36,000 BTU 17 SEER Dual Zone Wall Mounted Daikin Mini-Split Heat Pump System 12+18</div>
       <div class="card-desc">36,000</div>
@@ -766,7 +766,7 @@ footer a{color:#d97706;text-decoration:none;font-weight:600}
       <div style="font-size:13px;font-weight:700;color:var(--ink);margin-top:4px">$0</div>
     </a>
 <a href="/mini-splits/daikin-mxs-30-000-btu-dual-zone-mini-split-system-15-15-id1511/" class="product-card">
-      <img src="https://hvacdirect.com/media/catalog/product/cache/c831b74073e8f93ee349897f877fc397/d/a/daikin-dual-zone.jpg" alt="36,000 BTU 17 SEER Dual Zone Wall Mounted Daikin Mini-Split Heat Pump System 15+15" loading="lazy" referrerpolicy="no-referrer" style="width:100%;height:160px;object-fit:contain;background:#f9fafb;border-radius:6px;margin-bottom:12px">
+      <img src="/img?u=https%3A%2F%2Fhvacdirect.com%2Fmedia%2Fcatalog%2Fproduct%2Fcache%2Fc831b74073e8f93ee349897f877fc397%2Fd%2Fa%2Fdaikin-dual-zone.jpg" alt="36,000 BTU 17 SEER Dual Zone Wall Mounted Daikin Mini-Split Heat Pump System 15+15" loading="lazy" referrerpolicy="no-referrer" style="width:100%;height:160px;object-fit:contain;background:#f9fafb;border-radius:6px;margin-bottom:12px">
       <div class="card-badge">36,000</div>
       <div class="card-title">36,000 BTU 17 SEER Dual Zone Wall Mounted Daikin Mini-Split Heat Pump System 15+15</div>
       <div class="card-desc">36,000</div>
@@ -774,7 +774,7 @@ footer a{color:#d97706;text-decoration:none;font-weight:600}
       <div style="font-size:13px;font-weight:700;color:var(--ink);margin-top:4px">$0</div>
     </a>
 <a href="/mini-splits/daikin-mxs-31-000-btu-dual-zone-mini-split-system-7-24-id1518/" class="product-card">
-      <img src="https://hvacdirect.com/media/catalog/product/cache/c831b74073e8f93ee349897f877fc397/d/a/daikin-dual-zone.jpg" alt="36,000 BTU 17 SEER Dual Zone Wall Mounted Daikin Mini-Split Heat Pump System 7+24" loading="lazy" referrerpolicy="no-referrer" style="width:100%;height:160px;object-fit:contain;background:#f9fafb;border-radius:6px;margin-bottom:12px">
+      <img src="/img?u=https%3A%2F%2Fhvacdirect.com%2Fmedia%2Fcatalog%2Fproduct%2Fcache%2Fc831b74073e8f93ee349897f877fc397%2Fd%2Fa%2Fdaikin-dual-zone.jpg" alt="36,000 BTU 17 SEER Dual Zone Wall Mounted Daikin Mini-Split Heat Pump System 7+24" loading="lazy" referrerpolicy="no-referrer" style="width:100%;height:160px;object-fit:contain;background:#f9fafb;border-radius:6px;margin-bottom:12px">
       <div class="card-badge">36,000</div>
       <div class="card-title">36,000 BTU 17 SEER Dual Zone Wall Mounted Daikin Mini-Split Heat Pump System 7+24</div>
       <div class="card-desc">36,000</div>
@@ -782,7 +782,7 @@ footer a{color:#d97706;text-decoration:none;font-weight:600}
       <div style="font-size:13px;font-weight:700;color:var(--ink);margin-top:4px">$0</div>
     </a>
 <a href="/mini-splits/daikin-mxs-32-000-btu-dual-zone-mini-split-system-15-18-id1514/" class="product-card">
-      <img src="https://hvacdirect.com/media/catalog/product/cache/c831b74073e8f93ee349897f877fc397/d/a/daikin-dual-zone.jpg" alt="36,000 BTU 17 SEER Dual Zone Wall Mounted Daikin Mini-Split Heat Pump System 15+18" loading="lazy" referrerpolicy="no-referrer" style="width:100%;height:160px;object-fit:contain;background:#f9fafb;border-radius:6px;margin-bottom:12px">
+      <img src="/img?u=https%3A%2F%2Fhvacdirect.com%2Fmedia%2Fcatalog%2Fproduct%2Fcache%2Fc831b74073e8f93ee349897f877fc397%2Fd%2Fa%2Fdaikin-dual-zone.jpg" alt="36,000 BTU 17 SEER Dual Zone Wall Mounted Daikin Mini-Split Heat Pump System 15+18" loading="lazy" referrerpolicy="no-referrer" style="width:100%;height:160px;object-fit:contain;background:#f9fafb;border-radius:6px;margin-bottom:12px">
       <div class="card-badge">36,000</div>
       <div class="card-title">36,000 BTU 17 SEER Dual Zone Wall Mounted Daikin Mini-Split Heat Pump System 15+18</div>
       <div class="card-desc">36,000</div>
@@ -790,7 +790,7 @@ footer a{color:#d97706;text-decoration:none;font-weight:600}
       <div style="font-size:13px;font-weight:700;color:var(--ink);margin-top:4px">$0</div>
     </a>
 <a href="/mini-splits/daikin-mxs-36-000-btu-dual-zone-mini-split-system-12-24-id1520/" class="product-card">
-      <img src="https://hvacdirect.com/media/catalog/product/cache/c831b74073e8f93ee349897f877fc397/d/a/daikin-dual-zone.jpg" alt="36,000 BTU 17 SEER Dual Zone Wall Mounted Daikin Mini-Split Heat Pump System 12+24" loading="lazy" referrerpolicy="no-referrer" style="width:100%;height:160px;object-fit:contain;background:#f9fafb;border-radius:6px;margin-bottom:12px">
+      <img src="/img?u=https%3A%2F%2Fhvacdirect.com%2Fmedia%2Fcatalog%2Fproduct%2Fcache%2Fc831b74073e8f93ee349897f877fc397%2Fd%2Fa%2Fdaikin-dual-zone.jpg" alt="36,000 BTU 17 SEER Dual Zone Wall Mounted Daikin Mini-Split Heat Pump System 12+24" loading="lazy" referrerpolicy="no-referrer" style="width:100%;height:160px;object-fit:contain;background:#f9fafb;border-radius:6px;margin-bottom:12px">
       <div class="card-badge">36,000</div>
       <div class="card-title">36,000 BTU 17 SEER Dual Zone Wall Mounted Daikin Mini-Split Heat Pump System 12+24</div>
       <div class="card-desc">36,000</div>
@@ -798,7 +798,7 @@ footer a{color:#d97706;text-decoration:none;font-weight:600}
       <div style="font-size:13px;font-weight:700;color:var(--ink);margin-top:4px">$0</div>
     </a>
 <a href="/mini-splits/daikin-mxs-36-000-btu-dual-zone-mini-split-system-18-18-id1512/" class="product-card">
-      <img src="https://hvacdirect.com/media/catalog/product/cache/c831b74073e8f93ee349897f877fc397/d/a/daikin-dual-zone.jpg" alt="36,000 BTU 17 SEER Dual Zone Wall Mounted Daikin Mini-Split Heat Pump System 18+18" loading="lazy" referrerpolicy="no-referrer" style="width:100%;height:160px;object-fit:contain;background:#f9fafb;border-radius:6px;margin-bottom:12px">
+      <img src="/img?u=https%3A%2F%2Fhvacdirect.com%2Fmedia%2Fcatalog%2Fproduct%2Fcache%2Fc831b74073e8f93ee349897f877fc397%2Fd%2Fa%2Fdaikin-dual-zone.jpg" alt="36,000 BTU 17 SEER Dual Zone Wall Mounted Daikin Mini-Split Heat Pump System 18+18" loading="lazy" referrerpolicy="no-referrer" style="width:100%;height:160px;object-fit:contain;background:#f9fafb;border-radius:6px;margin-bottom:12px">
       <div class="card-badge">36,000</div>
       <div class="card-title">36,000 BTU 17 SEER Dual Zone Wall Mounted Daikin Mini-Split Heat Pump System 18+18</div>
       <div class="card-desc">36,000</div>
@@ -806,7 +806,7 @@ footer a{color:#d97706;text-decoration:none;font-weight:600}
       <div style="font-size:13px;font-weight:700;color:var(--ink);margin-top:4px">$0</div>
     </a>
 <a href="/mini-splits/mitsubishi-mz-fh06na-6-000-btu-33-1-seer-ductless-mini-split-heat-pump8958/" class="product-card">
-      <img src="https://hvacdirect.com/media/catalog/product/cache/c831b74073e8f93ee349897f877fc397/m/z/mz-fh06-12.png" alt="Mitsubishi 6,000 BTU FS-Series 32.1 SEER2 Single Zone Wall Mounted Mini Split Heat Pump R410A | 230V" loading="lazy" referrerpolicy="no-referrer" style="width:100%;height:160px;object-fit:contain;background:#f9fafb;border-radius:6px;margin-bottom:12px">
+      <img src="/img?u=https%3A%2F%2Fhvacdirect.com%2Fmedia%2Fcatalog%2Fproduct%2Fcache%2Fc831b74073e8f93ee349897f877fc397%2Fm%2Fz%2Fmz-fh06-12.png" alt="Mitsubishi 6,000 BTU FS-Series 32.1 SEER2 Single Zone Wall Mounted Mini Split Heat Pump R410A | 230V" loading="lazy" referrerpolicy="no-referrer" style="width:100%;height:160px;object-fit:contain;background:#f9fafb;border-radius:6px;margin-bottom:12px">
       <div class="card-badge">MITSUBISHI</div>
       <div class="card-title">Mitsubishi 6,000 BTU FS-Series 32.1 SEER2 Single Zone Wall Mounted Mini Split Heat Pump R410A | 230V</div>
       <div class="card-desc">Mitsubishi</div>
@@ -814,7 +814,7 @@ footer a{color:#d97706;text-decoration:none;font-weight:600}
       <div style="font-size:13px;font-weight:700;color:var(--ink);margin-top:4px">$1973</div>
     </a>
 <a href="/mini-splits/mitsubishi-mz-fh06nah-6000-btu-33-1-seer-ductless-mini-split-heat-pump8961/" class="product-card">
-      <img src="https://hvacdirect.com/media/catalog/product/cache/c831b74073e8f93ee349897f877fc397/m/z/mz-fh06-12_3.png" alt="6,000 BTU 33.1 SEER Wall Mounted Mitsubishi Mini Split H2i Hyper Heat Single Zone Heat Pump - MZ-FS06NAH-R410A" loading="lazy" referrerpolicy="no-referrer" style="width:100%;height:160px;object-fit:contain;background:#f9fafb;border-radius:6px;margin-bottom:12px">
+      <img src="/img?u=https%3A%2F%2Fhvacdirect.com%2Fmedia%2Fcatalog%2Fproduct%2Fcache%2Fc831b74073e8f93ee349897f877fc397%2Fm%2Fz%2Fmz-fh06-12_3.png" alt="6,000 BTU 33.1 SEER Wall Mounted Mitsubishi Mini Split H2i Hyper Heat Single Zone Heat Pump - MZ-FS06NAH-R410A" loading="lazy" referrerpolicy="no-referrer" style="width:100%;height:160px;object-fit:contain;background:#f9fafb;border-radius:6px;margin-bottom:12px">
       <div class="card-badge">6,000</div>
       <div class="card-title">6,000 BTU 33.1 SEER Wall Mounted Mitsubishi Mini Split H2i Hyper Heat Single Zone Heat Pump - MZ-FS06NAH-R410A</div>
       <div class="card-desc">6,000</div>
@@ -822,7 +822,7 @@ footer a{color:#d97706;text-decoration:none;font-weight:600}
       <div style="font-size:13px;font-weight:700;color:var(--ink);margin-top:4px">$2070</div>
     </a>
 <a href="/mini-splits/mitsubishi-mz-fh09na-9-000-btu-30-5-seer-ductless-mini-split-heat-pump8955/" class="product-card">
-      <img src="https://hvacdirect.com/media/catalog/product/cache/c831b74073e8f93ee349897f877fc397/m/z/mz-fh09na-01_2.jpg" alt="9,000 BTU 30.5 SEER Wall Mounted Mitsubishi Mini Split Single Zone Heat Pump - MZ-FS09NA" loading="lazy" referrerpolicy="no-referrer" style="width:100%;height:160px;object-fit:contain;background:#f9fafb;border-radius:6px;margin-bottom:12px">
+      <img src="/img?u=https%3A%2F%2Fhvacdirect.com%2Fmedia%2Fcatalog%2Fproduct%2Fcache%2Fc831b74073e8f93ee349897f877fc397%2Fm%2Fz%2Fmz-fh09na-01_2.jpg" alt="9,000 BTU 30.5 SEER Wall Mounted Mitsubishi Mini Split Single Zone Heat Pump - MZ-FS09NA" loading="lazy" referrerpolicy="no-referrer" style="width:100%;height:160px;object-fit:contain;background:#f9fafb;border-radius:6px;margin-bottom:12px">
       <div class="card-badge">9,000</div>
       <div class="card-title">9,000 BTU 30.5 SEER Wall Mounted Mitsubishi Mini Split Single Zone Heat Pump - MZ-FS09NA</div>
       <div class="card-desc">9,000</div>
@@ -830,7 +830,7 @@ footer a{color:#d97706;text-decoration:none;font-weight:600}
       <div style="font-size:13px;font-weight:700;color:var(--ink);margin-top:4px">$2143</div>
     </a>
 <a href="/mini-splits/mitsubishi-mz-fh09nah-9-000-btu-30-5-seer-ductless-mini-split-heat-pump8963/" class="product-card">
-      <img src="https://hvacdirect.com/media/catalog/product/cache/c831b74073e8f93ee349897f877fc397/m/z/mz-fh06-12_4.png" alt="9,000 BTU 30.5 SEER Wall Mounted Mitsubishi Mini Split H2i Hyper Heat Single Zone Heat Pump - MZ-FS09NAH-R410A" loading="lazy" referrerpolicy="no-referrer" style="width:100%;height:160px;object-fit:contain;background:#f9fafb;border-radius:6px;margin-bottom:12px">
+      <img src="/img?u=https%3A%2F%2Fhvacdirect.com%2Fmedia%2Fcatalog%2Fproduct%2Fcache%2Fc831b74073e8f93ee349897f877fc397%2Fm%2Fz%2Fmz-fh06-12_4.png" alt="9,000 BTU 30.5 SEER Wall Mounted Mitsubishi Mini Split H2i Hyper Heat Single Zone Heat Pump - MZ-FS09NAH-R410A" loading="lazy" referrerpolicy="no-referrer" style="width:100%;height:160px;object-fit:contain;background:#f9fafb;border-radius:6px;margin-bottom:12px">
       <div class="card-badge">9,000</div>
       <div class="card-title">9,000 BTU 30.5 SEER Wall Mounted Mitsubishi Mini Split H2i Hyper Heat Single Zone Heat Pump - MZ-FS09NAH-R410A</div>
       <div class="card-desc">9,000</div>
@@ -838,7 +838,7 @@ footer a{color:#d97706;text-decoration:none;font-weight:600}
       <div style="font-size:13px;font-weight:700;color:var(--ink);margin-top:4px">$2330</div>
     </a>
 <a href="/mini-splits/mitsubishi-mz-fh12na-12-000-btu-26-1-seer-ductless-mini-split-heat-pump8956/" class="product-card">
-      <img src="https://hvacdirect.com/media/catalog/product/cache/c831b74073e8f93ee349897f877fc397/m/z/mz-fh06-12_2.png" alt="12,000 BTU 26.1 SEER Wall Mounted Mitsubishi Mini Split FS Single Zone Heat Pump - MZ-FS12NA-R410A" loading="lazy" referrerpolicy="no-referrer" style="width:100%;height:160px;object-fit:contain;background:#f9fafb;border-radius:6px;margin-bottom:12px">
+      <img src="/img?u=https%3A%2F%2Fhvacdirect.com%2Fmedia%2Fcatalog%2Fproduct%2Fcache%2Fc831b74073e8f93ee349897f877fc397%2Fm%2Fz%2Fmz-fh06-12_2.png" alt="12,000 BTU 26.1 SEER Wall Mounted Mitsubishi Mini Split FS Single Zone Heat Pump - MZ-FS12NA-R410A" loading="lazy" referrerpolicy="no-referrer" style="width:100%;height:160px;object-fit:contain;background:#f9fafb;border-radius:6px;margin-bottom:12px">
       <div class="card-badge">12,000</div>
       <div class="card-title">12,000 BTU 26.1 SEER Wall Mounted Mitsubishi Mini Split FS Single Zone Heat Pump - MZ-FS12NA-R410A</div>
       <div class="card-desc">12,000</div>
@@ -846,7 +846,7 @@ footer a{color:#d97706;text-decoration:none;font-weight:600}
       <div style="font-size:13px;font-weight:700;color:var(--ink);margin-top:4px">$2395</div>
     </a>
 <a href="/mini-splits/mitsubishi-mz-fh12nah-12-000-btu-26-1-seer-ductless-mini-split-heat-pump8960/" class="product-card">
-      <img src="https://hvacdirect.com/media/catalog/product/cache/c831b74073e8f93ee349897f877fc397/m/z/mz-fh06-12_5.png" alt="12,000 BTU 26.1 SEER Wall Mounted Mitsubishi Mini Split H2i Hyper Heat Single Zone Heat Pump - MZ-FS12NAH-R410A" loading="lazy" referrerpolicy="no-referrer" style="width:100%;height:160px;object-fit:contain;background:#f9fafb;border-radius:6px;margin-bottom:12px">
+      <img src="/img?u=https%3A%2F%2Fhvacdirect.com%2Fmedia%2Fcatalog%2Fproduct%2Fcache%2Fc831b74073e8f93ee349897f877fc397%2Fm%2Fz%2Fmz-fh06-12_5.png" alt="12,000 BTU 26.1 SEER Wall Mounted Mitsubishi Mini Split H2i Hyper Heat Single Zone Heat Pump - MZ-FS12NAH-R410A" loading="lazy" referrerpolicy="no-referrer" style="width:100%;height:160px;object-fit:contain;background:#f9fafb;border-radius:6px;margin-bottom:12px">
       <div class="card-badge">12,000</div>
       <div class="card-title">12,000 BTU 26.1 SEER Wall Mounted Mitsubishi Mini Split H2i Hyper Heat Single Zone Heat Pump - MZ-FS12NAH-R410A</div>
       <div class="card-desc">12,000</div>
@@ -854,7 +854,7 @@ footer a{color:#d97706;text-decoration:none;font-weight:600}
       <div style="font-size:13px;font-weight:700;color:var(--ink);margin-top:4px">$2694</div>
     </a>
 <a href="/mini-splits/mitsubishi-mz-fh15nah-15-000-btu-22-seer-ductless-mini-split-heat-pump8962/" class="product-card">
-      <img src="https://hvacdirect.com/media/catalog/product/cache/c831b74073e8f93ee349897f877fc397/m/z/mz-fh15-18_2.png" alt="15,000 BTU 22 SEER Wall Mounted Mitsubishi Mini Split H2i Hyper Heat Single Zone Heat Pump - MZ-FS15NAH-R410A" loading="lazy" referrerpolicy="no-referrer" style="width:100%;height:160px;object-fit:contain;background:#f9fafb;border-radius:6px;margin-bottom:12px">
+      <img src="/img?u=https%3A%2F%2Fhvacdirect.com%2Fmedia%2Fcatalog%2Fproduct%2Fcache%2Fc831b74073e8f93ee349897f877fc397%2Fm%2Fz%2Fmz-fh15-18_2.png" alt="15,000 BTU 22 SEER Wall Mounted Mitsubishi Mini Split H2i Hyper Heat Single Zone Heat Pump - MZ-FS15NAH-R410A" loading="lazy" referrerpolicy="no-referrer" style="width:100%;height:160px;object-fit:contain;background:#f9fafb;border-radius:6px;margin-bottom:12px">
       <div class="card-badge">15,000</div>
       <div class="card-title">15,000 BTU 22 SEER Wall Mounted Mitsubishi Mini Split H2i Hyper Heat Single Zone Heat Pump - MZ-FS15NAH-R410A</div>
       <div class="card-desc">15,000</div>
@@ -862,7 +862,7 @@ footer a{color:#d97706;text-decoration:none;font-weight:600}
       <div style="font-size:13px;font-weight:700;color:var(--ink);margin-top:4px">$3260</div>
     </a>
 <a href="/mini-splits/mitsubishi-mz-fh18na-18-000-btu-21-seer-ductless-mini-split-heat-pump8957/" class="product-card">
-      <img src="https://hvacdirect.com/media/catalog/product/cache/c831b74073e8f93ee349897f877fc397/m/z/mz-fh18na-01_2.jpg" alt="Mitsubishi 18,000 BTU FS-Series 21 SEER2 Single Zone Wall Mounted Mini Split Heat Pump System R410A | 230V" loading="lazy" referrerpolicy="no-referrer" style="width:100%;height:160px;object-fit:contain;background:#f9fafb;border-radius:6px;margin-bottom:12px">
+      <img src="/img?u=https%3A%2F%2Fhvacdirect.com%2Fmedia%2Fcatalog%2Fproduct%2Fcache%2Fc831b74073e8f93ee349897f877fc397%2Fm%2Fz%2Fmz-fh18na-01_2.jpg" alt="Mitsubishi 18,000 BTU FS-Series 21 SEER2 Single Zone Wall Mounted Mini Split Heat Pump System R410A | 230V" loading="lazy" referrerpolicy="no-referrer" style="width:100%;height:160px;object-fit:contain;background:#f9fafb;border-radius:6px;margin-bottom:12px">
       <div class="card-badge">MITSUBISHI</div>
       <div class="card-title">Mitsubishi 18,000 BTU FS-Series 21 SEER2 Single Zone Wall Mounted Mini Split Heat Pump System R410A | 230V</div>
       <div class="card-desc">Mitsubishi</div>
@@ -870,7 +870,7 @@ footer a{color:#d97706;text-decoration:none;font-weight:600}
       <div style="font-size:13px;font-weight:700;color:var(--ink);margin-top:4px">$3508</div>
     </a>
 <a href="/mini-splits/mitsubishi-mz-fh18nah-18-000-btu-21-seer-ductless-mini-split-heat-pump8966/" class="product-card">
-      <img src="https://hvacdirect.com/media/catalog/product/cache/c831b74073e8f93ee349897f877fc397/m/z/mz-fh15-18_3.png" alt="18,000 BTU 21 SEER Wall Mounted Mitsubishi Mini Split H2i Hyper Heat Single Zone Heat Pump - MZ-FS18NAH-R410A" loading="lazy" referrerpolicy="no-referrer" style="width:100%;height:160px;object-fit:contain;background:#f9fafb;border-radius:6px;margin-bottom:12px">
+      <img src="/img?u=https%3A%2F%2Fhvacdirect.com%2Fmedia%2Fcatalog%2Fproduct%2Fcache%2Fc831b74073e8f93ee349897f877fc397%2Fm%2Fz%2Fmz-fh15-18_3.png" alt="18,000 BTU 21 SEER Wall Mounted Mitsubishi Mini Split H2i Hyper Heat Single Zone Heat Pump - MZ-FS18NAH-R410A" loading="lazy" referrerpolicy="no-referrer" style="width:100%;height:160px;object-fit:contain;background:#f9fafb;border-radius:6px;margin-bottom:12px">
       <div class="card-badge">18,000</div>
       <div class="card-title">18,000 BTU 21 SEER Wall Mounted Mitsubishi Mini Split H2i Hyper Heat Single Zone Heat Pump - MZ-FS18NAH-R410A</div>
       <div class="card-desc">18,000</div>
@@ -878,7 +878,7 @@ footer a{color:#d97706;text-decoration:none;font-weight:600}
       <div style="font-size:13px;font-weight:700;color:var(--ink);margin-top:4px">$4095</div>
     </a>
 <a href="/mini-splits/mitsubishi-mz-gs36na-33-200-btu-16-2-seer-ductless-mini-split-heat-pump-id8964/" class="product-card">
-      <img src="https://hvacdirect.com/media/catalog/product/cache/c831b74073e8f93ee349897f877fc397/m/z/mz-d_1.png" alt="36,000 BTU 16.2 SEER Wall Mounted Mitsubishi Mini Split Single Zone Heat Pump - MSZ-GS36NA-R410A" loading="lazy" referrerpolicy="no-referrer" style="width:100%;height:160px;object-fit:contain;background:#f9fafb;border-radius:6px;margin-bottom:12px">
+      <img src="/img?u=https%3A%2F%2Fhvacdirect.com%2Fmedia%2Fcatalog%2Fproduct%2Fcache%2Fc831b74073e8f93ee349897f877fc397%2Fm%2Fz%2Fmz-d_1.png" alt="36,000 BTU 16.2 SEER Wall Mounted Mitsubishi Mini Split Single Zone Heat Pump - MSZ-GS36NA-R410A" loading="lazy" referrerpolicy="no-referrer" style="width:100%;height:160px;object-fit:contain;background:#f9fafb;border-radius:6px;margin-bottom:12px">
       <div class="card-badge">36,000</div>
       <div class="card-title">36,000 BTU 16.2 SEER Wall Mounted Mitsubishi Mini Split Single Zone Heat Pump - MSZ-GS36NA-R410A</div>
       <div class="card-desc">36,000</div>
@@ -886,7 +886,7 @@ footer a{color:#d97706;text-decoration:none;font-weight:600}
       <div style="font-size:13px;font-weight:700;color:var(--ink);margin-top:4px">$4949</div>
     </a>
 <a href="/mini-splits/mitsubishi-mz-kj15na-15-000-btu-21-8-seer-ductless-mini-split-heat-pump8967/" class="product-card">
-      <img src="https://hvacdirect.com/media/catalog/product/cache/c831b74073e8f93ee349897f877fc397/m/z/mz-kj15-18na.png" alt="Mitsubishi 15,000 BTU KJ-Series 22.2 SEER2 Single Zone Floor Mounted Mini Split H2i Hyper Heat Heat Pump R410A | 230V" loading="lazy" referrerpolicy="no-referrer" style="width:100%;height:160px;object-fit:contain;background:#f9fafb;border-radius:6px;margin-bottom:12px">
+      <img src="/img?u=https%3A%2F%2Fhvacdirect.com%2Fmedia%2Fcatalog%2Fproduct%2Fcache%2Fc831b74073e8f93ee349897f877fc397%2Fm%2Fz%2Fmz-kj15-18na.png" alt="Mitsubishi 15,000 BTU KJ-Series 22.2 SEER2 Single Zone Floor Mounted Mini Split H2i Hyper Heat Heat Pump R410A | 230V" loading="lazy" referrerpolicy="no-referrer" style="width:100%;height:160px;object-fit:contain;background:#f9fafb;border-radius:6px;margin-bottom:12px">
       <div class="card-badge">MITSUBISHI</div>
       <div class="card-title">Mitsubishi 15,000 BTU KJ-Series 22.2 SEER2 Single Zone Floor Mounted Mini Split H2i Hyper Heat Heat Pump R410A | 230V</div>
       <div class="card-desc">Mitsubishi</div>
@@ -894,7 +894,7 @@ footer a{color:#d97706;text-decoration:none;font-weight:600}
       <div style="font-size:13px;font-weight:700;color:var(--ink);margin-top:4px">$3679</div>
     </a>
 <a href="/mini-splits/mitsubishi-se-ka09na-th-8100-btu-15-seer-ductless-mini-split-heat-pump8976/" class="product-card">
-      <img src="https://hvacdirect.com/media/catalog/product/cache/c831b74073e8f93ee349897f877fc397/s/z/sz-kd09-15.png" alt="9,000 BTU 18.8 SEER Concealed Duct Mitsubishi Mini Split Single Zone Heat Pump - SEZ-KA09NA2" loading="lazy" referrerpolicy="no-referrer" style="width:100%;height:160px;object-fit:contain;background:#f9fafb;border-radius:6px;margin-bottom:12px">
+      <img src="/img?u=https%3A%2F%2Fhvacdirect.com%2Fmedia%2Fcatalog%2Fproduct%2Fcache%2Fc831b74073e8f93ee349897f877fc397%2Fs%2Fz%2Fsz-kd09-15.png" alt="9,000 BTU 18.8 SEER Concealed Duct Mitsubishi Mini Split Single Zone Heat Pump - SEZ-KA09NA2" loading="lazy" referrerpolicy="no-referrer" style="width:100%;height:160px;object-fit:contain;background:#f9fafb;border-radius:6px;margin-bottom:12px">
       <div class="card-badge">9,000</div>
       <div class="card-title">9,000 BTU 18.8 SEER Concealed Duct Mitsubishi Mini Split Single Zone Heat Pump - SEZ-KA09NA2</div>
       <div class="card-desc">9,000</div>
@@ -902,7 +902,7 @@ footer a{color:#d97706;text-decoration:none;font-weight:600}
       <div style="font-size:13px;font-weight:700;color:var(--ink);margin-top:4px">$2749</div>
     </a>
 <a href="/mini-splits/mitsubishi-se-ka12na-th-11-500-btu-16-seer-ductless-mini-split-heat-pump8974/" class="product-card">
-      <img src="https://hvacdirect.com/media/catalog/product/cache/c831b74073e8f93ee349897f877fc397/s/z/sz-kd09-15_1.png" alt="12,000 BTU 20.5 SEER Concealed Duct Mitsubishi Mini Split Single Zone Heat Pump - SEZ-KA12NA2" loading="lazy" referrerpolicy="no-referrer" style="width:100%;height:160px;object-fit:contain;background:#f9fafb;border-radius:6px;margin-bottom:12px">
+      <img src="/img?u=https%3A%2F%2Fhvacdirect.com%2Fmedia%2Fcatalog%2Fproduct%2Fcache%2Fc831b74073e8f93ee349897f877fc397%2Fs%2Fz%2Fsz-kd09-15_1.png" alt="12,000 BTU 20.5 SEER Concealed Duct Mitsubishi Mini Split Single Zone Heat Pump - SEZ-KA12NA2" loading="lazy" referrerpolicy="no-referrer" style="width:100%;height:160px;object-fit:contain;background:#f9fafb;border-radius:6px;margin-bottom:12px">
       <div class="card-badge">12,000</div>
       <div class="card-title">12,000 BTU 20.5 SEER Concealed Duct Mitsubishi Mini Split Single Zone Heat Pump - SEZ-KA12NA2</div>
       <div class="card-desc">12,000</div>
@@ -910,7 +910,7 @@ footer a{color:#d97706;text-decoration:none;font-weight:600}
       <div style="font-size:13px;font-weight:700;color:var(--ink);margin-top:4px">$2799</div>
     </a>
 <a href="/mini-splits/mitsubishi-se-ka15na-th-14-100-btu-15-5-seer-ductless-mini-split-heat-pump8975/" class="product-card">
-      <img src="https://hvacdirect.com/media/catalog/product/cache/c831b74073e8f93ee349897f877fc397/s/z/sz-kd09-15_2.png" alt="15,000 BTU 19 SEER Concealed Duct Mitsubishi Mini Split Single Zone Heat Pump - SEZ-KA15NA2" loading="lazy" referrerpolicy="no-referrer" style="width:100%;height:160px;object-fit:contain;background:#f9fafb;border-radius:6px;margin-bottom:12px">
+      <img src="/img?u=https%3A%2F%2Fhvacdirect.com%2Fmedia%2Fcatalog%2Fproduct%2Fcache%2Fc831b74073e8f93ee349897f877fc397%2Fs%2Fz%2Fsz-kd09-15_2.png" alt="15,000 BTU 19 SEER Concealed Duct Mitsubishi Mini Split Single Zone Heat Pump - SEZ-KA15NA2" loading="lazy" referrerpolicy="no-referrer" style="width:100%;height:160px;object-fit:contain;background:#f9fafb;border-radius:6px;margin-bottom:12px">
       <div class="card-badge">15,000</div>
       <div class="card-title">15,000 BTU 19 SEER Concealed Duct Mitsubishi Mini Split Single Zone Heat Pump - SEZ-KA15NA2</div>
       <div class="card-desc">15,000</div>
@@ -918,7 +918,7 @@ footer a{color:#d97706;text-decoration:none;font-weight:600}
       <div style="font-size:13px;font-weight:700;color:var(--ink);margin-top:4px">$3199</div>
     </a>
 <a href="/mini-splits/mitsubishi-se-ka18na-18-000-btu-17-5-seer-ductless-mini-split-heat-pump8969/" class="product-card">
-      <img src="https://hvacdirect.com/media/catalog/product/cache/c831b74073e8f93ee349897f877fc397/s/z/sz-kd18_1.png" alt="18,000 BTU 20 SEER Concealed Duct Mitsubishi Mini Split Single Zone Heat Pump - SEZ-KA18NA2-R410A" loading="lazy" referrerpolicy="no-referrer" style="width:100%;height:160px;object-fit:contain;background:#f9fafb;border-radius:6px;margin-bottom:12px">
+      <img src="/img?u=https%3A%2F%2Fhvacdirect.com%2Fmedia%2Fcatalog%2Fproduct%2Fcache%2Fc831b74073e8f93ee349897f877fc397%2Fs%2Fz%2Fsz-kd18_1.png" alt="18,000 BTU 20 SEER Concealed Duct Mitsubishi Mini Split Single Zone Heat Pump - SEZ-KA18NA2-R410A" loading="lazy" referrerpolicy="no-referrer" style="width:100%;height:160px;object-fit:contain;background:#f9fafb;border-radius:6px;margin-bottom:12px">
       <div class="card-badge">18,000</div>
       <div class="card-title">18,000 BTU 20 SEER Concealed Duct Mitsubishi Mini Split Single Zone Heat Pump - SEZ-KA18NA2-R410A</div>
       <div class="card-desc">18,000</div>
@@ -926,7 +926,7 @@ footer a{color:#d97706;text-decoration:none;font-weight:600}
       <div style="font-size:13px;font-weight:700;color:var(--ink);margin-top:4px">$4208</div>
     </a>
 <a href="/mini-splits/mrcool-diy-5th-gen-e-star-12000-btu-single-zone-mini-split-complete-system-with-25ft-line-set-115v-diy-12-hp-wm-115d25-o/" class="product-card">
-      <img src="https://hvacdirect.com/media/catalog/product/cache/c831b74073e8f93ee349897f877fc397/d/i/diy-hp-wm-o_3.jpg" alt="MRCOOL 12,000 BTU DIY 5th Gen Energy Star 22 SEER2 Single Zone Wall Mount Mini Split Heat Pump System w/ 25'Line Set \u2013 R454B | 115V" loading="lazy" referrerpolicy="no-referrer" style="width:100%;height:160px;object-fit:contain;background:#f9fafb;border-radius:6px;margin-bottom:12px">
+      <img src="/img?u=https%3A%2F%2Fhvacdirect.com%2Fmedia%2Fcatalog%2Fproduct%2Fcache%2Fc831b74073e8f93ee349897f877fc397%2Fd%2Fi%2Fdiy-hp-wm-o_3.jpg" alt="MRCOOL 12,000 BTU DIY 5th Gen Energy Star 22 SEER2 Single Zone Wall Mount Mini Split Heat Pump System w/ 25'Line Set \u2013 R454B | 115V" loading="lazy" referrerpolicy="no-referrer" style="width:100%;height:160px;object-fit:contain;background:#f9fafb;border-radius:6px;margin-bottom:12px">
       <div class="card-badge">MRCOOL</div>
       <div class="card-title">MRCOOL 12,000 BTU DIY 5th Gen Energy Star 22 SEER2 Single Zone Wall Mount Mini Split Heat Pump System w/ 25'Line Set \u2013 R454B | 115V</div>
       <div class="card-desc">MRCOOL</div>
@@ -934,7 +934,7 @@ footer a{color:#d97706;text-decoration:none;font-weight:600}
       <div style="font-size:13px;font-weight:700;color:var(--ink);margin-top:4px">$2359</div>
     </a>
 <a href="/mini-splits/perfect-aire-12-000-btu-16-5-seer-ductless-mini-split-heat-pump-3pamsh12a-szw-3pamsh12aa-szo-3952/" class="product-card">
-      <img src="https://hvacdirect.com/media/catalog/product/cache/c831b74073e8f93ee349897f877fc397/p/e/perfect_aire_gen_3_single_zone_3.jpg" alt="12,000 BTU 16.5 SEER Perfect Aire Single Zone Ductless Mini Split Heat Pump - 115V" loading="lazy" referrerpolicy="no-referrer" style="width:100%;height:160px;object-fit:contain;background:#f9fafb;border-radius:6px;margin-bottom:12px">
+      <img src="/img?u=https%3A%2F%2Fhvacdirect.com%2Fmedia%2Fcatalog%2Fproduct%2Fcache%2Fc831b74073e8f93ee349897f877fc397%2Fp%2Fe%2Fperfect_aire_gen_3_single_zone_3.jpg" alt="12,000 BTU 16.5 SEER Perfect Aire Single Zone Ductless Mini Split Heat Pump - 115V" loading="lazy" referrerpolicy="no-referrer" style="width:100%;height:160px;object-fit:contain;background:#f9fafb;border-radius:6px;margin-bottom:12px">
       <div class="card-badge">12,000</div>
       <div class="card-title">12,000 BTU 16.5 SEER Perfect Aire Single Zone Ductless Mini Split Heat Pump - 115V</div>
       <div class="card-desc">12,000</div>
@@ -942,7 +942,7 @@ footer a{color:#d97706;text-decoration:none;font-weight:600}
       <div style="font-size:13px;font-weight:700;color:var(--ink);margin-top:4px">$1225</div>
     </a>
 <a href="/mini-splits/perfect-aire-12-000-btu-16-8-seer-ductless-mini-split-heat-pump-3pamsh12b-szw-3pamsh12b-szo-4079/" class="product-card">
-      <img src="https://hvacdirect.com/media/catalog/product/cache/c831b74073e8f93ee349897f877fc397/p/e/perfect_aire_gen_3_single_zone_5.jpg" alt="12,000 BTU 16.8 SEER Perfect Aire Ductless Mini Split Heat Pump - 230V" loading="lazy" referrerpolicy="no-referrer" style="width:100%;height:160px;object-fit:contain;background:#f9fafb;border-radius:6px;margin-bottom:12px">
+      <img src="/img?u=https%3A%2F%2Fhvacdirect.com%2Fmedia%2Fcatalog%2Fproduct%2Fcache%2Fc831b74073e8f93ee349897f877fc397%2Fp%2Fe%2Fperfect_aire_gen_3_single_zone_5.jpg" alt="12,000 BTU 16.8 SEER Perfect Aire Ductless Mini Split Heat Pump - 230V" loading="lazy" referrerpolicy="no-referrer" style="width:100%;height:160px;object-fit:contain;background:#f9fafb;border-radius:6px;margin-bottom:12px">
       <div class="card-badge">12,000</div>
       <div class="card-title">12,000 BTU 16.8 SEER Perfect Aire Ductless Mini Split Heat Pump - 230V</div>
       <div class="card-desc">12,000</div>
@@ -950,7 +950,7 @@ footer a{color:#d97706;text-decoration:none;font-weight:600}
       <div style="font-size:13px;font-weight:700;color:var(--ink);margin-top:4px">$1048.56</div>
     </a>
 <a href="/mini-splits/perfect-aire-18-000-btu-17-7-seer-ductless-mini-split-heat-pump-3pamsh18b-szw-3pamsh18b-szo-4135/" class="product-card">
-      <img src="https://hvacdirect.com/media/catalog/product/cache/c831b74073e8f93ee349897f877fc397/p/e/perfect_aire_gen_3_single_zone_7.jpg" alt="18,000 BTU 17.7 SEER Perfect Aire Ductless Mini Split Heat Pump - 230V" loading="lazy" referrerpolicy="no-referrer" style="width:100%;height:160px;object-fit:contain;background:#f9fafb;border-radius:6px;margin-bottom:12px">
+      <img src="/img?u=https%3A%2F%2Fhvacdirect.com%2Fmedia%2Fcatalog%2Fproduct%2Fcache%2Fc831b74073e8f93ee349897f877fc397%2Fp%2Fe%2Fperfect_aire_gen_3_single_zone_7.jpg" alt="18,000 BTU 17.7 SEER Perfect Aire Ductless Mini Split Heat Pump - 230V" loading="lazy" referrerpolicy="no-referrer" style="width:100%;height:160px;object-fit:contain;background:#f9fafb;border-radius:6px;margin-bottom:12px">
       <div class="card-badge">18,000</div>
       <div class="card-title">18,000 BTU 17.7 SEER Perfect Aire Ductless Mini Split Heat Pump - 230V</div>
       <div class="card-desc">18,000</div>
@@ -958,7 +958,7 @@ footer a{color:#d97706;text-decoration:none;font-weight:600}
       <div style="font-size:13px;font-weight:700;color:var(--ink);margin-top:4px">$1232.86</div>
     </a>
 <a href="/mini-splits/perfect-aire-30-000-btu-18-8-seer-ductless-mini-split-heat-pump-3pamsh30b-szw-3pamsh30b-szo-4141/" class="product-card">
-      <img src="https://hvacdirect.com/media/catalog/product/cache/c831b74073e8f93ee349897f877fc397/3/p/3pamsh30b_3pamsh36b_.jpg" alt="30,000 BTU 18.8 SEER Perfect Aire Ductless Mini Split Heat Pump - 230V" loading="lazy" referrerpolicy="no-referrer" style="width:100%;height:160px;object-fit:contain;background:#f9fafb;border-radius:6px;margin-bottom:12px">
+      <img src="/img?u=https%3A%2F%2Fhvacdirect.com%2Fmedia%2Fcatalog%2Fproduct%2Fcache%2Fc831b74073e8f93ee349897f877fc397%2F3%2Fp%2F3pamsh30b_3pamsh36b_.jpg" alt="30,000 BTU 18.8 SEER Perfect Aire Ductless Mini Split Heat Pump - 230V" loading="lazy" referrerpolicy="no-referrer" style="width:100%;height:160px;object-fit:contain;background:#f9fafb;border-radius:6px;margin-bottom:12px">
       <div class="card-badge">30,000</div>
       <div class="card-title">30,000 BTU 18.8 SEER Perfect Aire Ductless Mini Split Heat Pump - 230V</div>
       <div class="card-desc">30,000</div>
@@ -966,7 +966,7 @@ footer a{color:#d97706;text-decoration:none;font-weight:600}
       <div style="font-size:13px;font-weight:700;color:var(--ink);margin-top:4px">$1656.83</div>
     </a>
 <a href="/mini-splits/perfect-aire-36-000-btu-16-4-seer-ductless-mini-split-heat-pump-3pamsh36b-szw-3pamsh36b-szo-4143/" class="product-card">
-      <img src="https://hvacdirect.com/media/catalog/product/cache/c831b74073e8f93ee349897f877fc397/3/p/3pamsh30b_3pamsh36b__1.jpg" alt="36,000 BTU 16.4 SEER Perfect Aire Ductless Mini Split Heat Pump - 230V" loading="lazy" referrerpolicy="no-referrer" style="width:100%;height:160px;object-fit:contain;background:#f9fafb;border-radius:6px;margin-bottom:12px">
+      <img src="/img?u=https%3A%2F%2Fhvacdirect.com%2Fmedia%2Fcatalog%2Fproduct%2Fcache%2Fc831b74073e8f93ee349897f877fc397%2F3%2Fp%2F3pamsh30b_3pamsh36b__1.jpg" alt="36,000 BTU 16.4 SEER Perfect Aire Ductless Mini Split Heat Pump - 230V" loading="lazy" referrerpolicy="no-referrer" style="width:100%;height:160px;object-fit:contain;background:#f9fafb;border-radius:6px;margin-bottom:12px">
       <div class="card-badge">36,000</div>
       <div class="card-title">36,000 BTU 16.4 SEER Perfect Aire Ductless Mini Split Heat Pump - 230V</div>
       <div class="card-desc">36,000</div>
@@ -974,7 +974,7 @@ footer a{color:#d97706;text-decoration:none;font-weight:600}
       <div style="font-size:13px;font-weight:700;color:var(--ink);margin-top:4px">$1933.14</div>
     </a>
 <a href="/mini-splits/perfect-aire-9-000-btu-16-5-seer-ductless-mini-split-heat-pump-3pamsh09b-szw-3pamsh09b-szo-4077/" class="product-card">
-      <img src="https://hvacdirect.com/media/catalog/product/cache/c831b74073e8f93ee349897f877fc397/p/e/perfect_aire_gen_3_single_zone_1.jpg" alt="Perfect Aire 9,000 BTU R410A 16.5 SEER Ductless Mini Split Heat Pump - 230V" loading="lazy" referrerpolicy="no-referrer" style="width:100%;height:160px;object-fit:contain;background:#f9fafb;border-radius:6px;margin-bottom:12px">
+      <img src="/img?u=https%3A%2F%2Fhvacdirect.com%2Fmedia%2Fcatalog%2Fproduct%2Fcache%2Fc831b74073e8f93ee349897f877fc397%2Fp%2Fe%2Fperfect_aire_gen_3_single_zone_1.jpg" alt="Perfect Aire 9,000 BTU R410A 16.5 SEER Ductless Mini Split Heat Pump - 230V" loading="lazy" referrerpolicy="no-referrer" style="width:100%;height:160px;object-fit:contain;background:#f9fafb;border-radius:6px;margin-bottom:12px">
       <div class="card-badge">PERFECT</div>
       <div class="card-title">Perfect Aire 9,000 BTU R410A 16.5 SEER Ductless Mini Split Heat Pump - 230V</div>
       <div class="card-desc">Perfect</div>
@@ -982,7 +982,7 @@ footer a{color:#d97706;text-decoration:none;font-weight:600}
       <div style="font-size:13px;font-weight:700;color:var(--ink);margin-top:4px">$955.8</div>
     </a>
 <a href="/mini-splits/perfect-aire-9-000-btu-17-seer-ductless-mini-split-heat-pump-3pamsh09a-szw-3pamsh09a-szo-3951/" class="product-card">
-      <img src="https://hvacdirect.com/media/catalog/product/cache/c831b74073e8f93ee349897f877fc397/p/e/perfect_aire_gen_3_single_zone.jpg" alt="9,000 BTU 16.5 SEER Perfect Aire Single Zone Ductless Mini Split Heat Pump - 115V" loading="lazy" referrerpolicy="no-referrer" style="width:100%;height:160px;object-fit:contain;background:#f9fafb;border-radius:6px;margin-bottom:12px">
+      <img src="/img?u=https%3A%2F%2Fhvacdirect.com%2Fmedia%2Fcatalog%2Fproduct%2Fcache%2Fc831b74073e8f93ee349897f877fc397%2Fp%2Fe%2Fperfect_aire_gen_3_single_zone.jpg" alt="9,000 BTU 16.5 SEER Perfect Aire Single Zone Ductless Mini Split Heat Pump - 115V" loading="lazy" referrerpolicy="no-referrer" style="width:100%;height:160px;object-fit:contain;background:#f9fafb;border-radius:6px;margin-bottom:12px">
       <div class="card-badge">9,000</div>
       <div class="card-title">9,000 BTU 16.5 SEER Perfect Aire Single Zone Ductless Mini Split Heat Pump - 115V</div>
       <div class="card-desc">9,000</div>
@@ -990,7 +990,7 @@ footer a{color:#d97706;text-decoration:none;font-weight:600}
       <div style="font-size:13px;font-weight:700;color:var(--ink);margin-top:4px">$1150</div>
     </a>
 <a href="/mini-splits/perfect-aire-diy-36-000-btu-16-4-seer-quick-connect-ductless-mini-split-heat-pump-w-wifi-230v-3pamshqc36-id-8475/" class="product-card">
-      <img src="https://hvacdirect.com/media/catalog/product/cache/c831b74073e8f93ee349897f877fc397/3/p/3pamshqc_1_7_5.jpg" alt="Perfect Aire DIY 36,000 BTU 16.4 SEER Quick Connect Ductless Mini Split Heat Pump w/ WiFi - 230V" loading="lazy" referrerpolicy="no-referrer" style="width:100%;height:160px;object-fit:contain;background:#f9fafb;border-radius:6px;margin-bottom:12px">
+      <img src="/img?u=https%3A%2F%2Fhvacdirect.com%2Fmedia%2Fcatalog%2Fproduct%2Fcache%2Fc831b74073e8f93ee349897f877fc397%2F3%2Fp%2F3pamshqc_1_7_5.jpg" alt="Perfect Aire DIY 36,000 BTU 16.4 SEER Quick Connect Ductless Mini Split Heat Pump w/ WiFi - 230V" loading="lazy" referrerpolicy="no-referrer" style="width:100%;height:160px;object-fit:contain;background:#f9fafb;border-radius:6px;margin-bottom:12px">
       <div class="card-badge">PERFECT</div>
       <div class="card-title">Perfect Aire DIY 36,000 BTU 16.4 SEER Quick Connect Ductless Mini Split Heat Pump w/ WiFi - 230V</div>
       <div class="card-desc">Perfect</div>

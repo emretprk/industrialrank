@@ -383,7 +383,7 @@ footer a{color:#d97706;text-decoration:none;font-weight:600}
         html += '<div class="search-result-count">'+results.length+' results</div>';
         results.forEach(function(p){
           var imgHtml = p.image
-            ? '<img class="sri-img" src="'+p.image+'" alt="'+p.title+'" loading="lazy" referrerpolicy="no-referrer">'
+            ? '<img class="sri-img" src="/img?u='+encodeURIComponent(p.image)+'" alt="'+p.title+'" loading="lazy" referrerpolicy="no-referrer">'
             : '<div class="sri-img-placeholder">⚙</div>';
           var catLabel = (p.category||'').replace(/-/g,' ').replace(/\w/g,function(c){return c.toUpperCase();});
           html += '<a href="'+p.url+'" class="search-result-item" onclick="closeSearch()">'
