@@ -18,3 +18,12 @@ https://www.industrialrank.com/* https://industrialrank.com/:splat 301
 /hvac/daikin-vrv5-review/                        /mini-splits/       301
 /hvac/mitsubishi-mxz-4c36na-mini-split-review/   /mini-splits/       301
 /hvac/mrcool-diy-24k-mini-split-review/          /mini-splits/       301
+
+# Retired categories (too thin on this supplier to support standalone
+# review content — folded into the closest relevant category).
+/electrical/      /                   301
+/electrical/*     /                   301
+/pumps/           /                   301
+/pumps/*          /                   301
+/water-heating/   /furnaces/          301
+/water-heating/*  /furnaces/          301

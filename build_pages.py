@@ -24,6 +24,10 @@ def get_nav():
     <a href="/mini-splits/" style="font-size:12px;color:rgba(255,255,255,.55);text-decoration:none;padding:6px 12px;text-transform:uppercase;letter-spacing:.04em">Mini Splits</a>
     <a href="/heat-pumps/" style="font-size:12px;color:rgba(255,255,255,.55);text-decoration:none;padding:6px 12px;text-transform:uppercase;letter-spacing:.04em">Heat Pumps</a>
     <a href="/air-conditioners/" style="font-size:12px;color:rgba(255,255,255,.55);text-decoration:none;padding:6px 12px;text-transform:uppercase;letter-spacing:.04em">AC</a>
+    <a href="/furnaces/" style="font-size:12px;color:rgba(255,255,255,.55);text-decoration:none;padding:6px 12px;text-transform:uppercase;letter-spacing:.04em">Furnaces</a>
+    <a href="/commercial-hvac/" style="font-size:12px;color:rgba(255,255,255,.55);text-decoration:none;padding:6px 12px;text-transform:uppercase;letter-spacing:.04em">Commercial</a>
+    <a href="/ventilation/" style="font-size:12px;color:rgba(255,255,255,.55);text-decoration:none;padding:6px 12px;text-transform:uppercase;letter-spacing:.04em">Ventilation</a>
+    <a href="/air-quality/" style="font-size:12px;color:rgba(255,255,255,.55);text-decoration:none;padding:6px 12px;text-transform:uppercase;letter-spacing:.04em">Air Quality</a>
     <a href="/find/" style="background:#d97706;color:#1a1f2e;font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:13px;text-transform:uppercase;padding:8px 16px;border-radius:5px;text-decoration:none">Find Equipment</a>
   </div>
 </nav>'''
@@ -31,9 +35,19 @@ def get_nav():
 
 def categorize(url):
     u = url.lower()
+    excl = ['bbq', 'grill', 'fireplace', 'fire-pit', 'firepit', 'patio-heater',
+            'outdoor-furniture', 'stove', 'chimney', 'smart-toilet', 'toilet',
+            'generator', 'solar-panel', 'solar-powered', 'laser-cutting',
+            'ice-maker', 'water-cooler', 'drinking-fountain', 'gas-log',
+            'outdoor-kitchen', 'beverage-air']
+    if any(p in u for p in excl): return None
     if 'mini-split' in u or 'ductless' in u: return 'mini-splits'
     if 'heat-pump' in u: return 'heat-pumps'
     if 'air-condition' in u or 'central-air' in u or 'condenser' in u: return 'air-conditioners'
+    if 'furnace' in u: return 'furnaces'
+    if 'commercial' in u or 'ptac' in u or 'multi-tenant' in u or 'air-handler' in u or 'make-up-air' in u or 'air-curtain' in u: return 'commercial-hvac'
+    if 'fan' in u or 'ventilation' in u or 'exhaust' in u or 'hvls' in u or 'evaporative-cooler' in u: return 'ventilation'
+    if 'dehumidifier' in u or 'air-purifier' in u or 'hepa' in u or 'erv' in u or 'hrv' in u or 'air-filter' in u or 'iaq' in u or 'uv-light' in u or 'odor-control' in u: return 'air-quality'
     return None
 
 def scrape_product(url):
