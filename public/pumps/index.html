@@ -51,6 +51,22 @@ nav{background:var(--steel);padding:0 24px;display:flex;align-items:center;justi
 footer{background:#1a1f2e;color:#888;text-align:center;padding:32px 24px;margin-top:32px;font-size:.85rem}
 footer a{color:#d97706;text-decoration:none;font-weight:600}
 @media(max-width:768px){.product-grid{grid-template-columns:1fr}.page-hero{padding:32px 16px}.page-hero h1{font-size:36px}.section{padding:32px 16px}.breadcrumb{padding:10px 16px}.affiliate-cta{margin:32px 16px}.nav-links{display:none}}
+
+/* MEGA MENU */
+.has-dropdown{position:relative}
+.has-dropdown>a{cursor:default}
+.has-dropdown>a::after{content:'▾';font-size:9px;margin-left:4px;opacity:0.5}
+.dropdown{display:none;position:absolute;top:56px;left:0;background:var(--steel);border-top:3px solid var(--amber);box-shadow:0 16px 40px rgba(0,0,0,0.4);min-width:720px;padding:24px 0;z-index:200;border-radius:0 0 8px 8px}
+.has-dropdown:hover .dropdown{display:flex}
+.dropdown-col{flex:1;padding:0 24px;border-right:1px solid rgba(255,255,255,0.07)}
+.dropdown-col:last-child{border-right:none}
+.dropdown-col-title{font-family:'IBM Plex Mono',monospace;font-size:9px;color:var(--amber);letter-spacing:0.14em;text-transform:uppercase;margin-bottom:14px;padding-bottom:8px;border-bottom:1px solid rgba(255,255,255,0.08)}
+.dropdown-col a{display:block;font-size:12px;color:rgba(255,255,255,0.65);text-decoration:none;padding:6px 0;letter-spacing:0.02em;border-bottom:none;height:auto;text-transform:none;font-weight:400;transition:color 0.12s}
+.dropdown-col a:hover{color:var(--amber2);border-bottom:none}
+.dropdown-col a strong{display:block;color:rgba(255,255,255,0.9);font-weight:600;font-size:12px;margin-bottom:1px}
+.dropdown-col a span{font-size:11px;color:rgba(255,255,255,0.35)}
+.dropdown-footer{padding:14px 24px 0;border-top:1px solid rgba(255,255,255,0.07);display:flex;gap:12px;margin:16px 24px 0}
+.dropdown-footer a{font-size:11px;color:var(--amber);text-decoration:none;font-weight:600;letter-spacing:0.06em;text-transform:uppercase;height:auto;padding:0;border-bottom:none}
 </style>
 </head>
 <body>
