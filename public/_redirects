@@ -25,5 +25,58 @@ https://www.industrialrank.com/* https://industrialrank.com/:splat 301
 /electrical/*     /                   301
 /pumps/           /                   301
 /pumps/*          /                   301
-/water-heating/   /furnaces/          301
-/water-heating/*  /furnaces/          301
+/water-heating/   /                   301
+/water-heating/*  /                   301
+
+# Safety net: these fabricated product slugs (new-taxonomy category prefixes)
+# were linked from the nav mega-menu / footer / top10 page for a period before
+# being removed on 2026-06-20. If Google indexed any of them, 301 them to the
+# real category page instead of letting them 404.
+/heat-pumps/carrier-infinity-20-heat-pump-review/        /heat-pumps/        301
+/heat-pumps/trane-xr15-heat-pump-review/                 /heat-pumps/        301
+/heat-pumps/goodman-gsx160481-heat-pump-review/          /heat-pumps/        301
+/heat-pumps/bosch-bova-60hdn1-heat-pump-review/          /heat-pumps/        301
+/heat-pumps/lennox-xp21-heat-pump-review/                /heat-pumps/        301
+/heat-pumps/aciq-2ton-18seer2-heat-pump-review/          /heat-pumps/        301
+/heat-pumps/trane-runtru-2ton-heat-pump-review/          /heat-pumps/        301
+/heat-pumps/rheem-rp1648aj1na-heat-pump-review/          /heat-pumps/        301
+/air-conditioners/lennox-xc21-air-conditioner-review/    /air-conditioners/  301
+/air-conditioners/goodman-gsxh503610-ac-system-review/   /air-conditioners/  301
+/air-conditioners/carrier-performance-14-ac-review/      /air-conditioners/  301
+/mini-splits/daikin-vrv5-review/                         /mini-splits/       301
+/mini-splits/mitsubishi-mxz-4c36na-mini-split-review/    /mini-splits/       301
+/mini-splits/mrcool-diy-24k-mini-split-review/           /mini-splits/       301
+/mini-splits/mrcool-diy-36k-mini-split-review/           /mini-splits/       301
+/mini-splits/mrcool-diy-2-zone-27k-review/               /mini-splits/       301
+/mini-splits/pioneer-wb009gmfi22m-mini-split-review/     /mini-splits/       301
+/mini-splits/senville-leto-12k-mini-split-review/        /mini-splits/       301
+/mini-splits/lg-ls120hev2-mini-split-review/             /mini-splits/       301
+/mini-splits/cooper-hunter-sophia-24k-review/            /mini-splits/       301
+/mini-splits/mitsubishi-mxz-3c24na-review/               /mini-splits/       301
+/mini-splits/pioneer-3-zone-27k-mini-split-review/       /mini-splits/       301
+/electrical/eaton-br2020-review/                         /                   301
+/electrical/siemens-q2200-review/                        /                   301
+/electrical/fluke-117-review/                            /                   301
+/electrical/fluke-323-clamp-meter-review/                /                   301
+/electrical/klein-tools-mm400-multimeter-review/         /                   301
+/electrical/square-d-hom2160pcvp-panel-review/           /                   301
+/pumps/xylem-goulds-3196-review/                         /                   301
+/pumps/grundfos-cm5-5-review/                            /                   301
+/pumps/grundfos-up15-29su-circulator-review/             /                   301
+/pumps/zoeller-m53-sump-pump-review/                     /                   301
+/pumps/wayne-cdu980e-sump-pump-review/                   /                   301
+/pumps/little-giant-553271-sump-pump-review/             /                   301
+/air-quality/aprilaire-5000-whole-house-filter-review/   /air-quality/       301
+/air-quality/santa-fe-ultra120-dehumidifier-review/      /air-quality/       301
+/air-quality/aprilaire-8100-erv-review/                  /air-quality/       301
+/water-heating/aciq-50gal-hybrid-heat-pump-wh-review/    /                   301
+/water-heating/rinnai-rl75in-tankless-review/            /                   301
+/commercial-hvac/carrier-50xp-packaged-heat-pump-review/ /commercial-hvac/   301
+/commercial-hvac/reznor-udxc-unit-heater-review/         /commercial-hvac/   301
+
+# Furnaces/Ventilation categories not yet built on this supplier — nav links
+# removed site-wide on 2026-06-20 until real product pages exist.
+/furnaces/        /          301
+/furnaces/*       /          301
+/ventilation/     /          301
+/ventilation/*    /          301
